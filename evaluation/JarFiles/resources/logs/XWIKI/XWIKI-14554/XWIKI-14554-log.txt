@@ -1,0 +1,7 @@
+2017-07-19 10:44:11,778 [Mail Prepare Thread] ERROR o.x.m.i.DatabaseMailListener   - Failure during preparation phase of thread [300e4e3b-5462-428c-9e17-8e32f93e3a72]
+java.lang.NullPointerException: null
+        at org.xwiki.notifications.internal.email.AbstractMimeMessageIterator.next(AbstractMimeMessageIterator.java:214)
+        at org.xwiki.notifications.internal.email.AbstractMimeMessageIterator.next(AbstractMimeMessageIterator.java:51)
+        at org.xwiki.mail.internal.thread.PrepareMailRunnable.prepareMail(PrepareMailRunnable.java:122)
+        at org.xwiki.mail.internal.thread.PrepareMailRunnable.run(PrepareMailRunnable.java:78)
+        at java.lang.Thread.run(Unknown Source)

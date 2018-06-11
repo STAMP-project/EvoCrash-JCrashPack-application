@@ -1,0 +1,11 @@
+execution_idx,application,case,version,classpath,package,stacktrace_path,fixed,fixed_version,buggy_frame,p_functional_mocking,functional_mocking_percent,p_reflection_on_private,reflection_start_percent,search_budget,population,test_dir
+1,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+2,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+3,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+4,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+5,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+6,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+7,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+8,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+9,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031
+10,xwiki,XWIKI-13031,7.4,JarFiles/resources/targetedSoftware/XWIKI-bins/XWIKI-7.4,xwiki,JarFiles/resources/logs/XWIKI/XWIKI-13031/XWIKI-13031.log,yes,7.4.1,2,0.8,0.5,0,0,62328,100,JarFiles/GGA-tests/XWIKI-13031

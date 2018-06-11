@@ -1,0 +1,65 @@
+
+
+
+
+
+    #
+    # while 1==1:
+    #     if threading.active_count() < 3:
+    #         #starting next run
+    #         # vaghti mikhad ye thread e jadid doros kone check mikone age frame i baghi namonde bod mire soraghe case e badi [DONE]
+    #         if len(validFrames) == 0:
+    #             # get all of the valid frames
+    #             runner_pointer += 1
+    #             # check if we dont have any other run finish it
+    #             if runner_pointer == number_of_runs:
+    #                 break
+    #             currentRun = runs_configs[runner_pointer]
+    #             # validFrames = logReader.getValidFrameLevels(os.path.join(log_path, currentRun["package"].upper(), currentRun["case"],currentRun["case"] + ".log"), currentRun["package"])
+    #
+    #         #here, we are sure that validFrames is not empty
+    #
+    #         # #check if the class of the currentRun is compiled or not
+    #         # if currentRun["case"] not in compiled_classes:
+    #         #     # compiling
+    #         #     java_file_name = currentRun["case"].replace('-', '_') + "_Test"
+    #         #     print "Compiling ..."
+    #         #     subprocess.check_call(
+    #         #         ['javac', '-cp', libraryString, os.path.join(java_file_dir, java_file_name + ".java"),
+    #         #          os.path.join(java_file_dir, "Run.java")])
+    #         #     print "Compiling is finished"
+    #         #     compiled_classes.append(currentRun["case"])
+    #
+    #
+    #
+    #         target_frame = validFrames[0] # we are going to set this frame level az our target frame
+    #
+    #         print "running Thread(s) #{} ... ".format(threading.active_count())
+    #         mythread = RunJar.RunJar(name="run #{}".format(runner_pointer + 1))
+    #         mythread.run({'java_file_dir': java_file_dir,
+    #                       'java_file_name': java_file_name,
+    #                       'libraryString': libraryString,
+    #                       'ProjectPackage': currentRun["package"],
+    #                       'log_path': log_path,
+    #                       'case_name': currentRun["case"],
+    #                       'reflection_start_percent': currentRun["reflection_start_percent"],
+    #                       'functional_mocking_percent': currentRun["functional_mocking_percent"],
+    #                       'p_functional_mocking': currentRun["p_functional_mocking"],
+    #                       'application': currentRun["application"],
+    #                       'version': currentRun["version"],
+    #                       'p_reflection_on_private': currentRun["p_reflection_on_private"],
+    #                       'search_budget': currentRun["search_budget"],
+    #                       'population': currentRun["population"],
+    #                       })
+    #
+    #
+    #         validFrames = validFrames[1:] #delete first element of validFrames
+    #
+    #
+    #
+    #         #bade har thread doros kardan bayad check kone bebine akhare run hastim ya frame baghi monde. age frame bashe  frame_pointer o yedone mibare jolo. age namonde bashe frame_pointer =0 mishe va runner_pointer check mishe age akharin nabashe ++ mishe. vali age akharin bashe break mikonim.
+    #
+    #
+    #
+    #
+

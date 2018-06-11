@@ -1,0 +1,54 @@
+2016-08-01 12:05:27,148 [Mail Sende2r Thread] ERROR o.x.m.i.DatabaseMailListener   - Error when looking for a previous mail status for message [wf6IcqpIFAxhHxKKHDZ37sZ5zoE=] of batch [7c9b4454-91a2-441f-a0a1-5e73f2e74afd].
+org.xwiki.mail.MailStoreException: Failed to load mail statuses matching the filter [{id=wf6IcqpIFAxhHxKKHDZ37sZ5zoE=}] from the database.
+        at org.xwiki.mail.internal.DatabaseMailStatusStore.load(DatabaseMailStatusStore.java:142)
+        at org.xwiki.mail.internal.DatabaseMailStatusStore.load(DatabaseMailStatusStore.java:98)
+        at org.xwiki.mail.internal.DatabaseMailListener.retrieveExistingMailStatus(DatabaseMailListener.java:193)
+        at org.xwiki.mail.internal.DatabaseMailListener.onSendMessageSuccess(DatabaseMailListener.java:126)
+        at org.xwiki.mail.internal.thread.SendMailRunnable.sendMail(SendMailRunnable.java:184)
+        at org.xwiki.mail.internal.thread.SendMailRunnable.runInternal(SendMailRunnable.java:117)
+        at org.xwiki.mail.internal.thread.SendMailRunnable.run(SendMailRunnable.java:78)
+        at java.lang.Thread.run(Unknown Source)
+Caused by: com.xpn.xwiki.XWikiException: Error number 3301 in 3: Exception while switching to database null
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.setDatabase(XWikiHibernateBaseStore.java:758)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.beginTransaction(XWikiHibernateBaseStore.java:932)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.beginTransaction(XWikiHibernateBaseStore.java:831)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.execute(XWikiHibernateBaseStore.java:1323)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.executeRead(XWikiHibernateBaseStore.java:1391)
+        at org.xwiki.mail.internal.DatabaseMailStatusStore.load(DatabaseMailStatusStore.java:122)
+        ... 7 common frames omitted
+Caused by: java.lang.NullPointerException: null
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getXWikiConfig(AbstractDataMigrationManager.java:300)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getDBVersionFromConfig(AbstractDataMigrationManager.java:375)
+        at com.xpn.xwiki.store.migration.hibernate.HibernateDataMigrationManager.getDBVersionFromDatabase(HibernateDataMigrationManager.java:88)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getDataMigrationStatus(AbstractDataMigrationManager.java:421)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getDatabaseStatus(AbstractDataMigrationManager.java:564)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.checkDatabase(AbstractDataMigrationManager.java:532)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.setDatabase(XWikiHibernateBaseStore.java:754)
+        ... 12 common frames omitted
+2016-08-01 12:05:27,209 [Mail Sender Thread] WARN  o.x.m.i.DatabaseMailListener   - Forcing a new mail status for message [wf6IcqpIFAxhHxKKHDZ37sZ5zoE=] of batch [7c9b4454-91a2-441f-a0a1-5e73f2e74afd] to send_success state.
+2016-08-01 12:05:27,246 [Mail Sender Thread] ERROR o.x.m.i.DatabaseMailListener   - Failed to delete mail status [messageId = [wf6IcqpIFAxhHxKKHDZ37sZ5zoE=], batchId = [7c9b4454-91a2-441f-a0a1-5e73f2e74afd], state = [send_success], date = [Mon Aug 01 12:05:27 EEST 2016], recipients = [irina.hrehorciuc@xwiki.com]] from the database
+org.xwiki.mail.MailStoreException: Failed to delete mail status (message id [wf6IcqpIFAxhHxKKHDZ37sZ5zoE=]) from the database.
+        at org.xwiki.mail.internal.DatabaseMailStatusStore.delete(DatabaseMailStatusStore.java:207)
+        at org.xwiki.mail.internal.DatabaseMailListener.deleteStatus(DatabaseMailListener.java:227)
+        at org.xwiki.mail.internal.DatabaseMailListener.onSendMessageSuccess(DatabaseMailListener.java:141)
+        at org.xwiki.mail.internal.thread.SendMailRunnable.sendMail(SendMailRunnable.java:184)
+        at org.xwiki.mail.internal.thread.SendMailRunnable.runInternal(SendMailRunnable.java:117)
+        at org.xwiki.mail.internal.thread.SendMailRunnable.run(SendMailRunnable.java:78)
+        at java.lang.Thread.run(Unknown Source)
+Caused by: com.xpn.xwiki.XWikiException: Error number 3301 in 3: Exception while switching to database null
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.setDatabase(XWikiHibernateBaseStore.java:758)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.beginTransaction(XWikiHibernateBaseStore.java:932)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.beginTransaction(XWikiHibernateBaseStore.java:831)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.execute(XWikiHibernateBaseStore.java:1323)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.executeWrite(XWikiHibernateBaseStore.java:1437)
+        at org.xwiki.mail.internal.DatabaseMailStatusStore.delete(DatabaseMailStatusStore.java:195)
+        ... 6 common frames omitted
+Caused by: java.lang.NullPointerException: null
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getXWikiConfig(AbstractDataMigrationManager.java:300)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getDBVersionFromConfig(AbstractDataMigrationManager.java:375)
+        at com.xpn.xwiki.store.migration.hibernate.HibernateDataMigrationManager.getDBVersionFromDatabase(HibernateDataMigrationManager.java:88)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getDataMigrationStatus(AbstractDataMigrationManager.java:421)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.getDatabaseStatus(AbstractDataMigrationManager.java:564)
+        at com.xpn.xwiki.store.migration.AbstractDataMigrationManager.checkDatabase(AbstractDataMigrationManager.java:532)
+        at com.xpn.xwiki.store.XWikiHibernateBaseStore.setDatabase(XWikiHibernateBaseStore.java:754)
+        ... 11 common frames omitted

@@ -1,0 +1,1 @@
+<open file '<fdopen>', mode 'rU' at 0x10a0e3150>

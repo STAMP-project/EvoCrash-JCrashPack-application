@@ -1,0 +1,20 @@
+2017-08-14 11:39:05,923 [pool-1-thread-2] WARN  iComponentManagerEventListener - Failed to register the wiki component located in the document [incubator:Gadgets.PanelClock]: {}
+org.xwiki.component.wiki.WikiComponentException: Failed to retrieve panel document [incubator:Gadgets.PanelClock]
+        at org.xwiki.panels.internal.PanelWikiUIExtensionComponentBuilder.buildComponents(PanelWikiUIExtensionComponentBuilder.java:133)
+        at org.xwiki.component.wiki.internal.DefaultWikiComponentManagerEventListener.registerAllComponents(DefaultWikiComponentManagerEventListener.java:135)
+        at org.xwiki.component.wiki.internal.DefaultWikiComponentManagerEventListener.onEvent(DefaultWikiComponentManagerEventListener.java:122)
+        at org.xwiki.observation.internal.DefaultObservationManager.notify(DefaultObservationManager.java:304)
+        at org.xwiki.observation.internal.DefaultObservationManager.notify(DefaultObservationManager.java:269)
+        at com.xpn.xwiki.internal.WikiInitializerJob.runInternal(WikiInitializerJob.java:120)
+        at org.xwiki.job.AbstractJob.runInContext(AbstractJob.java:206)
+        at org.xwiki.job.AbstractJob.run(AbstractJob.java:189)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+        at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException: null
+        at java.io.StringReader.<init>(StringReader.java:50)
+        at org.xwiki.rendering.internal.parser.DefaultContentParser.parse(DefaultContentParser.java:62)
+        at org.xwiki.rendering.internal.parser.DefaultContentParser.parse(DefaultContentParser.java:69)
+        at org.xwiki.component.wiki.internal.bridge.DefaultContentParser.parse(DefaultContentParser.java:59)
+        at org.xwiki.panels.internal.PanelWikiUIExtensionComponentBuilder.buildComponents(PanelWikiUIExtensionComponentBuilder.java:124)
+        ... 10 common frames omitted

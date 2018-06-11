@@ -1,0 +1,4 @@
+java.lang.StringIndexOutOfBoundsException: String index out of range: 6
+	at java.lang.String.substring(String.java:1963)
+	at org.apache.commons.math.complex.ComplexFormat.parse(ComplexFormat.java:378)
+	

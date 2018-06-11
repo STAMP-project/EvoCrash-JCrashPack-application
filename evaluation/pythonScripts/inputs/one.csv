@@ -1,0 +1,2 @@
+execution_idx,application,case,version,classpath,package,stacktrace_path,fixed,fixed_version,buggy_frame,p_functional_mocking,functional_mocking_percent,p_reflection_on_private,reflection_start_percent,search_budget,population,test_dir
+1,XWiki,XWIKI-13031,7.4,,xwiki,,,,,0,0,0,0,5000,80,
