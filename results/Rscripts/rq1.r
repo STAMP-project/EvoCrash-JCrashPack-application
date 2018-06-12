@@ -14,9 +14,7 @@ colorpalette="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org
 # ------------------------------
 
 plotGroupedCoverageRanges <- function(results){
-  majority <- results %>%
-    group_by(application_name, application_kind_factor, case, exception, exception_factor, frame_level) %>%
-    summarize(majority_result = names(which.max(table(result_factor))))
+  majority <- getBestResult()
   
   p <- ggplot(data=majority, aes(x=majority_result, fill=majority_result)) +
     geom_bar(stat="count") +
