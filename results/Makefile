@@ -1,6 +1,6 @@
 SHELL=/bin/bash
 
-all: analysebenchmark analyseresults tables plots
+all: analysebenchmark analyseresults tables plots rqs
 	
 # Prints statistics on the benchmark
 analysebenchmark:
@@ -12,14 +12,21 @@ analyseresults:
 
 # Print tables describing benchmark and results in tables/	
 tables:
-	mkdir tables
+	mkdir -p tables
 	(cd Rscripts && Rscript makecategorisationtable.r)
 	(cd Rscripts && Rscript makeresultstable.r)	
 
 # Print plots describing benchmark in plots/
 plots:
-	mkdir plots
+	mkdir -p plots
 	(cd Rscripts && Rscript makebenchmarkplots.r)
+	
+rqs:
+	mkdir -p tables
+	mkdir -p plots
+	(cd Rscripts && Rscript rq1.r)
+	(cd Rscripts && Rscript rq2.r)
+	(cd Rscripts && Rscript rq3.r)
 	
 clean: 
 	rm -rf plots/

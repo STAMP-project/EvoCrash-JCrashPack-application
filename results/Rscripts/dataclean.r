@@ -104,9 +104,9 @@ getResults <- function(){
   return(results)
 }
 
-getBestResult <- function(){
+getMostFrequentResult <- function(){
   majority <- getResults() %>%
-    group_by(application_name, application_kind_factor, case, exception, exception_factor, frame_level) %>%
+    group_by(application_name, application_kind, application_kind_factor, case, exception, exception_factor, frame_level) %>%
     summarise(majority_result = names(which.max(table(result_factor))))
   df <- data.frame(majority)
   return(df)
