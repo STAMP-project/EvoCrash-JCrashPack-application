@@ -1,0 +1,7 @@
+.*
+*.class
+*.pyc
+!.gitignore
+.DS_Store
+results/tables
+results/plots
