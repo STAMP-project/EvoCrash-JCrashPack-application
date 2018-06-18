@@ -13,9 +13,6 @@ colorpalette="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org
 # Functions definition
 # ------------------------------
 
-plotGroupedCoverageRanges <- function(results){
-
-}
 
 # ------------------------------
 # Main function definition
@@ -49,7 +46,7 @@ main <- function(){
 	  filter(case %in% failing_cases$case)
 	
 	
-	previous_analysis <- read.csv('../manual-analysis/categorisation.csv', quote = "", stringsAsFactors = FALSE )
+	previous_analysis <- read.csv('../manual-analysis/categorisation-old.csv', quote = "", stringsAsFactors = FALSE )
 	
 	empty_category <- previous_analysis %>%
 	  filter(Category == "") %>%

@@ -13,6 +13,7 @@ analyseresults:
 # Print tables describing benchmark and results in tables/	
 tables:
 	mkdir -p tables
+	(cd Rscripts && Rscript makebenchmarktables.r)
 	(cd Rscripts && Rscript makecategorisationtable.r)
 	(cd Rscripts && Rscript makeresultstable.r)	
 

@@ -186,12 +186,33 @@ main <- function(){
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
   ggsave(plot = p, filename = '../plots/rq2_appstats.pdf', width=100, height=100, units = "mm" )
   
+  p <- ggplot(filtered_results, aes(x = application_factor, y = fitness_function_number_of_tries, fill = application_factor)) +
+    geom_boxplot(outlier.shape = NA) +
+    facet_grid(. ~ exception_factor, scales="free_x") +
+    scale_y_log10() + 
+    xlab("Application") +
+    ylab("Number of fitness evaluation (log. scale)") + 
+    guides(fill=FALSE) + 
+    scale_fill_brewer(palette=colorpalette) +
+    theme(axis.text.x = element_text(angle = 90, hjust = 1))
+  ggsave(plot = p, filename = '../plots/rq2_excepappstats.pdf', width=300, height=100, units = "mm" )
+  
   # Getting extreme cases for each exception type
   for(ex in distinct(filtered_results, exception_factor)$exception_factor){
-    cat("Extreme case for exception ", ex, "\n")
+    cat("Costliest case for exception ", ex, "\n")
     df <- filtered_results %>%
       filter(exception_factor == ex) %>%
       top_n(1, fitness_function_number_of_tries) %>%
+      select(application, case, frame_level, exception, exception_name, fitness_function_number_of_tries)
+    print(df)
+  }
+  
+  for(ex in distinct(filtered_results, exception_factor)$exception_factor){
+    cat("Chepeast case for exception ", ex, "\n")
+    df <- filtered_results %>%
+      filter(exception_factor == ex) %>%
+      arrange(fitness_function_number_of_tries) %>%
+      slice(1) %>%
       select(application, case, frame_level, exception, exception_name, fitness_function_number_of_tries)
     print(df)
   }
@@ -205,13 +226,6 @@ main <- function(){
       select(application, case, frame_level, exception, exception_name, fitness_function_number_of_tries)
     print(df)
   }
-
-  
-  filtered_results %>%
-    filter(case == "MOCKITO-1b", frame_level == 1) %>%
-    select(exception_name)
-  
-  
   
 }
 
