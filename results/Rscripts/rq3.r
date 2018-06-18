@@ -13,57 +13,50 @@ colorpalette="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org
 # Functions definition
 # ------------------------------
 
+updateFromOld() <- function(){
+  results <- getResults()
+  
+  succeeding <- results %>%
+    filter(result == 'reproduced') %>%
+    distinct(application, application_name, application_kind, version, case, frame_level)
+  
+  failing <- results %>%
+    distinct(application, application_name, application_kind, version, case, frame_level) %>%
+    setdiff(succeeding)
+  
+  succeeding_cases <- results %>%
+    filter(result == 'reproduced') %>%
+    distinct(application, application_name, application_kind, version, case)
+  
+  failing_cases <- results %>%
+    distinct(application, application_name, application_kind, version, case) %>%
+    setdiff(succeeding_cases)
+  
+  previous_analysis <- read.csv('../manual-analysis/categorisation-old.csv', quote = "", stringsAsFactors = FALSE )
+  
+  df <- failing %>%
+    left_join(previous_analysis, by = c("case", "frame_level" = "frame")) %>%
+    select(application, application_name, application_kind, version, case, frame_level, Category) %>%
+    arrange(application_kind, case, frame_level)
+  
+  # write.csv(df, file = '../manual-analysis/categorisation.csv', quote = FALSE)
+}
 
 # ------------------------------
 # Main function definition
 # ------------------------------
 
 main <- function(){
-	results <- getResults()
-
-	succeeding <- results %>%
-	  filter(result == 'reproduced') %>%
-	  distinct(application, application_kind, case, frame_level)
-	
-	failing <- results %>%
-	  distinct(application, application_kind, case, frame_level) %>%
-	  setdiff(succeeding)
-	
-	succeeding_cases <- results %>%
-	  filter(result == 'reproduced') %>%
-	  distinct(application, application_kind, case)
-	
-	failing_cases <- results %>%
-	  distinct(application, application_kind, case) %>%
-	  setdiff(succeeding_cases)
-	
-	failing_cases %>%
-	  group_by(application) %>%
-	  summarise(n())
-	
-	
-	df <- failing %>%
-	  filter(case %in% failing_cases$case)
-	
-	
-	previous_analysis <- read.csv('../manual-analysis/categorisation-old.csv', quote = "", stringsAsFactors = FALSE )
-	
-	empty_category <- previous_analysis %>%
-	  filter(Category == "") %>%
-	  distinct(case)
-	
-	filled_category <- previous_analysis %>%
-	  filter(Category != "") %>%
-	  distinct(case)
-	
-	never_succeeded <- empty_category %>%
-	  setdiff(filled_category)
-	
-	failing_cases %>%
-	  filter(!(case %in% previous_analysis$case)) %>%
-	  group_by(application) %>%
-	  summarise(n())
-
+  manual_analysis <- read.csv('../manual-analysis/categorisation.csv', quote = "", stringsAsFactors = FALSE )
+  
+  df <- manual_analysis %>% 
+    group_by(Category) %>%
+    summarise(count = n())
+  
+  cat("Summary:")
+  print(df)
+  
+  
 }
 
 # ------------------------------
