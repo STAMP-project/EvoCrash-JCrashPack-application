@@ -13,7 +13,7 @@ colorpalette="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org
 # Functions definition
 # ------------------------------
 
-updateFromOld() <- function(){
+updateFromOld <- function(){
   results <- getResults()
   
   succeeding <- results %>%

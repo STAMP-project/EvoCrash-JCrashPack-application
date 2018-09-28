@@ -107,7 +107,8 @@ getResults <- function(){
 getMostFrequentResult <- function(){
   majority <- getResults() %>%
     group_by(application_name, application_kind, application_kind_factor, case, exception, exception_factor, frame_level) %>%
-    summarise(majority_result = names(which.max(table(result_factor))))
+    summarise(majority_result = names(which.max(table(result_factor))),
+              majority_result_factor = factor(names(which.max(table(result_factor))), levels = c("crashed", "failed", "line reached", "ex. thrown", "reproduced")))
   df <- data.frame(majority)
   return(df)
 }

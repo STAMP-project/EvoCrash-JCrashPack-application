@@ -55,9 +55,11 @@ printApplicationTable <- function(filtered_results){
   }
   
   # Print table
-  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} R{1} r R{1} r r r }", "\n")
+  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{0.6} R{1.4} r R{1} r }", "\n")
+  #cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} R{1} r R{1} r r r }", "\n")
   cat("\\hline", "\n")
-  cat("\\textbf{Applications} & \\textbf{Cr.} & \\textbf{Fr.}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} & \\textbf{Skew.} & \\textbf{Kurt.} \\\\", "\n")
+  #cat("\\textbf{Applications} & \\textbf{Cr.} & \\textbf{Fr.}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} & \\textbf{Skew.} & \\textbf{Kurt.} \\\\", "\n")
+  cat("\\textbf{Applications} & \\textbf{Cr.} & \\textbf{Fr.}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} \\\\", "\n")
   cat("\\hline", "\n")
   for (app in df$application_factor) {
     x <- df %>%
@@ -70,9 +72,10 @@ printApplicationTable <- function(filtered_results){
     cat("[", x$cilower,",",x$ciupper, "]" ," & ", sep = "");
     cat(formatC(x$median, digits=2, format="f", big.mark = ',')," & ");
     cat(formatC(x$upperquartile, digits=1, format="f", big.mark = ',')," & ");
-    cat(formatC(x$max, format="d", big.mark = ',')," & ");
-    cat(formatC(x$skewness, digits=2, format="f", big.mark = ',')," & ");
-    cat(formatC(x$kurtosis, digits=2, format="f", big.mark = ',')," ");
+    cat(formatC(x$max, format="d", big.mark = ',')," ");
+    # cat(formatC(x$max, format="d", big.mark = ',')," & ");
+    # cat(formatC(x$skewness, digits=2, format="f", big.mark = ',')," & ");
+    # cat(formatC(x$kurtosis, digits=2, format="f", big.mark = ',')," ");
     cat("\\\\", "\n")
   }
   cat("\\hline", "\n")
@@ -113,9 +116,11 @@ printExceptionTable <- function(filtered_results){
   }
   
   # Print table
-  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} R{1} r R{1} r r r }", "\n")
+  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{0.6} R{1.4} r R{1} r }", "\n")
+  # cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} R{1} r R{1} r r r }", "\n")
   cat("\\hline", "\n")
-  cat("\\textbf{Exception kind} & \\textbf{Cr.} & \\textbf{Fr.}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} & \\textbf{Skew.} & \\textbf{Kurt.} \\\\", "\n")
+  # cat("\\textbf{Exception kind} & \\textbf{Cr.} & \\textbf{Fr.}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} & \\textbf{Skew.} & \\textbf{Kurt.} \\\\", "\n")
+  cat("\\textbf{Exception kind} & \\textbf{Cr.} & \\textbf{Fr.}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} \\\\", "\n")
   cat("\\hline", "\n")
   for (ex in df$exception_factor) {
     x <- df %>%
@@ -128,9 +133,10 @@ printExceptionTable <- function(filtered_results){
     cat("[", x$cilower,",",x$ciupper, "]" ," & ", sep = "");
     cat(formatC(x$median, digits=2, format="f", big.mark = ',')," & ");
     cat(formatC(x$upperquartile, digits=1, format="f", big.mark = ',')," & ");
-    cat(formatC(x$max, format="d", big.mark = ',')," & ");
-    cat(formatC(x$skewness, digits=2, format="f", big.mark = ',')," & ");
-    cat(formatC(x$kurtosis, digits=2, format="f", big.mark = ',')," ");
+    #cat(formatC(x$max, format="d", big.mark = ',')," & ");
+    cat(formatC(x$max, format="d", big.mark = ','));
+    # cat(formatC(x$skewness, digits=2, format="f", big.mark = ',')," & ");
+    # cat(formatC(x$kurtosis, digits=2, format="f", big.mark = ',')," ");
     cat("\\\\", "\n")
   }
   cat("\\hline", "\n")
@@ -169,7 +175,6 @@ main <- function(){
   p <- ggplot(filtered_results, aes(x = exception_factor, y = fitness_function_number_of_tries, fill = exception_factor)) +
     geom_boxplot() +
     scale_y_log10() + 
-    xlab("Exception") +
     ylab("Number of fitness evaluation (log. scale)") + 
     guides(fill=FALSE) + 
     scale_fill_brewer(palette=colorpalette) +
@@ -179,7 +184,6 @@ main <- function(){
   p <- ggplot(filtered_results, aes(x = application_factor, y = fitness_function_number_of_tries, fill = application_factor)) +
     geom_boxplot() +
     scale_y_log10() + 
-    xlab("Application") +
     ylab("Number of fitness evaluation (log. scale)") + 
     guides(fill=FALSE) + 
     scale_fill_brewer(palette=colorpalette) +
@@ -188,14 +192,13 @@ main <- function(){
   
   p <- ggplot(filtered_results, aes(x = application_factor, y = fitness_function_number_of_tries, fill = application_factor)) +
     geom_boxplot(outlier.shape = NA) +
-    facet_grid(. ~ exception_factor, scales="free_x") +
+    facet_wrap( ~ exception_factor, ncol = 4) +
     scale_y_log10() + 
-    xlab("Application") +
     ylab("Number of fitness evaluation (log. scale)") + 
     guides(fill=FALSE) + 
     scale_fill_brewer(palette=colorpalette) +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))
-  ggsave(plot = p, filename = '../plots/rq2_excepappstats.pdf', width=300, height=100, units = "mm" )
+  ggsave(plot = p, filename = '../plots/rq2_excepappstats.pdf', width=200, height=150, units = "mm" )
   
   # Getting extreme cases for each exception type
   for(ex in distinct(filtered_results, exception_factor)$exception_factor){

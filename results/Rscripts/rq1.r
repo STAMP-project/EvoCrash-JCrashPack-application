@@ -16,11 +16,11 @@ colorpalette="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org
 plotGroupedCoverageRanges <- function(results){
   majority <- getMostFrequentResult()
   
-  p <- ggplot(data=majority, aes(x=majority_result, fill=majority_result)) +
+  p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
     geom_bar(stat="count") +
     xlab("") +
     ylab("Average Number of frames (logarithmic scale)") +
-    theme(axis.text.x = element_text(size = 6, angle=90), axis.text.y = element_text(size = 4)) +
+    theme(axis.text.x = element_text(angle=90)) +
     facet_grid(exception_factor ~ application_kind_factor, scales="free_x") +
     scale_fill_brewer(palette=colorpalette) +
     scale_y_log10() +

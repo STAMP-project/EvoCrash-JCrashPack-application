@@ -30,11 +30,11 @@ plotFramesPerException <- function(benchmark){
 plotExceptionsPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, case, exception_factor) %>%
-    mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
+    distinct(application, application_name, case, exception_factor) #%>%
+    #mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
   p <- ggplot(df, aes(x=application_name, fill=exception_factor)) +
     #geom_bar(stat="count") +
-    geom_bar(position="dodge") +
+    geom_bar(position = position_dodge(preserve = 'single')) +
     xlab("") + 
     ylab("Number of exceptions") + 
     labs(fill="Exception") +
@@ -46,14 +46,15 @@ plotExceptionsPerApp <- function(benchmark){
 plotAvgCCNPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, case, avg_ccn) %>%
-    mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
-  p <- ggplot(df, aes(x=application_name, y=avg_ccn)) +
-    #geom_bar(stat="count") +
-    geom_boxplot(outlier.shape = NA) +
+    distinct(application, application_name, case, avg_ccn) #%>%
+    #mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
+  p <- ggplot(df, aes(x=application_name, y=avg_ccn, fill=factor(application_name))) +
+    geom_bar(position = "dodge", stat = "summary", fun.y = "mean") +
+    geom_point() +
     xlab("") + 
-    ylab("Average cyclomatic complexity number (CCN)") + 
+    ylab("Average CCN") + 
     #scale_y_log10() +
+    guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette)
   return (p)
 }
@@ -61,14 +62,15 @@ plotAvgCCNPerApp <- function(benchmark){
 plotAvgNCSSPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, case, application_ncss) %>%
-    mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
-  p <- ggplot(df, aes(x=application_name, y=application_ncss)) +
-    #geom_bar(stat="count") +
-    geom_boxplot(outlier.shape = NA) +
+    distinct(application, application_name, case, application_ncss) #%>%
+    #mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
+  p <- ggplot(df, aes(x=application_name, y=application_ncss, fill=factor(application_name))) +
+    geom_bar(position = "dodge", stat = "summary", fun.y = "mean") +
+    geom_point() +
     xlab("") + 
-    ylab("Non commenting source statements (NCSS)") + 
-    scale_y_log10() +
+    ylab("Average NCSS") + 
+    #scale_y_log10() +
+    guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette)
   return (p)
 }
@@ -91,11 +93,11 @@ main <- function(){
 	
 	# CCN distribution per project
 	p <- plotAvgCCNPerApp(benchmark)
-	ggsave(plot = p, filename = '../plots/benchmark-ccn-per-app-boxplot.pdf', width=75, height=90, units = "mm" )
+	ggsave(plot = p, filename = '../plots/benchmark-ccn-per-app-boxplot.pdf', width=190, height=90, units = "mm" )
 	
 	# CCN distribution per project
 	p <- plotAvgNCSSPerApp(benchmark)
-	ggsave(plot = p, filename = '../plots/benchmark-ncss-per-app-boxplot.pdf', width=75, height=90, units = "mm" )
+	ggsave(plot = p, filename = '../plots/benchmark-ncss-per-app-boxplot.pdf', width=190, height=90, units = "mm" )
 	
 }
 
@@ -104,5 +106,5 @@ main <- function(){
 # ------------------------------
 
 main()
-
+ 
 
