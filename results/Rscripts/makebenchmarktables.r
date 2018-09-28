@@ -50,9 +50,16 @@ printExceptionsApplicationsDescription <- function(){
     arrange(application_kind_factor) %>% 
     distinct(application_kind, application_kind_factor)
   
+  cat("#")
+  for (i in 1:nrow(exceptions)) {
+    ex <- exceptions[i,]
+    cat(ex$exception_class, " (", ex$exception, "), ", sep = "")
+  }
+  cat("\n")
+  
   cat("\\begin{tabular}{ l | r r r | r r r | r r r | r r r } ")
   # Print headers 
-  cat("\\textbf{Exception type} ")
+  cat("\\textbf{Except.} ")
   for(j in 1:nrow(applications)){
     app <- applications[j,]
     cat(" & \\multicolumn{3}{c}{\\textbf{", app$application_kind, "}} ")
@@ -69,7 +76,8 @@ printExceptionsApplicationsDescription <- function(){
   for (i in 1:nrow(exceptions)) {
     ex <- exceptions[i,]
     # Print row header
-    cat(ex$exception_class, " {\\tiny(", ex$exception, ")} ", sep = "")
+    # cat(ex$exception_class, " {\\tiny(", ex$exception, ")} ", sep = "")
+    cat(ex$exception)
     for(j in 1:nrow(applications)){
       app <- applications[j,]
       square <- df %>%
