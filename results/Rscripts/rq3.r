@@ -35,7 +35,7 @@ updateFromOld <- function(){
   previous_analysis <- read.csv('../manual-analysis/categorisation-old.csv', quote = "", stringsAsFactors = FALSE )
   
   df <- failing %>%
-    left_join(previous_analysis, by = c("case", "frame_level" = "frame")) %>%
+    left_join(previous_analysis, by = c("application", "application_name", "application_kind", "version", "case", "frame_level", "case", "frame_level")) %>%
     select(application, application_name, application_kind, version, case, frame_level, Category) %>%
     arrange(application_kind, case, frame_level)
   

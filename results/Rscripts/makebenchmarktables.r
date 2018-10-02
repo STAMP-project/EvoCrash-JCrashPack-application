@@ -50,7 +50,7 @@ printExceptionsApplicationsDescription <- function(){
     arrange(application_kind_factor) %>% 
     distinct(application_kind, application_kind_factor)
   
-  cat("#")
+  cat("% ")
   for (i in 1:nrow(exceptions)) {
     ex <- exceptions[i,]
     cat(ex$exception_class, " (", ex$exception, "), ", sep = "")

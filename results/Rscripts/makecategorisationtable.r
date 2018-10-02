@@ -15,7 +15,7 @@ source('dataclean.r')
 printCategoriesTable <- function(categories){
   df <- categories %>%
     filter(!is.na(Category) & Category != '') %>%
-    arrange(case, frame)
+    arrange(case, frame_level)
   cat("\\begin{longtable}{l r l}", "\n")
   cat("\\textbf{Id} & \\textbf{Frame} & \\textbf{Category} ", "\n")
   cat("\\\\")
