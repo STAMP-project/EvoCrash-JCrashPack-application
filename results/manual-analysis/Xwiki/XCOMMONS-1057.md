@@ -16,7 +16,7 @@ java.lang.ClassCastException: org.xwiki.extension.job.plan.internal.DefaultExten
 
 # Frame  2 & 3 & 4 & 5 & 6
 
-Injecting target method is hard. EvoCrash can do it because it can not find the generator for the genetic type which is needed for initializing the target class (`UpgradePlanJob`)
+Injecting target method is hard. EvoCrash can not do it because it can not find the generator for the genetic type which is needed for initializing the target class (`UpgradePlanJob`)
 
 
 # Frame  7 & 8
