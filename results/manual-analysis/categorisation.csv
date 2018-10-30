@@ -4,14 +4,14 @@
 3,chart,JFreechart,Defects4J,13b,CHART-13b,4,Complex Code
 4,chart,JFreechart,Defects4J,13b,CHART-13b,5,Complex Code
 5,chart,JFreechart,Defects4J,13b,CHART-13b,6,Complex Code
-6,lang,Commons-lang,Defects4J,13b,LANG-13b,4,NA
-7,lang,Commons-lang,Defects4J,13b,LANG-13b,5,NA
+6,lang,Commons-lang,Defects4J,13b,LANG-13b,4,Input Data Generation
+7,lang,Commons-lang,Defects4J,13b,LANG-13b,5,Input Data Generation
 8,lang,Commons-lang,Defects4J,19b,LANG-19b,2,Input Data Generation
 9,lang,Commons-lang,Defects4J,20b,LANG-20b,1,Static Initialization
 10,lang,Commons-lang,Defects4J,20b,LANG-20b,2,Static Initialization
 11,lang,Commons-lang,Defects4J,20b,LANG-20b,3,Static Initialization
 12,lang,Commons-lang,Defects4J,27b,LANG-27b,2,NA
-13,lang,Commons-lang,Defects4J,37b,LANG-37b,1,NA
+13,lang,Commons-lang,Defects4J,37b,LANG-37b,1,Input Data Generation
 14,lang,Commons-lang,Defects4J,44b,LANG-44b,1,NA
 15,lang,Commons-lang,Defects4J,6b,LANG-6b,2,Abstract Class
 16,lang,Commons-lang,Defects4J,6b,LANG-6b,3,Input Data Generation
@@ -25,10 +25,10 @@
 24,lang,Commons-lang,Defects4J,9b,LANG-9b,9,Private Inner Class
 25,lang,Commons-lang,Defects4J,9b,LANG-9b,10,Input Data Generation
 26,math,Commons-math,Defects4J,101b,MATH-101b,1,NA
-27,math,Commons-math,Defects4J,103b,MATH-103b,2,NA
-28,math,Commons-math,Defects4J,103b,MATH-103b,3,NA
-29,math,Commons-math,Defects4J,1b,MATH-1b,1,NA
-30,math,Commons-math,Defects4J,31b,MATH-31b,1,NA
+27,math,Commons-math,Defects4J,103b,MATH-103b,2,Input Data Generation
+28,math,Commons-math,Defects4J,103b,MATH-103b,3,Input Data Generation
+29,math,Commons-math,Defects4J,1b,MATH-1b,1,Nested calls
+30,math,Commons-math,Defects4J,31b,MATH-31b,1,Abstract Class
 31,math,Commons-math,Defects4J,31b,MATH-31b,2,NA
 32,math,Commons-math,Defects4J,31b,MATH-31b,3,NA
 33,math,Commons-math,Defects4J,31b,MATH-31b,4,NA
@@ -44,69 +44,69 @@
 43,math,Commons-math,Defects4J,32b,MATH-32b,8,Input Data Generation
 44,math,Commons-math,Defects4J,32b,MATH-32b,9,Input Data Generation
 45,math,Commons-math,Defects4J,32b,MATH-32b,10,Input Data Generation
-46,math,Commons-math,Defects4J,38b,MATH-38b,1,NA
-47,math,Commons-math,Defects4J,38b,MATH-38b,2,NA
-48,math,Commons-math,Defects4J,38b,MATH-38b,3,NA
-49,math,Commons-math,Defects4J,38b,MATH-38b,4,NA
+46,math,Commons-math,Defects4J,38b,MATH-38b,1,Complex Code
+47,math,Commons-math,Defects4J,38b,MATH-38b,2,Complex Code
+48,math,Commons-math,Defects4J,38b,MATH-38b,3,Complex Code
+49,math,Commons-math,Defects4J,38b,MATH-38b,4,Complex Code
 50,math,Commons-math,Defects4J,3b,MATH-3b,1,Unknown
-51,math,Commons-math,Defects4J,40b,MATH-40b,1,NA
-52,math,Commons-math,Defects4J,49b,MATH-49b,1,NA
-53,math,Commons-math,Defects4J,49b,MATH-49b,4,NA
-54,math,Commons-math,Defects4J,51b,MATH-51b,1,NA
-55,math,Commons-math,Defects4J,51b,MATH-51b,2,NA
-56,math,Commons-math,Defects4J,58b,MATH-58b,3,NA
-57,math,Commons-math,Defects4J,58b,MATH-58b,4,NA
-58,math,Commons-math,Defects4J,58b,MATH-58b,5,NA
-59,math,Commons-math,Defects4J,58b,MATH-58b,6,NA
-60,math,Commons-math,Defects4J,58b,MATH-58b,7,NA
-61,math,Commons-math,Defects4J,58b,MATH-58b,8,NA
-62,math,Commons-math,Defects4J,58b,MATH-58b,9,NA
+51,math,Commons-math,Defects4J,40b,MATH-40b,1,Abstract Class
+52,math,Commons-math,Defects4J,49b,MATH-49b,1,Irrelevant Frame
+53,math,Commons-math,Defects4J,49b,MATH-49b,4,Irrelevant Frame
+54,math,Commons-math,Defects4J,51b,MATH-51b,1,Abstract Class
+55,math,Commons-math,Defects4J,51b,MATH-51b,2,Abstract Class
+56,math,Commons-math,Defects4J,58b,MATH-58b,3,Private Inner Class
+57,math,Commons-math,Defects4J,58b,MATH-58b,4,Abstract Class
+58,math,Commons-math,Defects4J,58b,MATH-58b,5,Abstract Class
+59,math,Commons-math,Defects4J,58b,MATH-58b,6,Complex Code
+60,math,Commons-math,Defects4J,58b,MATH-58b,7,Abstract Class
+61,math,Commons-math,Defects4J,58b,MATH-58b,8,Abstract Class
+62,math,Commons-math,Defects4J,58b,MATH-58b,9,Abstract Class
 63,math,Commons-math,Defects4J,58b,MATH-58b,10,NA
 64,math,Commons-math,Defects4J,58b,MATH-58b,11,NA
 65,math,Commons-math,Defects4J,58b,MATH-58b,12,NA
-66,math,Commons-math,Defects4J,60b,MATH-60b,1,NA
-67,math,Commons-math,Defects4J,60b,MATH-60b,2,NA
-68,math,Commons-math,Defects4J,60b,MATH-60b,3,NA
-69,math,Commons-math,Defects4J,60b,MATH-60b,4,NA
-70,math,Commons-math,Defects4J,60b,MATH-60b,5,NA
-71,math,Commons-math,Defects4J,61b,MATH-61b,1,NA
-72,math,Commons-math,Defects4J,78b,MATH-78b,1,NA
+66,math,Commons-math,Defects4J,60b,MATH-60b,1,Abstract Class
+67,math,Commons-math,Defects4J,60b,MATH-60b,2,Complex Code
+68,math,Commons-math,Defects4J,60b,MATH-60b,3,Complex Code
+69,math,Commons-math,Defects4J,60b,MATH-60b,4,Complex Code
+70,math,Commons-math,Defects4J,60b,MATH-60b,5,Complex Code
+71,math,Commons-math,Defects4J,61b,MATH-61b,1,Irrelevant Frame
+72,math,Commons-math,Defects4J,78b,MATH-78b,1,Irrelevant Frame
 73,math,Commons-math,Defects4J,79b,MATH-79b,2,Unknown
 74,math,Commons-math,Defects4J,81b,MATH-81b,1,Unknown
 75,math,Commons-math,Defects4J,81b,MATH-81b,2,Unknown
 76,math,Commons-math,Defects4J,81b,MATH-81b,3,Unknown
 77,math,Commons-math,Defects4J,81b,MATH-81b,4,Unknown
 78,math,Commons-math,Defects4J,81b,MATH-81b,5,Unknown
-79,math,Commons-math,Defects4J,85b,MATH-85b,1,NA
-80,math,Commons-math,Defects4J,85b,MATH-85b,2,NA
-81,math,Commons-math,Defects4J,85b,MATH-85b,3,NA
-82,mockito,Mockito,Defects4J,10b,MOCKITO-10b,1,NA
-83,mockito,Mockito,Defects4J,10b,MOCKITO-10b,2,NA
-84,mockito,Mockito,Defects4J,10b,MOCKITO-10b,3,NA
-85,mockito,Mockito,Defects4J,10b,MOCKITO-10b,4,NA
-86,mockito,Mockito,Defects4J,10b,MOCKITO-10b,5,NA
-87,mockito,Mockito,Defects4J,10b,MOCKITO-10b,6,NA
-88,mockito,Mockito,Defects4J,10b,MOCKITO-10b,7,NA
-89,mockito,Mockito,Defects4J,10b,MOCKITO-10b,8,NA
-90,mockito,Mockito,Defects4J,10b,MOCKITO-10b,9,NA
-91,mockito,Mockito,Defects4J,10b,MOCKITO-10b,10,NA
-92,mockito,Mockito,Defects4J,10b,MOCKITO-10b,11,NA
-93,mockito,Mockito,Defects4J,10b,MOCKITO-10b,12,NA
+79,math,Commons-math,Defects4J,85b,MATH-85b,1,Complex Code
+80,math,Commons-math,Defects4J,85b,MATH-85b,2,Complex Code
+81,math,Commons-math,Defects4J,85b,MATH-85b,3,Complex Code
+82,mockito,Mockito,Defects4J,10b,MOCKITO-10b,1,Input Data Generation
+83,mockito,Mockito,Defects4J,10b,MOCKITO-10b,2,Complex Code
+84,mockito,Mockito,Defects4J,10b,MOCKITO-10b,3,Input Data Generation
+85,mockito,Mockito,Defects4J,10b,MOCKITO-10b,4,Input Data Generation
+86,mockito,Mockito,Defects4J,10b,MOCKITO-10b,5,Input Data Generation
+87,mockito,Mockito,Defects4J,10b,MOCKITO-10b,6,Nested calls
+88,mockito,Mockito,Defects4J,10b,MOCKITO-10b,7,Nested calls
+89,mockito,Mockito,Defects4J,10b,MOCKITO-10b,8,Input Data Generation
+90,mockito,Mockito,Defects4J,10b,MOCKITO-10b,9,Input Data Generation
+91,mockito,Mockito,Defects4J,10b,MOCKITO-10b,10,Input Data Generation
+92,mockito,Mockito,Defects4J,10b,MOCKITO-10b,11,Input Data Generation
+93,mockito,Mockito,Defects4J,10b,MOCKITO-10b,12,Input Data Generation
 94,mockito,Mockito,Defects4J,12b,MOCKITO-12b,1,Input Data Generation
-95,mockito,Mockito,Defects4J,16b,MOCKITO-16b,1,NA
-96,mockito,Mockito,Defects4J,16b,MOCKITO-16b,2,NA
-97,mockito,Mockito,Defects4J,16b,MOCKITO-16b,3,NA
-98,mockito,Mockito,Defects4J,16b,MOCKITO-16b,4,NA
-99,mockito,Mockito,Defects4J,1b,MOCKITO-1b,1,NA
-100,mockito,Mockito,Defects4J,1b,MOCKITO-1b,2,NA
-101,mockito,Mockito,Defects4J,1b,MOCKITO-1b,3,NA
-102,mockito,Mockito,Defects4J,1b,MOCKITO-1b,4,NA
-103,mockito,Mockito,Defects4J,1b,MOCKITO-1b,5,NA
-104,mockito,Mockito,Defects4J,1b,MOCKITO-1b,6,NA
-105,mockito,Mockito,Defects4J,1b,MOCKITO-1b,7,NA
-106,mockito,Mockito,Defects4J,1b,MOCKITO-1b,8,NA
-107,mockito,Mockito,Defects4J,1b,MOCKITO-1b,9,NA
-108,mockito,Mockito,Defects4J,1b,MOCKITO-1b,10,NA
+95,mockito,Mockito,Defects4J,16b,MOCKITO-16b,1,Unknown
+96,mockito,Mockito,Defects4J,16b,MOCKITO-16b,2,Input Data Generation
+97,mockito,Mockito,Defects4J,16b,MOCKITO-16b,3,Input Data Generation
+98,mockito,Mockito,Defects4J,16b,MOCKITO-16b,4,Static Initialization
+99,mockito,Mockito,Defects4J,1b,MOCKITO-1b,1,Input Data Generation
+100,mockito,Mockito,Defects4J,1b,MOCKITO-1b,2,Input Data Generation
+101,mockito,Mockito,Defects4J,1b,MOCKITO-1b,3,Input Data Generation
+102,mockito,Mockito,Defects4J,1b,MOCKITO-1b,4,Input Data Generation
+103,mockito,Mockito,Defects4J,1b,MOCKITO-1b,5,Input Data Generation
+104,mockito,Mockito,Defects4J,1b,MOCKITO-1b,6,Input Data Generation
+105,mockito,Mockito,Defects4J,1b,MOCKITO-1b,7,Static Initialization
+106,mockito,Mockito,Defects4J,1b,MOCKITO-1b,8,Static Initialization
+107,mockito,Mockito,Defects4J,1b,MOCKITO-1b,9,Static Initialization
+108,mockito,Mockito,Defects4J,1b,MOCKITO-1b,10,Static Initialization
 109,mockito,Mockito,Defects4J,34b,MOCKITO-34b,1,Input Data Generation
 110,mockito,Mockito,Defects4J,38b,MOCKITO-38b,1,Input Data Generation
 111,mockito,Mockito,Defects4J,38b,MOCKITO-38b,2,Input Data Generation
@@ -122,35 +122,35 @@
 121,mockito,Mockito,Defects4J,3b,MOCKITO-3b,10,Input Data Generation
 122,mockito,Mockito,Defects4J,3b,MOCKITO-3b,11,Input Data Generation
 123,mockito,Mockito,Defects4J,4b,MOCKITO-4b,1,Input Data Generation
-124,mockito,Mockito,Defects4J,7b,MOCKITO-7b,1,NA
-125,mockito,Mockito,Defects4J,7b,MOCKITO-7b,2,NA
-126,mockito,Mockito,Defects4J,7b,MOCKITO-7b,3,NA
-127,mockito,Mockito,Defects4J,7b,MOCKITO-7b,4,NA
-128,mockito,Mockito,Defects4J,7b,MOCKITO-7b,5,NA
-129,mockito,Mockito,Defects4J,7b,MOCKITO-7b,6,NA
-130,mockito,Mockito,Defects4J,7b,MOCKITO-7b,7,NA
-131,mockito,Mockito,Defects4J,7b,MOCKITO-7b,8,NA
-132,mockito,Mockito,Defects4J,9b,MOCKITO-9b,1,NA
-133,mockito,Mockito,Defects4J,9b,MOCKITO-9b,2,NA
-134,mockito,Mockito,Defects4J,9b,MOCKITO-9b,3,NA
-135,mockito,Mockito,Defects4J,9b,MOCKITO-9b,4,NA
-136,mockito,Mockito,Defects4J,9b,MOCKITO-9b,5,NA
-137,mockito,Mockito,Defects4J,9b,MOCKITO-9b,6,NA
-138,mockito,Mockito,Defects4J,9b,MOCKITO-9b,7,NA
-139,time,Joda-Time,Defects4J,14b,TIME-14b,1,NA
-140,time,Joda-Time,Defects4J,14b,TIME-14b,2,NA
-141,time,Joda-Time,Defects4J,14b,TIME-14b,3,NA
-142,time,Joda-Time,Defects4J,14b,TIME-14b,4,NA
-143,time,Joda-Time,Defects4J,14b,TIME-14b,5,NA
-144,time,Joda-Time,Defects4J,18b,TIME-18b,1,NA
-145,time,Joda-Time,Defects4J,18b,TIME-18b,2,NA
-146,time,Joda-Time,Defects4J,18b,TIME-18b,3,NA
-147,time,Joda-Time,Defects4J,18b,TIME-18b,4,NA
-148,time,Joda-Time,Defects4J,18b,TIME-18b,5,NA
-149,time,Joda-Time,Defects4J,18b,TIME-18b,6,NA
-150,time,Joda-Time,Defects4J,18b,TIME-18b,7,NA
-151,time,Joda-Time,Defects4J,5b,TIME-5b,1,NA
-152,time,Joda-Time,Defects4J,7b,TIME-7b,3,NA
+124,mockito,Mockito,Defects4J,7b,MOCKITO-7b,1,Private Inner Class
+125,mockito,Mockito,Defects4J,7b,MOCKITO-7b,2,Private Inner Class
+126,mockito,Mockito,Defects4J,7b,MOCKITO-7b,3,Private Inner Class
+127,mockito,Mockito,Defects4J,7b,MOCKITO-7b,4,Complex Code
+128,mockito,Mockito,Defects4J,7b,MOCKITO-7b,5,Complex Code
+129,mockito,Mockito,Defects4J,7b,MOCKITO-7b,6,Input Data Generation
+130,mockito,Mockito,Defects4J,7b,MOCKITO-7b,7,Input Data Generation
+131,mockito,Mockito,Defects4J,7b,MOCKITO-7b,8,Input Data Generation
+132,mockito,Mockito,Defects4J,9b,MOCKITO-9b,1,Unknown
+133,mockito,Mockito,Defects4J,9b,MOCKITO-9b,2,Unknown
+134,mockito,Mockito,Defects4J,9b,MOCKITO-9b,3,Input Data Generation
+135,mockito,Mockito,Defects4J,9b,MOCKITO-9b,4,Input Data Generation
+136,mockito,Mockito,Defects4J,9b,MOCKITO-9b,5,Input Data Generation
+137,mockito,Mockito,Defects4J,9b,MOCKITO-9b,6,Input Data Generation
+138,mockito,Mockito,Defects4J,9b,MOCKITO-9b,7,Input Data Generation
+139,time,Joda-Time,Defects4J,14b,TIME-14b,1,Input Data Generation
+140,time,Joda-Time,Defects4J,14b,TIME-14b,2,Input Data Generation
+141,time,Joda-Time,Defects4J,14b,TIME-14b,3,Input Data Generation
+142,time,Joda-Time,Defects4J,14b,TIME-14b,4,Input Data Generation
+143,time,Joda-Time,Defects4J,14b,TIME-14b,5,Input Data Generation
+144,time,Joda-Time,Defects4J,18b,TIME-18b,1,Input Data Generation
+145,time,Joda-Time,Defects4J,18b,TIME-18b,2,Input Data Generation
+146,time,Joda-Time,Defects4J,18b,TIME-18b,3,Input Data Generation
+147,time,Joda-Time,Defects4J,18b,TIME-18b,4,Static Initialization
+148,time,Joda-Time,Defects4J,18b,TIME-18b,5,Input Data Generation
+149,time,Joda-Time,Defects4J,18b,TIME-18b,6,Input Data Generation
+150,time,Joda-Time,Defects4J,18b,TIME-18b,7,Input Data Generation
+151,time,Joda-Time,Defects4J,5b,TIME-5b,1,Nested calls
+152,time,Joda-Time,Defects4J,7b,TIME-7b,3,Private Inner Class
 153,es,Elasticsearch,Elasticsearch,2.0.0,ES-14457,4,NA
 154,es,Elasticsearch,Elasticsearch,2.0.0,ES-14457,5,NA
 155,es,Elasticsearch,Elasticsearch,2.0.0,ES-14457,6,NA
@@ -1048,13 +1048,13 @@
 1047,es,Elasticsearch,Elasticsearch,1.4.5,ES-9379,10,NA
 1048,es,Elasticsearch,Elasticsearch,1.4.5,ES-9379,11,NA
 1049,es,Elasticsearch,Elasticsearch,1.4.5,ES-9379,12,NA
-1050,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,2,NA
-1051,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,3,NA
-1052,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,4,NA
-1053,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,5,NA
-1054,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,6,NA
-1055,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,7,NA
-1056,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,8,NA
+1050,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,2,Input Data Generation
+1051,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,3,Input Data Generation
+1052,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,4,Input Data Generation
+1053,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,5,Input Data Generation
+1054,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,6,Input Data Generation
+1055,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,7,Abstract Class
+1056,xwiki,XWiki,XWiki,8.2.1,XCOMMONS-1057,8,Abstract Class
 1057,xwiki,XWiki,XWiki,7.4.2,XCOMMONS-928,1,Input Data Generation
 1058,xwiki,XWiki,XWiki,7.4.2,XCOMMONS-928,2,Input Data Generation
 1059,xwiki,XWiki,XWiki,7.4.2,XCOMMONS-928,3,Input Data Generation
@@ -1095,105 +1095,105 @@
 1094,xwiki,XWiki,XWiki,7.3,XRENDERING-418,25,Input Data Generation
 1095,xwiki,XWiki,XWiki,7.3,XRENDERING-418,26,Input Data Generation
 1096,xwiki,XWiki,XWiki,7.3,XRENDERING-418,27,Input Data Generation
-1097,xwiki,XWiki,XWiki,7.3,XRENDERING-418,29,NA
-1098,xwiki,XWiki,XWiki,7.3,XRENDERING-418,31,NA
-1099,xwiki,XWiki,XWiki,7.3,XRENDERING-418,33,NA
-1100,xwiki,XWiki,XWiki,7.3,XRENDERING-418,34,NA
-1101,xwiki,XWiki,XWiki,7.3,XRENDERING-418,35,NA
-1102,xwiki,XWiki,XWiki,7.3,XRENDERING-418,36,NA
+1097,xwiki,XWiki,XWiki,7.3,XRENDERING-418,29,Input Data Generation
+1098,xwiki,XWiki,XWiki,7.3,XRENDERING-418,31,Input Data Generation
+1099,xwiki,XWiki,XWiki,7.3,XRENDERING-418,33,Input Data Generation
+1100,xwiki,XWiki,XWiki,7.3,XRENDERING-418,34,Input Data Generation
+1101,xwiki,XWiki,XWiki,7.3,XRENDERING-418,35,Input Data Generation
+1102,xwiki,XWiki,XWiki,7.3,XRENDERING-418,36,Input Data Generation
 1103,xwiki,XWiki,XWiki,7.3,XRENDERING-418,37,Input Data Generation
-1104,xwiki,XWiki,XWiki,7.3,XRENDERING-418,38,NA
+1104,xwiki,XWiki,XWiki,7.3,XRENDERING-418,38,Input Data Generation
 1105,xwiki,XWiki,XWiki,7.3,XRENDERING-418,41,Input Data Generation
 1106,xwiki,XWiki,XWiki,7.3,XRENDERING-418,44,Input Data Generation
-1107,xwiki,XWiki,XWiki,7.3,XRENDERING-418,47,NA
-1108,xwiki,XWiki,XWiki,7.3,XRENDERING-418,50,NA
-1109,xwiki,XWiki,XWiki,7.3,XRENDERING-418,53,NA
-1110,xwiki,XWiki,XWiki,7.3,XRENDERING-422,6,NA
-1111,xwiki,XWiki,XWiki,7.3,XRENDERING-422,7,NA
-1112,xwiki,XWiki,XWiki,7.3,XRENDERING-422,8,NA
-1113,xwiki,XWiki,XWiki,7.3,XRENDERING-422,9,NA
-1114,xwiki,XWiki,XWiki,7.3,XRENDERING-422,10,NA
-1115,xwiki,XWiki,XWiki,7.3,XRENDERING-422,11,NA
-1116,xwiki,XWiki,XWiki,7.3,XRENDERING-422,12,NA
-1117,xwiki,XWiki,XWiki,7.3,XRENDERING-422,13,NA
-1118,xwiki,XWiki,XWiki,7.3,XRENDERING-422,14,NA
-1119,xwiki,XWiki,XWiki,7.3,XRENDERING-422,15,NA
-1120,xwiki,XWiki,XWiki,7.3,XRENDERING-422,17,NA
-1121,xwiki,XWiki,XWiki,7.3,XRENDERING-422,18,NA
-1122,xwiki,XWiki,XWiki,7.3,XRENDERING-422,19,NA
-1123,xwiki,XWiki,XWiki,7.3,XRENDERING-422,20,NA
-1124,xwiki,XWiki,XWiki,7.3,XRENDERING-422,21,NA
-1125,xwiki,XWiki,XWiki,7.3,XRENDERING-422,23,NA
-1126,xwiki,XWiki,XWiki,7.3,XRENDERING-422,25,NA
-1127,xwiki,XWiki,XWiki,7.3,XRENDERING-422,35,NA
-1128,xwiki,XWiki,XWiki,7.3,XRENDERING-422,37,NA
-1129,xwiki,XWiki,XWiki,7.3,XRENDERING-422,39,NA
-1130,xwiki,XWiki,XWiki,7.3,XRENDERING-422,40,NA
-1131,xwiki,XWiki,XWiki,9.6,XRENDERING-481,1,NA
-1132,xwiki,XWiki,XWiki,9.6,XRENDERING-481,2,NA
-1133,xwiki,XWiki,XWiki,9.6,XRENDERING-481,3,NA
-1134,xwiki,XWiki,XWiki,9.6,XRENDERING-481,4,NA
-1135,xwiki,XWiki,XWiki,9.6,XRENDERING-481,5,NA
-1136,xwiki,XWiki,XWiki,9.6,XRENDERING-481,6,NA
-1137,xwiki,XWiki,XWiki,9.6,XRENDERING-481,7,NA
-1138,xwiki,XWiki,XWiki,9.6,XRENDERING-481,8,NA
-1139,xwiki,XWiki,XWiki,9.6,XRENDERING-481,9,NA
-1140,xwiki,XWiki,XWiki,9.6,XRENDERING-481,10,NA
-1141,xwiki,XWiki,XWiki,9.6,XRENDERING-481,11,NA
-1142,xwiki,XWiki,XWiki,9.6,XRENDERING-481,12,NA
-1143,xwiki,XWiki,XWiki,9.6,XRENDERING-481,13,NA
-1144,xwiki,XWiki,XWiki,9.6,XRENDERING-481,14,NA
-1145,xwiki,XWiki,XWiki,9.6,XRENDERING-481,15,NA
-1146,xwiki,XWiki,XWiki,9.6,XRENDERING-481,29,NA
-1147,xwiki,XWiki,XWiki,9.6,XRENDERING-481,32,NA
-1148,xwiki,XWiki,XWiki,9.6,XRENDERING-481,33,NA
-1149,xwiki,XWiki,XWiki,9.6,XRENDERING-481,34,NA
-1150,xwiki,XWiki,XWiki,9.6,XRENDERING-481,35,NA
-1151,xwiki,XWiki,XWiki,9.6,XRENDERING-481,36,NA
-1152,xwiki,XWiki,XWiki,9.6,XRENDERING-481,37,NA
-1153,xwiki,XWiki,XWiki,9.6,XRENDERING-481,38,NA
-1154,xwiki,XWiki,XWiki,9.6,XRENDERING-481,39,NA
-1155,xwiki,XWiki,XWiki,9.6,XRENDERING-481,40,NA
-1156,xwiki,XWiki,XWiki,9.6,XRENDERING-481,41,NA
-1157,xwiki,XWiki,XWiki,9.6,XRENDERING-481,42,NA
-1158,xwiki,XWiki,XWiki,9.6,XRENDERING-481,43,NA
-1159,xwiki,XWiki,XWiki,9.6,XRENDERING-481,44,NA
-1160,xwiki,XWiki,XWiki,9.6,XRENDERING-481,45,NA
-1161,xwiki,XWiki,XWiki,9.6,XRENDERING-481,60,NA
-1162,xwiki,XWiki,XWiki,9.6,XRENDERING-481,61,NA
-1163,xwiki,XWiki,XWiki,9.6,XRENDERING-481,62,NA
-1164,xwiki,XWiki,XWiki,9.6,XRENDERING-481,63,NA
-1165,xwiki,XWiki,XWiki,9.6,XRENDERING-481,64,NA
-1166,xwiki,XWiki,XWiki,9.6,XRENDERING-481,65,NA
-1167,xwiki,XWiki,XWiki,9.6,XRENDERING-481,66,NA
-1168,xwiki,XWiki,XWiki,9.6,XRENDERING-481,67,NA
-1169,xwiki,XWiki,XWiki,9.6,XRENDERING-481,68,NA
-1170,xwiki,XWiki,XWiki,9.6,XRENDERING-481,69,NA
-1171,xwiki,XWiki,XWiki,9.6,XRENDERING-481,70,NA
-1172,xwiki,XWiki,XWiki,9.6,XRENDERING-481,71,NA
-1173,xwiki,XWiki,XWiki,9.6,XRENDERING-481,72,NA
-1174,xwiki,XWiki,XWiki,9.6,XRENDERING-481,73,NA
-1175,xwiki,XWiki,XWiki,9.6,XRENDERING-481,93,NA
-1176,xwiki,XWiki,XWiki,9.6,XRENDERING-481,94,NA
-1177,xwiki,XWiki,XWiki,9.6,XRENDERING-481,95,NA
-1178,xwiki,XWiki,XWiki,9.6,XRENDERING-481,96,NA
-1179,xwiki,XWiki,XWiki,9.6,XRENDERING-481,97,NA
-1180,xwiki,XWiki,XWiki,9.6,XRENDERING-481,98,NA
-1181,xwiki,XWiki,XWiki,9.6,XRENDERING-481,99,NA
-1182,xwiki,XWiki,XWiki,9.6,XRENDERING-481,100,NA
-1183,xwiki,XWiki,XWiki,9.6,XRENDERING-481,101,NA
-1184,xwiki,XWiki,XWiki,9.6,XRENDERING-481,102,NA
-1185,xwiki,XWiki,XWiki,9.6,XRENDERING-481,103,NA
-1186,xwiki,XWiki,XWiki,9.6,XRENDERING-481,104,NA
-1187,xwiki,XWiki,XWiki,9.6,XRENDERING-481,105,NA
-1188,xwiki,XWiki,XWiki,9.6,XRENDERING-481,106,NA
-1189,xwiki,XWiki,XWiki,9.6,XRENDERING-481,107,NA
-1190,xwiki,XWiki,XWiki,9.6,XRENDERING-481,116,NA
-1191,xwiki,XWiki,XWiki,9.6,XRENDERING-481,118,NA
-1192,xwiki,XWiki,XWiki,9.6,XRENDERING-481,120,NA
-1193,xwiki,XWiki,XWiki,9.6,XRENDERING-481,122,NA
-1194,xwiki,XWiki,XWiki,9.6,XRENDERING-481,124,NA
-1195,xwiki,XWiki,XWiki,9.6,XRENDERING-481,126,NA
+1107,xwiki,XWiki,XWiki,7.3,XRENDERING-418,47,Input Data Generation
+1108,xwiki,XWiki,XWiki,7.3,XRENDERING-418,50,Input Data Generation
+1109,xwiki,XWiki,XWiki,7.3,XRENDERING-418,53,Input Data Generation
+1110,xwiki,XWiki,XWiki,7.3,XRENDERING-422,6,Unknown
+1111,xwiki,XWiki,XWiki,7.3,XRENDERING-422,7,Nested calls
+1112,xwiki,XWiki,XWiki,7.3,XRENDERING-422,8,Nested calls
+1113,xwiki,XWiki,XWiki,7.3,XRENDERING-422,9,Input Data Generation
+1114,xwiki,XWiki,XWiki,7.3,XRENDERING-422,10,Input Data Generation
+1115,xwiki,XWiki,XWiki,7.3,XRENDERING-422,11,Input Data Generation
+1116,xwiki,XWiki,XWiki,7.3,XRENDERING-422,12,Input Data Generation
+1117,xwiki,XWiki,XWiki,7.3,XRENDERING-422,13,Input Data Generation
+1118,xwiki,XWiki,XWiki,7.3,XRENDERING-422,14,Input Data Generation
+1119,xwiki,XWiki,XWiki,7.3,XRENDERING-422,15,Input Data Generation
+1120,xwiki,XWiki,XWiki,7.3,XRENDERING-422,17,Input Data Generation
+1121,xwiki,XWiki,XWiki,7.3,XRENDERING-422,18,Input Data Generation
+1122,xwiki,XWiki,XWiki,7.3,XRENDERING-422,19,Input Data Generation
+1123,xwiki,XWiki,XWiki,7.3,XRENDERING-422,20,Input Data Generation
+1124,xwiki,XWiki,XWiki,7.3,XRENDERING-422,21,Input Data Generation
+1125,xwiki,XWiki,XWiki,7.3,XRENDERING-422,23,Input Data Generation
+1126,xwiki,XWiki,XWiki,7.3,XRENDERING-422,25,Input Data Generation
+1127,xwiki,XWiki,XWiki,7.3,XRENDERING-422,35,Unknown Source
+1128,xwiki,XWiki,XWiki,7.3,XRENDERING-422,37,Unknown Source
+1129,xwiki,XWiki,XWiki,7.3,XRENDERING-422,39,Unknown Source
+1130,xwiki,XWiki,XWiki,7.3,XRENDERING-422,40,Unknown Source
+1131,xwiki,XWiki,XWiki,9.6,XRENDERING-481,1,Input Data Generation
+1132,xwiki,XWiki,XWiki,9.6,XRENDERING-481,2,Input Data Generation
+1133,xwiki,XWiki,XWiki,9.6,XRENDERING-481,3,Input Data Generation
+1134,xwiki,XWiki,XWiki,9.6,XRENDERING-481,4,Input Data Generation
+1135,xwiki,XWiki,XWiki,9.6,XRENDERING-481,5,Input Data Generation
+1136,xwiki,XWiki,XWiki,9.6,XRENDERING-481,6,Input Data Generation
+1137,xwiki,XWiki,XWiki,9.6,XRENDERING-481,7,Input Data Generation
+1138,xwiki,XWiki,XWiki,9.6,XRENDERING-481,8,Irrelevant Frame
+1139,xwiki,XWiki,XWiki,9.6,XRENDERING-481,9,Input Data Generation
+1140,xwiki,XWiki,XWiki,9.6,XRENDERING-481,10,Input Data Generation
+1141,xwiki,XWiki,XWiki,9.6,XRENDERING-481,11,Input Data Generation
+1142,xwiki,XWiki,XWiki,9.6,XRENDERING-481,12,Input Data Generation
+1143,xwiki,XWiki,XWiki,9.6,XRENDERING-481,13,Input Data Generation
+1144,xwiki,XWiki,XWiki,9.6,XRENDERING-481,14,Input Data Generation
+1145,xwiki,XWiki,XWiki,9.6,XRENDERING-481,15,Input Data Generation
+1146,xwiki,XWiki,XWiki,9.6,XRENDERING-481,29,Complex Code
+1147,xwiki,XWiki,XWiki,9.6,XRENDERING-481,32,Input Data Generation
+1148,xwiki,XWiki,XWiki,9.6,XRENDERING-481,33,Input Data Generation
+1149,xwiki,XWiki,XWiki,9.6,XRENDERING-481,34,Input Data Generation
+1150,xwiki,XWiki,XWiki,9.6,XRENDERING-481,35,Private Inner Class
+1151,xwiki,XWiki,XWiki,9.6,XRENDERING-481,36,Private Inner Class
+1152,xwiki,XWiki,XWiki,9.6,XRENDERING-481,37,Private Inner Class
+1153,xwiki,XWiki,XWiki,9.6,XRENDERING-481,38,Input Data Generation
+1154,xwiki,XWiki,XWiki,9.6,XRENDERING-481,39,Private Inner Class
+1155,xwiki,XWiki,XWiki,9.6,XRENDERING-481,40,Private Inner Class
+1156,xwiki,XWiki,XWiki,9.6,XRENDERING-481,41,Private Inner Class
+1157,xwiki,XWiki,XWiki,9.6,XRENDERING-481,42,Input Data Generation
+1158,xwiki,XWiki,XWiki,9.6,XRENDERING-481,43,Input Data Generation
+1159,xwiki,XWiki,XWiki,9.6,XRENDERING-481,44,Input Data Generation
+1160,xwiki,XWiki,XWiki,9.6,XRENDERING-481,45,Environmental Dependencies
+1161,xwiki,XWiki,XWiki,9.6,XRENDERING-481,60,Input Data Generation
+1162,xwiki,XWiki,XWiki,9.6,XRENDERING-481,61,Input Data Generation
+1163,xwiki,XWiki,XWiki,9.6,XRENDERING-481,62,Input Data Generation
+1164,xwiki,XWiki,XWiki,9.6,XRENDERING-481,63,Private Inner Class
+1165,xwiki,XWiki,XWiki,9.6,XRENDERING-481,64,Private Inner Class
+1166,xwiki,XWiki,XWiki,9.6,XRENDERING-481,65,Private Inner Class
+1167,xwiki,XWiki,XWiki,9.6,XRENDERING-481,66,Input Data Generation
+1168,xwiki,XWiki,XWiki,9.6,XRENDERING-481,67,Private Inner Class
+1169,xwiki,XWiki,XWiki,9.6,XRENDERING-481,68,Private Inner Class
+1170,xwiki,XWiki,XWiki,9.6,XRENDERING-481,69,Private Inner Class
+1171,xwiki,XWiki,XWiki,9.6,XRENDERING-481,70,Input Data Generation
+1172,xwiki,XWiki,XWiki,9.6,XRENDERING-481,71,Input Data Generation
+1173,xwiki,XWiki,XWiki,9.6,XRENDERING-481,72,Input Data Generation
+1174,xwiki,XWiki,XWiki,9.6,XRENDERING-481,73,Environmental Dependencies
+1175,xwiki,XWiki,XWiki,9.6,XRENDERING-481,93,Input Data Generation
+1176,xwiki,XWiki,XWiki,9.6,XRENDERING-481,94,Input Data Generation
+1177,xwiki,XWiki,XWiki,9.6,XRENDERING-481,95,Input Data Generation
+1178,xwiki,XWiki,XWiki,9.6,XRENDERING-481,96,Private Inner Class
+1179,xwiki,XWiki,XWiki,9.6,XRENDERING-481,97,Private Inner Class
+1180,xwiki,XWiki,XWiki,9.6,XRENDERING-481,98,Private Inner Class
+1181,xwiki,XWiki,XWiki,9.6,XRENDERING-481,99,Input Data Generation
+1182,xwiki,XWiki,XWiki,9.6,XRENDERING-481,100,Private Inner Class
+1183,xwiki,XWiki,XWiki,9.6,XRENDERING-481,101,Private Inner Class
+1184,xwiki,XWiki,XWiki,9.6,XRENDERING-481,102,Private Inner Class
+1185,xwiki,XWiki,XWiki,9.6,XRENDERING-481,103,Input Data Generation
+1186,xwiki,XWiki,XWiki,9.6,XRENDERING-481,104,Input Data Generation
+1187,xwiki,XWiki,XWiki,9.6,XRENDERING-481,105,Complex Code
+1188,xwiki,XWiki,XWiki,9.6,XRENDERING-481,106,Complex Code
+1189,xwiki,XWiki,XWiki,9.6,XRENDERING-481,107,Complex Code
+1190,xwiki,XWiki,XWiki,9.6,XRENDERING-481,116,Input Data Generation
+1191,xwiki,XWiki,XWiki,9.6,XRENDERING-481,118,Input Data Generation
+1192,xwiki,XWiki,XWiki,9.6,XRENDERING-481,120,Input Data Generation
+1193,xwiki,XWiki,XWiki,9.6,XRENDERING-481,122,Input Data Generation
+1194,xwiki,XWiki,XWiki,9.6,XRENDERING-481,124,Input Data Generation
+1195,xwiki,XWiki,XWiki,9.6,XRENDERING-481,126,Input Data Generation
 1196,xwiki,XWiki,XWiki,7.2-milestone-3,XWIKI-12482,1,Input Data Generation
 1197,xwiki,XWiki,XWiki,7.2-milestone-3,XWIKI-12482,2,Input Data Generation
 1198,xwiki,XWiki,XWiki,7.2-milestone-3,XWIKI-12482,3,Input Data Generation
@@ -1208,167 +1208,167 @@
 1207,xwiki,XWiki,XWiki,7.2-milestone-2,XWIKI-12584,4,Environmental Dependencies
 1208,xwiki,XWiki,XWiki,7.2-milestone-2,XWIKI-12584,5,Input Data Generation
 1209,xwiki,XWiki,XWiki,7.2-milestone-2,XWIKI-12584,6,Unknown
-1210,xwiki,XWiki,XWiki,7.2,XWIKI-12667,7,NA
-1211,xwiki,XWiki,XWiki,7.2,XWIKI-12667,8,NA
-1212,xwiki,XWiki,XWiki,7.2,XWIKI-12667,9,NA
-1213,xwiki,XWiki,XWiki,7.2,XWIKI-12667,10,NA
-1214,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,1,NA
-1215,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,23,NA
-1216,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,24,NA
-1217,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,25,NA
-1218,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,26,NA
-1219,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,27,NA
-1220,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,28,NA
-1221,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,29,NA
-1222,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,30,NA
-1223,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,31,NA
-1224,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,32,NA
-1225,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,33,NA
-1226,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,34,NA
-1227,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,35,NA
-1228,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,36,NA
-1229,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,37,NA
-1230,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,38,NA
-1231,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,39,NA
-1232,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,40,NA
-1233,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,41,NA
-1234,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,42,NA
-1235,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,43,NA
-1236,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,44,NA
-1237,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,45,NA
-1238,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,46,NA
-1239,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,62,NA
-1240,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,65,NA
-1241,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,66,NA
-1242,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,67,NA
-1243,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,68,NA
-1244,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,69,NA
-1245,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,70,NA
-1246,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,71,NA
-1247,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,72,NA
-1248,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,73,NA
-1249,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,74,NA
-1250,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,75,NA
-1251,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,76,NA
-1252,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,91,NA
-1253,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,92,NA
-1254,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,93,NA
-1255,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,94,NA
-1256,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,95,NA
-1257,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,96,NA
-1258,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,97,NA
-1259,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,98,NA
-1260,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,99,NA
-1261,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,100,NA
-1262,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,101,NA
-1263,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,102,NA
-1264,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,122,NA
-1265,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,123,NA
-1266,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,124,NA
-1267,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,125,NA
-1268,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,126,NA
-1269,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,127,NA
-1270,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,128,NA
-1271,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,129,NA
-1272,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,130,NA
-1273,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,131,NA
-1274,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,132,NA
-1275,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,133,NA
-1276,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,134,NA
-1277,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,143,NA
-1278,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,145,NA
-1279,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,147,NA
-1280,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,149,NA
-1281,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,151,NA
-1282,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,153,NA
-1283,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,155,NA
-1284,xwiki,XWiki,XWiki,7.3,XWIKI-12855,29,NA
-1285,xwiki,XWiki,XWiki,7.3,XWIKI-12855,30,NA
-1286,xwiki,XWiki,XWiki,7.3,XWIKI-12855,31,NA
-1287,xwiki,XWiki,XWiki,7.3,XWIKI-12855,32,NA
-1288,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,2,NA
-1289,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,48,NA
-1290,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,50,NA
-1291,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,52,NA
-1292,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,54,NA
-1293,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,56,NA
-1294,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,58,NA
-1295,xwiki,XWiki,XWiki,7.3,XWIKI-12896,11,NA
-1296,xwiki,XWiki,XWiki,7.3,XWIKI-12896,12,NA
-1297,xwiki,XWiki,XWiki,7.3,XWIKI-12896,13,NA
-1298,xwiki,XWiki,XWiki,7.4-milestone-2,XWIKI-12919,4,NA
+1210,xwiki,XWiki,XWiki,7.2,XWIKI-12667,7,Input Data Generation
+1211,xwiki,XWiki,XWiki,7.2,XWIKI-12667,8,Input Data Generation
+1212,xwiki,XWiki,XWiki,7.2,XWIKI-12667,9,Input Data Generation
+1213,xwiki,XWiki,XWiki,7.2,XWIKI-12667,10,Complex Code
+1214,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,1,Input Data Generation
+1215,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,23,Input Data Generation
+1216,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,24,Input Data Generation
+1217,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,25,Input Data Generation
+1218,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,26,Input Data Generation
+1219,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,27,Irrelevant Frame
+1220,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,28,Input Data Generation
+1221,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,29,Input Data Generation
+1222,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,30,Irrelevant Frame
+1223,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,31,Complex Code
+1224,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,32,Complex Code
+1225,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,33,Input Data Generation
+1226,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,34,Input Data Generation
+1227,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,35,Input Data Generation
+1228,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,36,Irrelevant Frame
+1229,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,37,Input Data Generation
+1230,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,38,Irrelevant Frame
+1231,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,39,Input Data Generation
+1232,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,40,Irrelevant Frame
+1233,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,41,Input Data Generation
+1234,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,42,Irrelevant Frame
+1235,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,43,Input Data Generation
+1236,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,44,Input Data Generation
+1237,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,45,Input Data Generation
+1238,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,46,Input Data Generation
+1239,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,62,Complex Code
+1240,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,65,Input Data Generation
+1241,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,66,Input Data Generation
+1242,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,67,Input Data Generation
+1243,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,68,Private Inner Class
+1244,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,69,Private Inner Class
+1245,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,70,Private Inner Class
+1246,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,71,Private Inner Class
+1247,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,72,Private Inner Class
+1248,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,73,Input Data Generation
+1249,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,74,Input Data Generation
+1250,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,75,Input Data Generation
+1251,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,76,Input Data Generation
+1252,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,91,Input Data Generation
+1253,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,92,Input Data Generation
+1254,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,93,Input Data Generation
+1255,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,94,Private Inner Class
+1256,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,95,Private Inner Class
+1257,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,96,Private Inner Class
+1258,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,97,Private Inner Class
+1259,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,98,Private Inner Class
+1260,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,99,Input Data Generation
+1261,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,100,Input Data Generation
+1262,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,101,Input Data Generation
+1263,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,102,Input Data Generation
+1264,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,122,Input Data Generation
+1265,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,123,Input Data Generation
+1266,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,124,Input Data Generation
+1267,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,125,Private Inner Class
+1268,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,126,Private Inner Class
+1269,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,127,Private Inner Class
+1270,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,128,Private Inner Class
+1271,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,129,Private Inner Class
+1272,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,130,Input Data Generation
+1273,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,131,Input Data Generation
+1274,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,132,Complex Code
+1275,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,133,Complex Code
+1276,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,134,Complex Code
+1277,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,143,Input Data Generation
+1278,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,145,Input Data Generation
+1279,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,147,Input Data Generation
+1280,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,149,Input Data Generation
+1281,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,151,Input Data Generation
+1282,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,153,Input Data Generation
+1283,xwiki,XWiki,XWiki,7.3-rc-1,XWIKI-12798,155,Input Data Generation
+1284,xwiki,XWiki,XWiki,7.3,XWIKI-12855,29,Environmental Dependencies
+1285,xwiki,XWiki,XWiki,7.3,XWIKI-12855,30,Anonymous Class
+1286,xwiki,XWiki,XWiki,7.3,XWIKI-12855,31,Anonymous Class
+1287,xwiki,XWiki,XWiki,7.3,XWIKI-12855,32,Environmental Dependencies
+1288,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,2,Environmental Dependencies
+1289,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,48,Input Data Generation
+1290,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,50,Input Data Generation
+1291,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,52,Input Data Generation
+1292,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,54,Input Data Generation
+1293,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,56,Input Data Generation
+1294,xwiki,XWiki,XWiki,7.4-milestone-1,XWIKI-12889,58,Input Data Generation
+1295,xwiki,XWiki,XWiki,7.3,XWIKI-12896,11,Anonymous Class
+1296,xwiki,XWiki,XWiki,7.3,XWIKI-12896,12,Anonymous Class
+1297,xwiki,XWiki,XWiki,7.3,XWIKI-12896,13,Environmental Dependencies
+1298,xwiki,XWiki,XWiki,7.4-milestone-2,XWIKI-12919,4,Input Data Generation
 1299,xwiki,XWiki,XWiki,7.4,XWIKI-13031,4,Irrelevant Frame
 1300,xwiki,XWiki,XWiki,7.4,XWIKI-13031,5,Anonymous Class
-1301,xwiki,XWiki,XWiki,7.3,XWIKI-13096,1,NA
-1302,xwiki,XWiki,XWiki,7.3,XWIKI-13096,2,NA
-1303,xwiki,XWiki,XWiki,7.3,XWIKI-13096,3,NA
-1304,xwiki,XWiki,XWiki,7.4.1,XWIKI-13137,3,NA
-1305,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,1,NA
-1306,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,2,NA
-1307,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,3,NA
-1308,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,4,NA
-1309,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,5,NA
-1310,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,6,NA
-1311,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,7,NA
-1312,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,8,NA
-1313,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,9,NA
-1314,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,10,NA
-1315,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,11,NA
-1316,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,12,NA
-1317,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,13,NA
-1318,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,14,NA
-1319,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,15,NA
-1320,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,16,NA
-1321,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,17,NA
-1322,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,1,NA
-1323,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,2,NA
-1324,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,3,NA
-1325,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,4,NA
-1326,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,5,NA
-1327,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,6,NA
-1328,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,7,NA
-1329,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,8,NA
-1330,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,17,NA
-1331,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,19,NA
-1332,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,21,NA
-1333,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,23,NA
-1334,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,36,NA
-1335,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,38,NA
-1336,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,40,NA
-1337,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,42,NA
-1338,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,44,NA
-1339,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,46,NA
-1340,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,48,NA
-1341,xwiki,XWiki,XWiki,7.4.2,XWIKI-13193,1,NA
+1301,xwiki,XWiki,XWiki,7.3,XWIKI-13096,1,Environmental Dependencies
+1302,xwiki,XWiki,XWiki,7.3,XWIKI-13096,2,Environmental Dependencies
+1303,xwiki,XWiki,XWiki,7.3,XWIKI-13096,3,Complex Code
+1304,xwiki,XWiki,XWiki,7.4.1,XWIKI-13137,3,Anonymous Class
+1305,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,1,Environmental Dependencies
+1306,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,2,Environmental Dependencies
+1307,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,3,Environmental Dependencies
+1308,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,4,Input Data Generation
+1309,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,5,Input Data Generation
+1310,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,6,Input Data Generation
+1311,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,7,Input Data Generation
+1312,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,8,Input Data Generation
+1313,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,9,Input Data Generation
+1314,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,10,Input Data Generation
+1315,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,11,Input Data Generation
+1316,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,12,Input Data Generation
+1317,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,13,Input Data Generation
+1318,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,14,Input Data Generation
+1319,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,15,Unknown
+1320,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,16,Abstract Class
+1321,xwiki,XWiki,XWiki,8.0-milestone-2,XWIKI-13138,17,Abstract Class
+1322,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,1,Environmental Dependencies
+1323,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,2,Input Data Generation
+1324,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,3,Input Data Generation
+1325,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,4,Input Data Generation
+1326,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,5,Complex Code
+1327,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,6,Input Data Generation
+1328,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,7,Complex Code
+1329,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,8,Complex Code
+1330,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,17,Input Data Generation
+1331,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,19,Input Data Generation
+1332,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,21,Input Data Generation
+1333,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,23,Input Data Generation
+1334,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,36,Input Data Generation
+1335,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,38,Input Data Generation
+1336,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,40,Input Data Generation
+1337,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,42,Input Data Generation
+1338,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,44,Input Data Generation
+1339,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,46,Input Data Generation
+1340,xwiki,XWiki,XWiki,7.4.2,XWIKI-13141,48,Input Data Generation
+1341,xwiki,XWiki,XWiki,7.4.2,XWIKI-13193,1,Input Data Generation
 1342,xwiki,XWiki,XWiki,7.4.2,XWIKI-13196,5,Input Data Generation
 1343,xwiki,XWiki,XWiki,7.4.2,XWIKI-13196,6,Input Data Generation
 1344,xwiki,XWiki,XWiki,7.4.2,XWIKI-13196,7,Input Data Generation
 1345,xwiki,XWiki,XWiki,7.4.2,XWIKI-13196,8,Private Inner Class
 1346,xwiki,XWiki,XWiki,7.4.2,XWIKI-13196,9,Input Data Generation
-1347,xwiki,XWiki,XWiki,7.4.2,XWIKI-13288,13,NA
-1348,xwiki,XWiki,XWiki,7.4.2,XWIKI-13288,14,NA
-1349,xwiki,XWiki,XWiki,7.4.2,XWIKI-13288,15,NA
-1350,xwiki,XWiki,XWiki,8.0,XWIKI-13303,1,NA
-1351,xwiki,XWiki,XWiki,8.0,XWIKI-13303,2,NA
-1352,xwiki,XWiki,XWiki,8.0,XWIKI-13303,3,NA
-1353,xwiki,XWiki,XWiki,8.0,XWIKI-13303,4,NA
-1354,xwiki,XWiki,XWiki,8.0,XWIKI-13303,5,NA
-1355,xwiki,XWiki,XWiki,8.0,XWIKI-13303,6,NA
-1356,xwiki,XWiki,XWiki,8.0,XWIKI-13303,7,NA
-1357,xwiki,XWiki,XWiki,8.0,XWIKI-13303,8,NA
-1358,xwiki,XWiki,XWiki,8.0,XWIKI-13303,9,NA
-1359,xwiki,XWiki,XWiki,8.0,XWIKI-13303,10,NA
-1360,xwiki,XWiki,XWiki,8.0,XWIKI-13303,11,NA
-1361,xwiki,XWiki,XWiki,8.0,XWIKI-13316,3,NA
-1362,xwiki,XWiki,XWiki,8.0,XWIKI-13316,4,NA
-1363,xwiki,XWiki,XWiki,8.0,XWIKI-13316,5,NA
-1364,xwiki,XWiki,XWiki,8.0,XWIKI-13316,6,NA
-1365,xwiki,XWiki,XWiki,8.0,XWIKI-13316,7,NA
-1366,xwiki,XWiki,XWiki,8.0,XWIKI-13316,8,NA
-1367,xwiki,XWiki,XWiki,8.0,XWIKI-13316,9,NA
-1368,xwiki,XWiki,XWiki,8.0,XWIKI-13316,10,NA
-1369,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13345,1,NA
-1370,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13345,2,NA
+1347,xwiki,XWiki,XWiki,7.4.2,XWIKI-13288,13,Environmental Dependencies
+1348,xwiki,XWiki,XWiki,7.4.2,XWIKI-13288,14,Anonymous Class
+1349,xwiki,XWiki,XWiki,7.4.2,XWIKI-13288,15,Environmental Dependencies
+1350,xwiki,XWiki,XWiki,8.0,XWIKI-13303,1,Input Data Generation
+1351,xwiki,XWiki,XWiki,8.0,XWIKI-13303,2,Input Data Generation
+1352,xwiki,XWiki,XWiki,8.0,XWIKI-13303,3,Input Data Generation
+1353,xwiki,XWiki,XWiki,8.0,XWIKI-13303,4,Input Data Generation
+1354,xwiki,XWiki,XWiki,8.0,XWIKI-13303,5,Irrelevant Frame
+1355,xwiki,XWiki,XWiki,8.0,XWIKI-13303,6,Input Data Generation
+1356,xwiki,XWiki,XWiki,8.0,XWIKI-13303,7,Input Data Generation
+1357,xwiki,XWiki,XWiki,8.0,XWIKI-13303,8,Input Data Generation
+1358,xwiki,XWiki,XWiki,8.0,XWIKI-13303,9,Input Data Generation
+1359,xwiki,XWiki,XWiki,8.0,XWIKI-13303,10,Input Data Generation
+1360,xwiki,XWiki,XWiki,8.0,XWIKI-13303,11,Input Data Generation
+1361,xwiki,XWiki,XWiki,8.0,XWIKI-13316,3,Input Data Generation
+1362,xwiki,XWiki,XWiki,8.0,XWIKI-13316,4,Private Inner Class
+1363,xwiki,XWiki,XWiki,8.0,XWIKI-13316,5,Private Inner Class
+1364,xwiki,XWiki,XWiki,8.0,XWIKI-13316,6,Private Inner Class
+1365,xwiki,XWiki,XWiki,8.0,XWIKI-13316,7,Private Inner Class
+1366,xwiki,XWiki,XWiki,8.0,XWIKI-13316,8,Private Inner Class
+1367,xwiki,XWiki,XWiki,8.0,XWIKI-13316,9,Input Data Generation
+1368,xwiki,XWiki,XWiki,8.0,XWIKI-13316,10,Input Data Generation
+1369,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13345,1,try/catch
+1370,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13345,2,try/catch
 1371,xwiki,XWiki,XWiki,7.4.2,XWIKI-13372,4,Input Data Generation
 1372,xwiki,XWiki,XWiki,7.4.2,XWIKI-13372,5,Input Data Generation
 1373,xwiki,XWiki,XWiki,7.4.2,XWIKI-13372,6,Input Data Generation
@@ -1389,111 +1389,111 @@
 1388,xwiki,XWiki,XWiki,7.4.2,XWIKI-13372,21,Input Data Generation
 1389,xwiki,XWiki,XWiki,7.4.2,XWIKI-13372,22,Input Data Generation
 1390,xwiki,XWiki,XWiki,7.4.2,XWIKI-13372,23,Input Data Generation
-1391,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,2,NA
-1392,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,3,NA
-1393,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,4,NA
-1394,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,5,NA
-1395,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,6,NA
-1396,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,7,NA
-1397,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,8,NA
-1398,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,9,NA
-1399,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,10,NA
-1400,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,11,NA
-1401,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,12,NA
-1402,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,13,NA
-1403,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,14,NA
-1404,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,15,NA
-1405,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,16,NA
-1406,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,17,NA
-1407,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,18,NA
-1408,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,19,NA
-1409,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,20,NA
-1410,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,29,NA
-1411,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,32,NA
-1412,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,38,NA
-1413,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,41,NA
-1414,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,44,NA
-1415,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,47,NA
-1416,xwiki,XWiki,XWiki,7.4.2,XWIKI-13396,2,NA
-1417,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,1,NA
-1418,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,2,NA
-1419,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,3,NA
-1420,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,4,NA
-1421,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,5,NA
-1422,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,6,NA
-1423,xwiki,XWiki,XWiki,8.0,XWIKI-13457,7,NA
-1424,xwiki,XWiki,XWiki,8.0,XWIKI-13457,8,NA
-1425,xwiki,XWiki,XWiki,8.0,XWIKI-13457,9,NA
-1426,xwiki,XWiki,XWiki,8.0,XWIKI-13457,10,NA
-1427,xwiki,XWiki,XWiki,8.0,XWIKI-13457,11,NA
-1428,xwiki,XWiki,XWiki,8.0,XWIKI-13457,12,NA
-1429,xwiki,XWiki,XWiki,8.0,XWIKI-13457,13,NA
-1430,xwiki,XWiki,XWiki,8.0,XWIKI-13457,14,NA
-1431,xwiki,XWiki,XWiki,8.0,XWIKI-13457,15,NA
-1432,xwiki,XWiki,XWiki,8.0,XWIKI-13457,16,NA
-1433,xwiki,XWiki,XWiki,8.0,XWIKI-13457,17,NA
-1434,xwiki,XWiki,XWiki,8.0,XWIKI-13457,18,NA
-1435,xwiki,XWiki,XWiki,8.0,XWIKI-13457,19,NA
-1436,xwiki,XWiki,XWiki,8.0,XWIKI-13457,28,NA
-1437,xwiki,XWiki,XWiki,8.0,XWIKI-13457,30,NA
-1438,xwiki,XWiki,XWiki,8.0,XWIKI-13457,32,NA
-1439,xwiki,XWiki,XWiki,8.0,XWIKI-13457,34,NA
-1440,xwiki,XWiki,XWiki,8.0,XWIKI-13457,36,NA
-1441,xwiki,XWiki,XWiki,8.0,XWIKI-13457,38,NA
-1442,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,1,NA
-1443,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,2,NA
-1444,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,3,NA
-1445,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,4,NA
-1446,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,5,NA
-1447,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,6,NA
-1448,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,7,NA
-1449,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,8,NA
-1450,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,9,NA
-1451,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,10,NA
-1452,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,11,NA
-1453,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,12,NA
-1454,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,13,NA
-1455,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,14,NA
-1456,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,16,NA
-1457,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,17,NA
-1458,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,18,NA
-1459,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,19,NA
-1460,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,20,NA
-1461,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,21,NA
-1462,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,22,NA
-1463,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,23,NA
-1464,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,24,NA
-1465,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,25,NA
-1466,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,26,NA
-1467,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,27,NA
-1468,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,41,NA
-1469,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,42,NA
-1470,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,43,NA
-1471,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,44,NA
-1472,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,45,NA
-1473,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,46,NA
-1474,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,47,NA
-1475,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,48,NA
-1476,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,49,NA
-1477,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,50,NA
-1478,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,51,NA
-1479,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,52,NA
-1480,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,53,NA
-1481,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,62,NA
-1482,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,65,NA
-1483,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,75,NA
-1484,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,78,NA
-1485,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,81,NA
-1486,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,84,NA
-1487,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,87,NA
-1488,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,7,NA
-1489,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,8,NA
-1490,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,9,NA
-1491,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,10,NA
-1492,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,11,NA
-1493,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,12,NA
-1494,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,13,NA
-1495,xwiki,XWiki,XWiki,8.2,XWIKI-13616,3,NA
+1391,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,2,Input Data Generation
+1392,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,3,Input Data Generation
+1393,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,4,Input Data Generation
+1394,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,5,Input Data Generation
+1395,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,6,Input Data Generation
+1396,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,7,Input Data Generation
+1397,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,8,Input Data Generation
+1398,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,9,Input Data Generation
+1399,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,10,Input Data Generation
+1400,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,11,Input Data Generation
+1401,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,12,Input Data Generation
+1402,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,13,Input Data Generation
+1403,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,14,Input Data Generation
+1404,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,15,Input Data Generation
+1405,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,16,Input Data Generation
+1406,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,17,Input Data Generation
+1407,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,18,Input Data Generation
+1408,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,19,Complex Code
+1409,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,20,Input Data Generation
+1410,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,29,Input Data Generation
+1411,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,32,Input Data Generation
+1412,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,38,Input Data Generation
+1413,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,41,Input Data Generation
+1414,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,44,Input Data Generation
+1415,xwiki,XWiki,XWiki,8.1-milestone-1,XWIKI-13377,47,Input Data Generation
+1416,xwiki,XWiki,XWiki,7.4.2,XWIKI-13396,2,Input Data Generation
+1417,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,1,Input Data Generation
+1418,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,2,Input Data Generation
+1419,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,3,Input Data Generation
+1420,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,4,Input Data Generation
+1421,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,5,Input Data Generation
+1422,xwiki,XWiki,XWiki,8.1-rc-1,XWIKI-13407,6,Input Data Generation
+1423,xwiki,XWiki,XWiki,8.0,XWIKI-13457,7,Input Data Generation
+1424,xwiki,XWiki,XWiki,8.0,XWIKI-13457,8,Static Initialization
+1425,xwiki,XWiki,XWiki,8.0,XWIKI-13457,9,Static Initialization
+1426,xwiki,XWiki,XWiki,8.0,XWIKI-13457,10,Static Initialization
+1427,xwiki,XWiki,XWiki,8.0,XWIKI-13457,11,Static Initialization
+1428,xwiki,XWiki,XWiki,8.0,XWIKI-13457,12,Static Initialization
+1429,xwiki,XWiki,XWiki,8.0,XWIKI-13457,13,Static Initialization
+1430,xwiki,XWiki,XWiki,8.0,XWIKI-13457,14,Static Initialization
+1431,xwiki,XWiki,XWiki,8.0,XWIKI-13457,15,Static Initialization
+1432,xwiki,XWiki,XWiki,8.0,XWIKI-13457,16,Input Data Generation
+1433,xwiki,XWiki,XWiki,8.0,XWIKI-13457,17,Input Data Generation
+1434,xwiki,XWiki,XWiki,8.0,XWIKI-13457,18,Complex Code
+1435,xwiki,XWiki,XWiki,8.0,XWIKI-13457,19,Input Data Generation
+1436,xwiki,XWiki,XWiki,8.0,XWIKI-13457,28,Input Data Generation
+1437,xwiki,XWiki,XWiki,8.0,XWIKI-13457,30,Input Data Generation
+1438,xwiki,XWiki,XWiki,8.0,XWIKI-13457,32,Input Data Generation
+1439,xwiki,XWiki,XWiki,8.0,XWIKI-13457,34,Input Data Generation
+1440,xwiki,XWiki,XWiki,8.0,XWIKI-13457,36,Input Data Generation
+1441,xwiki,XWiki,XWiki,8.0,XWIKI-13457,38,Input Data Generation
+1442,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,1,Abstract Class
+1443,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,2,Irrelevant Frame
+1444,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,3,Complex Code
+1445,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,4,Complex Code
+1446,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,5,Input Data Generation
+1447,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,6,Input Data Generation
+1448,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,7,Input Data Generation
+1449,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,8,Irrelevant Frame
+1450,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,9,Input Data Generation
+1451,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,10,Input Data Generation
+1452,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,11,Input Data Generation
+1453,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,12,Input Data Generation
+1454,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,13,Input Data Generation
+1455,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,14,Input Data Generation
+1456,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,16,Input Data Generation
+1457,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,17,Input Data Generation
+1458,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,18,Input Data Generation
+1459,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,19,Private Inner Class
+1460,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,20,Private Inner Class
+1461,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,21,Private Inner Class
+1462,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,22,Private Inner Class
+1463,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,23,Private Inner Class
+1464,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,24,Input Data Generation
+1465,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,25,Input Data Generation
+1466,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,26,Input Data Generation
+1467,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,27,Input Data Generation
+1468,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,41,Input Data Generation
+1469,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,42,Input Data Generation
+1470,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,43,Input Data Generation
+1471,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,44,Private Inner Class
+1472,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,45,Private Inner Class
+1473,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,46,Private Inner Class
+1474,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,47,Private Inner Class
+1475,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,48,Private Inner Class
+1476,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,49,Input Data Generation
+1477,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,50,Input Data Generation
+1478,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,51,Complex Code
+1479,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,52,Complex Code
+1480,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,53,Complex Code
+1481,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,62,Input Data Generation
+1482,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,65,Input Data Generation
+1483,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,75,Input Data Generation
+1484,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,78,Input Data Generation
+1485,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,81,Input Data Generation
+1486,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,84,Input Data Generation
+1487,xwiki,XWiki,XWiki,7.4.4,XWIKI-13544,87,Input Data Generation
+1488,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,7,Input Data Generation
+1489,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,8,Input Data Generation
+1490,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,9,Input Data Generation
+1491,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,10,Input Data Generation
+1492,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,11,Input Data Generation
+1493,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,12,Input Data Generation
+1494,xwiki,XWiki,XWiki,7.4.2,XWIKI-13546,13,Input Data Generation
+1495,xwiki,XWiki,XWiki,8.2,XWIKI-13616,3,Input Data Generation
 1496,xwiki,XWiki,XWiki,8.2,XWIKI-13616,4,Input Data Generation
 1497,xwiki,XWiki,XWiki,8.2,XWIKI-13616,5,Input Data Generation
 1498,xwiki,XWiki,XWiki,8.2,XWIKI-13616,6,Input Data Generation
@@ -1524,174 +1524,174 @@
 1523,xwiki,XWiki,XWiki,8.4,XWIKI-13916,8,Input Data Generation
 1524,xwiki,XWiki,XWiki,8.4,XWIKI-13916,9,Input Data Generation
 1525,xwiki,XWiki,XWiki,8.4,XWIKI-13942,5,Input Data Generation
-1526,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,17,NA
-1527,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,18,NA
-1528,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,19,NA
-1529,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,20,NA
-1530,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,21,NA
-1531,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,22,NA
-1532,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,23,NA
-1533,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,24,NA
-1534,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,25,NA
-1535,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,26,NA
-1536,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,27,NA
-1537,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,28,NA
-1538,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,29,NA
-1539,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,30,NA
-1540,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,31,NA
-1541,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,32,NA
-1542,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,33,NA
-1543,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,34,NA
-1544,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,35,NA
-1545,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,36,NA
-1546,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,37,NA
-1547,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,38,NA
-1548,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,39,NA
-1549,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,40,NA
-1550,xwiki,XWiki,XWiki,9.3-rc-1,XWIKI-14149,19,NA
-1551,xwiki,XWiki,XWiki,9.3-rc-1,XWIKI-14149,20,NA
-1552,xwiki,XWiki,XWiki,9.3-rc-1,XWIKI-14149,21,NA
+1526,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,17,Environmental Dependencies
+1527,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,18,Environmental Dependencies
+1528,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,19,Input Data Generation
+1529,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,20,Input Data Generation
+1530,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,21,Input Data Generation
+1531,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,22,Input Data Generation
+1532,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,23,Input Data Generation
+1533,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,24,Environmental Dependencies
+1534,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,25,Input Data Generation
+1535,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,26,Input Data Generation
+1536,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,27,Input Data Generation
+1537,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,28,Input Data Generation
+1538,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,29,Input Data Generation
+1539,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,30,Input Data Generation
+1540,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,31,Input Data Generation
+1541,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,32,Input Data Generation
+1542,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,33,Input Data Generation
+1543,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,34,Input Data Generation
+1544,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,35,Abstract Class
+1545,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,36,Abstract Class
+1546,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,37,Abstract Class
+1547,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,38,Input Data Generation
+1548,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,39,Input Data Generation
+1549,xwiki,XWiki,XWiki,9.2-rc-1,XWIKI-14122,40,Input Data Generation
+1550,xwiki,XWiki,XWiki,9.3-rc-1,XWIKI-14149,19,Anonymous Class
+1551,xwiki,XWiki,XWiki,9.3-rc-1,XWIKI-14149,20,Anonymous Class
+1552,xwiki,XWiki,XWiki,9.3-rc-1,XWIKI-14149,21,Environmental Dependencies
 1553,xwiki,XWiki,XWiki,8.4.4,XWIKI-14152,6,Anonymous Class
 1554,xwiki,XWiki,XWiki,8.4.4,XWIKI-14152,7,Anonymous Class
 1555,xwiki,XWiki,XWiki,8.4.4,XWIKI-14152,8,Unknown
-1556,xwiki,XWiki,XWiki,9.3,XWIKI-14227,1,NA
-1557,xwiki,XWiki,XWiki,9.3,XWIKI-14227,3,NA
-1558,xwiki,XWiki,XWiki,9.3,XWIKI-14227,4,NA
-1559,xwiki,XWiki,XWiki,9.3,XWIKI-14227,5,NA
-1560,xwiki,XWiki,XWiki,9.3,XWIKI-14227,6,NA
-1561,xwiki,XWiki,XWiki,9.3,XWIKI-14227,7,NA
-1562,xwiki,XWiki,XWiki,9.3,XWIKI-14227,8,NA
-1563,xwiki,XWiki,XWiki,9.3,XWIKI-14227,9,NA
-1564,xwiki,XWiki,XWiki,9.3,XWIKI-14227,10,NA
-1565,xwiki,XWiki,XWiki,9.3,XWIKI-14227,11,NA
-1566,xwiki,XWiki,XWiki,9.3,XWIKI-14227,12,NA
-1567,xwiki,XWiki,XWiki,9.3,XWIKI-14227,13,NA
-1568,xwiki,XWiki,XWiki,9.3,XWIKI-14227,14,NA
-1569,xwiki,XWiki,XWiki,9.3,XWIKI-14227,15,NA
-1570,xwiki,XWiki,XWiki,9.3,XWIKI-14227,16,NA
-1571,xwiki,XWiki,XWiki,9.3,XWIKI-14227,17,NA
-1572,xwiki,XWiki,XWiki,9.3,XWIKI-14227,18,NA
-1573,xwiki,XWiki,XWiki,9.3,XWIKI-14227,19,NA
-1574,xwiki,XWiki,XWiki,9.3,XWIKI-14227,20,NA
-1575,xwiki,XWiki,XWiki,9.3,XWIKI-14227,21,NA
-1576,xwiki,XWiki,XWiki,9.3,XWIKI-14227,22,NA
-1577,xwiki,XWiki,XWiki,9.3,XWIKI-14227,23,NA
-1578,xwiki,XWiki,XWiki,9.3,XWIKI-14227,24,NA
-1579,xwiki,XWiki,XWiki,9.3,XWIKI-14227,25,NA
-1580,xwiki,XWiki,XWiki,8.4,XWIKI-14263,1,NA
-1581,xwiki,XWiki,XWiki,8.4,XWIKI-14263,2,NA
-1582,xwiki,XWiki,XWiki,8.4,XWIKI-14263,3,NA
-1583,xwiki,XWiki,XWiki,8.4,XWIKI-14263,4,NA
-1584,xwiki,XWiki,XWiki,8.4,XWIKI-14263,5,NA
-1585,xwiki,XWiki,XWiki,8.4,XWIKI-14263,6,NA
-1586,xwiki,XWiki,XWiki,8.4,XWIKI-14263,7,NA
-1587,xwiki,XWiki,XWiki,8.4,XWIKI-14263,8,NA
-1588,xwiki,XWiki,XWiki,8.4,XWIKI-14263,9,NA
-1589,xwiki,XWiki,XWiki,8.4,XWIKI-14263,10,NA
-1590,xwiki,XWiki,XWiki,8.4,XWIKI-14263,11,NA
-1591,xwiki,XWiki,XWiki,8.4,XWIKI-14263,12,NA
-1592,xwiki,XWiki,XWiki,8.4,XWIKI-14263,13,NA
-1593,xwiki,XWiki,XWiki,8.4,XWIKI-14263,30,NA
-1594,xwiki,XWiki,XWiki,8.4,XWIKI-14263,31,NA
-1595,xwiki,XWiki,XWiki,8.4,XWIKI-14263,32,NA
-1596,xwiki,XWiki,XWiki,8.4,XWIKI-14263,33,NA
-1597,xwiki,XWiki,XWiki,8.4,XWIKI-14263,34,NA
-1598,xwiki,XWiki,XWiki,8.4,XWIKI-14263,35,NA
-1599,xwiki,XWiki,XWiki,8.4,XWIKI-14263,36,NA
-1600,xwiki,XWiki,XWiki,8.4,XWIKI-14263,37,NA
-1601,xwiki,XWiki,XWiki,8.4,XWIKI-14263,38,NA
-1602,xwiki,XWiki,XWiki,8.4,XWIKI-14263,39,NA
-1603,xwiki,XWiki,XWiki,8.4,XWIKI-14263,40,NA
-1604,xwiki,XWiki,XWiki,8.4,XWIKI-14263,41,NA
-1605,xwiki,XWiki,XWiki,8.4,XWIKI-14263,55,NA
-1606,xwiki,XWiki,XWiki,8.4,XWIKI-14263,56,NA
-1607,xwiki,XWiki,XWiki,8.4,XWIKI-14263,57,NA
-1608,xwiki,XWiki,XWiki,8.4,XWIKI-14263,58,NA
-1609,xwiki,XWiki,XWiki,8.4,XWIKI-14263,59,NA
-1610,xwiki,XWiki,XWiki,8.4,XWIKI-14263,60,NA
-1611,xwiki,XWiki,XWiki,8.4,XWIKI-14263,61,NA
-1612,xwiki,XWiki,XWiki,8.4,XWIKI-14263,62,NA
-1613,xwiki,XWiki,XWiki,8.4,XWIKI-14263,63,NA
-1614,xwiki,XWiki,XWiki,8.4,XWIKI-14263,64,NA
-1615,xwiki,XWiki,XWiki,8.4,XWIKI-14263,65,NA
-1616,xwiki,XWiki,XWiki,8.4,XWIKI-14263,66,NA
-1617,xwiki,XWiki,XWiki,8.4,XWIKI-14263,83,NA
-1618,xwiki,XWiki,XWiki,8.4,XWIKI-14263,84,NA
-1619,xwiki,XWiki,XWiki,8.4,XWIKI-14263,85,NA
-1620,xwiki,XWiki,XWiki,8.4,XWIKI-14263,86,NA
-1621,xwiki,XWiki,XWiki,8.4,XWIKI-14263,87,NA
-1622,xwiki,XWiki,XWiki,8.4,XWIKI-14263,88,NA
-1623,xwiki,XWiki,XWiki,8.4,XWIKI-14263,89,NA
-1624,xwiki,XWiki,XWiki,8.4,XWIKI-14263,90,NA
-1625,xwiki,XWiki,XWiki,8.4,XWIKI-14263,91,NA
-1626,xwiki,XWiki,XWiki,8.4,XWIKI-14263,92,NA
-1627,xwiki,XWiki,XWiki,8.4,XWIKI-14263,93,NA
-1628,xwiki,XWiki,XWiki,8.4,XWIKI-14263,94,NA
-1629,xwiki,XWiki,XWiki,8.4,XWIKI-14263,95,NA
-1630,xwiki,XWiki,XWiki,8.4,XWIKI-14263,104,NA
-1631,xwiki,XWiki,XWiki,8.4,XWIKI-14263,107,NA
-1632,xwiki,XWiki,XWiki,8.4,XWIKI-14263,117,NA
-1633,xwiki,XWiki,XWiki,8.4,XWIKI-14263,120,NA
-1634,xwiki,XWiki,XWiki,8.4,XWIKI-14263,123,NA
-1635,xwiki,XWiki,XWiki,8.4,XWIKI-14263,126,NA
-1636,xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,15,NA
-1637,xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,16,NA
-1638,xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,17,NA
+1556,xwiki,XWiki,XWiki,9.3,XWIKI-14227,1,Input Data Generation
+1557,xwiki,XWiki,XWiki,9.3,XWIKI-14227,3,Input Data Generation
+1558,xwiki,XWiki,XWiki,9.3,XWIKI-14227,4,Static Initialization
+1559,xwiki,XWiki,XWiki,9.3,XWIKI-14227,5,Static Initialization
+1560,xwiki,XWiki,XWiki,9.3,XWIKI-14227,6,Static Initialization
+1561,xwiki,XWiki,XWiki,9.3,XWIKI-14227,7,Input Data Generation
+1562,xwiki,XWiki,XWiki,9.3,XWIKI-14227,8,Static Initialization
+1563,xwiki,XWiki,XWiki,9.3,XWIKI-14227,9,Static Initialization
+1564,xwiki,XWiki,XWiki,9.3,XWIKI-14227,10,Static Initialization
+1565,xwiki,XWiki,XWiki,9.3,XWIKI-14227,11,Input Data Generation
+1566,xwiki,XWiki,XWiki,9.3,XWIKI-14227,12,Input Data Generation
+1567,xwiki,XWiki,XWiki,9.3,XWIKI-14227,13,Input Data Generation
+1568,xwiki,XWiki,XWiki,9.3,XWIKI-14227,14,Environmental Dependencies
+1569,xwiki,XWiki,XWiki,9.3,XWIKI-14227,15,Input Data Generation
+1570,xwiki,XWiki,XWiki,9.3,XWIKI-14227,16,Input Data Generation
+1571,xwiki,XWiki,XWiki,9.3,XWIKI-14227,17,Input Data Generation
+1572,xwiki,XWiki,XWiki,9.3,XWIKI-14227,18,Input Data Generation
+1573,xwiki,XWiki,XWiki,9.3,XWIKI-14227,19,Input Data Generation
+1574,xwiki,XWiki,XWiki,9.3,XWIKI-14227,20,Input Data Generation
+1575,xwiki,XWiki,XWiki,9.3,XWIKI-14227,21,Input Data Generation
+1576,xwiki,XWiki,XWiki,9.3,XWIKI-14227,22,Input Data Generation
+1577,xwiki,XWiki,XWiki,9.3,XWIKI-14227,23,Input Data Generation
+1578,xwiki,XWiki,XWiki,9.3,XWIKI-14227,24,Input Data Generation
+1579,xwiki,XWiki,XWiki,9.3,XWIKI-14227,25,Input Data Generation
+1580,xwiki,XWiki,XWiki,8.4,XWIKI-14263,1,Input Data Generation
+1581,xwiki,XWiki,XWiki,8.4,XWIKI-14263,2,Nested calls
+1582,xwiki,XWiki,XWiki,8.4,XWIKI-14263,3,Nested calls
+1583,xwiki,XWiki,XWiki,8.4,XWIKI-14263,4,Input Data Generation
+1584,xwiki,XWiki,XWiki,8.4,XWIKI-14263,5,Input Data Generation
+1585,xwiki,XWiki,XWiki,8.4,XWIKI-14263,6,Abstract Class
+1586,xwiki,XWiki,XWiki,8.4,XWIKI-14263,7,Abstract Class
+1587,xwiki,XWiki,XWiki,8.4,XWIKI-14263,8,Irrelevant Frame
+1588,xwiki,XWiki,XWiki,8.4,XWIKI-14263,9,Input Data Generation
+1589,xwiki,XWiki,XWiki,8.4,XWIKI-14263,10,Input Data Generation
+1590,xwiki,XWiki,XWiki,8.4,XWIKI-14263,11,Input Data Generation
+1591,xwiki,XWiki,XWiki,8.4,XWIKI-14263,12,Input Data Generation
+1592,xwiki,XWiki,XWiki,8.4,XWIKI-14263,13,Input Data Generation
+1593,xwiki,XWiki,XWiki,8.4,XWIKI-14263,30,Input Data Generation
+1594,xwiki,XWiki,XWiki,8.4,XWIKI-14263,31,Input Data Generation
+1595,xwiki,XWiki,XWiki,8.4,XWIKI-14263,32,Input Data Generation
+1596,xwiki,XWiki,XWiki,8.4,XWIKI-14263,33,Private Inner Class
+1597,xwiki,XWiki,XWiki,8.4,XWIKI-14263,34,Private Inner Class
+1598,xwiki,XWiki,XWiki,8.4,XWIKI-14263,35,Private Inner Class
+1599,xwiki,XWiki,XWiki,8.4,XWIKI-14263,36,Private Inner Class
+1600,xwiki,XWiki,XWiki,8.4,XWIKI-14263,37,Private Inner Class
+1601,xwiki,XWiki,XWiki,8.4,XWIKI-14263,38,Input Data Generation
+1602,xwiki,XWiki,XWiki,8.4,XWIKI-14263,39,Input Data Generation
+1603,xwiki,XWiki,XWiki,8.4,XWIKI-14263,40,Input Data Generation
+1604,xwiki,XWiki,XWiki,8.4,XWIKI-14263,41,Environmental Dependencies
+1605,xwiki,XWiki,XWiki,8.4,XWIKI-14263,55,Input Data Generation
+1606,xwiki,XWiki,XWiki,8.4,XWIKI-14263,56,Input Data Generation
+1607,xwiki,XWiki,XWiki,8.4,XWIKI-14263,57,Input Data Generation
+1608,xwiki,XWiki,XWiki,8.4,XWIKI-14263,58,Private Inner Class
+1609,xwiki,XWiki,XWiki,8.4,XWIKI-14263,59,Private Inner Class
+1610,xwiki,XWiki,XWiki,8.4,XWIKI-14263,60,Private Inner Class
+1611,xwiki,XWiki,XWiki,8.4,XWIKI-14263,61,Private Inner Class
+1612,xwiki,XWiki,XWiki,8.4,XWIKI-14263,62,Private Inner Class
+1613,xwiki,XWiki,XWiki,8.4,XWIKI-14263,63,Input Data Generation
+1614,xwiki,XWiki,XWiki,8.4,XWIKI-14263,64,Input Data Generation
+1615,xwiki,XWiki,XWiki,8.4,XWIKI-14263,65,Input Data Generation
+1616,xwiki,XWiki,XWiki,8.4,XWIKI-14263,66,Environmental Dependencies
+1617,xwiki,XWiki,XWiki,8.4,XWIKI-14263,83,Input Data Generation
+1618,xwiki,XWiki,XWiki,8.4,XWIKI-14263,84,Input Data Generation
+1619,xwiki,XWiki,XWiki,8.4,XWIKI-14263,85,Input Data Generation
+1620,xwiki,XWiki,XWiki,8.4,XWIKI-14263,86,Private Inner Class
+1621,xwiki,XWiki,XWiki,8.4,XWIKI-14263,87,Private Inner Class
+1622,xwiki,XWiki,XWiki,8.4,XWIKI-14263,88,Private Inner Class
+1623,xwiki,XWiki,XWiki,8.4,XWIKI-14263,89,Private Inner Class
+1624,xwiki,XWiki,XWiki,8.4,XWIKI-14263,90,Private Inner Class
+1625,xwiki,XWiki,XWiki,8.4,XWIKI-14263,91,Input Data Generation
+1626,xwiki,XWiki,XWiki,8.4,XWIKI-14263,92,Input Data Generation
+1627,xwiki,XWiki,XWiki,8.4,XWIKI-14263,93,Complex Code
+1628,xwiki,XWiki,XWiki,8.4,XWIKI-14263,94,Complex Code
+1629,xwiki,XWiki,XWiki,8.4,XWIKI-14263,95,Complex Code
+1630,xwiki,XWiki,XWiki,8.4,XWIKI-14263,104,Input Data Generation
+1631,xwiki,XWiki,XWiki,8.4,XWIKI-14263,107,Input Data Generation
+1632,xwiki,XWiki,XWiki,8.4,XWIKI-14263,117,Input Data Generation
+1633,xwiki,XWiki,XWiki,8.4,XWIKI-14263,120,Input Data Generation
+1634,xwiki,XWiki,XWiki,8.4,XWIKI-14263,123,Input Data Generation
+1635,xwiki,XWiki,XWiki,8.4,XWIKI-14263,126,Input Data Generation
+1636,xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,15,Private Inner Class
+1637,xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,16,Private Inner Class
+1638,xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,17,Input Data Generation
 1639,xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14319,2,Input Data Generation
-1640,xwiki,XWiki,XWiki,9.5,XWIKI-14462,1,NA
-1641,xwiki,XWiki,XWiki,9.5,XWIKI-14462,2,NA
-1642,xwiki,XWiki,XWiki,9.5,XWIKI-14462,3,NA
-1643,xwiki,XWiki,XWiki,9.5,XWIKI-14462,4,NA
-1644,xwiki,XWiki,XWiki,9.5,XWIKI-14462,5,NA
-1645,xwiki,XWiki,XWiki,9.5,XWIKI-14462,6,NA
-1646,xwiki,XWiki,XWiki,9.5,XWIKI-14462,7,NA
-1647,xwiki,XWiki,XWiki,9.5,XWIKI-14462,8,NA
-1648,xwiki,XWiki,XWiki,9.5,XWIKI-14462,9,NA
-1649,xwiki,XWiki,XWiki,9.5,XWIKI-14462,10,NA
-1650,xwiki,XWiki,XWiki,9.5,XWIKI-14462,11,NA
-1651,xwiki,XWiki,XWiki,9.5,XWIKI-14462,12,NA
-1652,xwiki,XWiki,XWiki,9.5,XWIKI-14462,13,NA
-1653,xwiki,XWiki,XWiki,9.5,XWIKI-14462,14,NA
-1654,xwiki,XWiki,XWiki,9.5,XWIKI-14462,15,NA
-1655,xwiki,XWiki,XWiki,9.5,XWIKI-14462,16,NA
-1656,xwiki,XWiki,XWiki,9.5,XWIKI-14462,17,NA
+1640,xwiki,XWiki,XWiki,9.5,XWIKI-14462,1,Static Initialization
+1641,xwiki,XWiki,XWiki,9.5,XWIKI-14462,2,Static Initialization
+1642,xwiki,XWiki,XWiki,9.5,XWIKI-14462,3,Static Initialization
+1643,xwiki,XWiki,XWiki,9.5,XWIKI-14462,4,Static Initialization
+1644,xwiki,XWiki,XWiki,9.5,XWIKI-14462,5,Static Initialization
+1645,xwiki,XWiki,XWiki,9.5,XWIKI-14462,6,Static Initialization
+1646,xwiki,XWiki,XWiki,9.5,XWIKI-14462,7,Input Data Generation
+1647,xwiki,XWiki,XWiki,9.5,XWIKI-14462,8,Input Data Generation
+1648,xwiki,XWiki,XWiki,9.5,XWIKI-14462,9,Input Data Generation
+1649,xwiki,XWiki,XWiki,9.5,XWIKI-14462,10,Input Data Generation
+1650,xwiki,XWiki,XWiki,9.5,XWIKI-14462,11,Input Data Generation
+1651,xwiki,XWiki,XWiki,9.5,XWIKI-14462,12,Input Data Generation
+1652,xwiki,XWiki,XWiki,9.5,XWIKI-14462,13,Input Data Generation
+1653,xwiki,XWiki,XWiki,9.5,XWIKI-14462,14,Input Data Generation
+1654,xwiki,XWiki,XWiki,9.5,XWIKI-14462,15,Input Data Generation
+1655,xwiki,XWiki,XWiki,9.5,XWIKI-14462,16,Input Data Generation
+1656,xwiki,XWiki,XWiki,9.5,XWIKI-14462,17,Input Data Generation
 1657,xwiki,XWiki,XWiki,9.5,XWIKI-14475,2,Input Data Generation
 1658,xwiki,XWiki,XWiki,9.5,XWIKI-14475,3,Abstract Class
 1659,xwiki,XWiki,XWiki,9.5,XWIKI-14475,4,Abstract Class
 1660,xwiki,XWiki,XWiki,9.5,XWIKI-14475,5,Abstract Class
-1661,xwiki,XWiki,XWiki,9.6-rc-1,XWIKI-14554,2,NA
-1662,xwiki,XWiki,XWiki,9.6-rc-1,XWIKI-14554,3,NA
-1663,xwiki,XWiki,XWiki,9.5,XWIKI-14556,7,NA
-1664,xwiki,XWiki,XWiki,9.5,XWIKI-14556,8,NA
-1665,xwiki,XWiki,XWiki,9.5,XWIKI-14556,9,NA
-1666,xwiki,XWiki,XWiki,9.5,XWIKI-14556,10,NA
-1667,xwiki,XWiki,XWiki,9.6,XWIKI-14599,1,NA
-1668,xwiki,XWiki,XWiki,9.6,XWIKI-14599,2,NA
-1669,xwiki,XWiki,XWiki,9.6,XWIKI-14599,3,NA
-1670,xwiki,XWiki,XWiki,9.6,XWIKI-14599,4,NA
-1671,xwiki,XWiki,XWiki,9.6,XWIKI-14599,5,NA
-1672,xwiki,XWiki,XWiki,9.6,XWIKI-14599,6,NA
-1673,xwiki,XWiki,XWiki,9.6,XWIKI-14599,7,NA
-1674,xwiki,XWiki,XWiki,9.6,XWIKI-14599,8,NA
-1675,xwiki,XWiki,XWiki,9.6,XWIKI-14599,9,NA
-1676,xwiki,XWiki,XWiki,9.6,XWIKI-14599,10,NA
-1677,xwiki,XWiki,XWiki,9.6,XWIKI-14599,11,NA
-1678,xwiki,XWiki,XWiki,9.6,XWIKI-14599,12,NA
-1679,xwiki,XWiki,XWiki,9.6,XWIKI-14599,13,NA
-1680,xwiki,XWiki,XWiki,9.6,XWIKI-14599,14,NA
-1681,xwiki,XWiki,XWiki,9.6,XWIKI-14599,15,NA
-1682,xwiki,XWiki,XWiki,9.6,XWIKI-14599,16,NA
-1683,xwiki,XWiki,XWiki,9.6,XWIKI-14599,17,NA
-1684,xwiki,XWiki,XWiki,9.6,XWIKI-14599,18,NA
+1661,xwiki,XWiki,XWiki,9.6-rc-1,XWIKI-14554,2,Input Data Generation
+1662,xwiki,XWiki,XWiki,9.6-rc-1,XWIKI-14554,3,Input Data Generation
+1663,xwiki,XWiki,XWiki,9.5,XWIKI-14556,7,Input Data Generation
+1664,xwiki,XWiki,XWiki,9.5,XWIKI-14556,8,Anonymous Class
+1665,xwiki,XWiki,XWiki,9.5,XWIKI-14556,9,Anonymous Class
+1666,xwiki,XWiki,XWiki,9.5,XWIKI-14556,10,Input Data Generation
+1667,xwiki,XWiki,XWiki,9.6,XWIKI-14599,1,Input Data Generation
+1668,xwiki,XWiki,XWiki,9.6,XWIKI-14599,2,Input Data Generation
+1669,xwiki,XWiki,XWiki,9.6,XWIKI-14599,3,Input Data Generation
+1670,xwiki,XWiki,XWiki,9.6,XWIKI-14599,4,Input Data Generation
+1671,xwiki,XWiki,XWiki,9.6,XWIKI-14599,5,Input Data Generation
+1672,xwiki,XWiki,XWiki,9.6,XWIKI-14599,6,Input Data Generation
+1673,xwiki,XWiki,XWiki,9.6,XWIKI-14599,7,Input Data Generation
+1674,xwiki,XWiki,XWiki,9.6,XWIKI-14599,8,Input Data Generation
+1675,xwiki,XWiki,XWiki,9.6,XWIKI-14599,9,Input Data Generation
+1676,xwiki,XWiki,XWiki,9.6,XWIKI-14599,10,Input Data Generation
+1677,xwiki,XWiki,XWiki,9.6,XWIKI-14599,11,Input Data Generation
+1678,xwiki,XWiki,XWiki,9.6,XWIKI-14599,12,Input Data Generation
+1679,xwiki,XWiki,XWiki,9.6,XWIKI-14599,13,Input Data Generation
+1680,xwiki,XWiki,XWiki,9.6,XWIKI-14599,14,Input Data Generation
+1681,xwiki,XWiki,XWiki,9.6,XWIKI-14599,15,Input Data Generation
+1682,xwiki,XWiki,XWiki,9.6,XWIKI-14599,16,Input Data Generation
+1683,xwiki,XWiki,XWiki,9.6,XWIKI-14599,17,Input Data Generation
+1684,xwiki,XWiki,XWiki,9.6,XWIKI-14599,18,Input Data Generation
 1685,xwiki,XWiki,XWiki,8.4,XWIKI-14612,3,Input Data Generation
 1686,xwiki,XWiki,XWiki,8.4,XWIKI-14612,4,Input Data Generation
-1687,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,1,NA
-1688,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,2,NA
-1689,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,3,NA
-1690,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,4,NA
-1691,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,5,NA
-1692,xwiki,XWiki,XWiki,8.2,XWIKI-8281,1,NA
-1693,xwiki,XWiki,XWiki,8.2,XWIKI-8281,2,NA
-1694,xwiki,XWiki,XWiki,8.2,XWIKI-8281,3,NA
-1695,xwiki,XWiki,XWiki,8.2,XWIKI-8281,4,NA
-1696,xwiki,XWiki,XWiki,8.2,XWIKI-8281,5,NA
+1687,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,1,Static Initialization
+1688,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,2,Static Initialization
+1689,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,3,Private Inner Class
+1690,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,4,Private Inner Class
+1691,xwiki,XWiki,XWiki,9.3.1,XWIKI-14626,5,Environmental Dependencies
+1692,xwiki,XWiki,XWiki,8.2,XWIKI-8281,1,Input Data Generation
+1693,xwiki,XWiki,XWiki,8.2,XWIKI-8281,2,Environmental Dependencies
+1694,xwiki,XWiki,XWiki,8.2,XWIKI-8281,3,Input Data Generation
+1695,xwiki,XWiki,XWiki,8.2,XWIKI-8281,4,Input Data Generation
+1696,xwiki,XWiki,XWiki,8.2,XWIKI-8281,5,Complex Code
