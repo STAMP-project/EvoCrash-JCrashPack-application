@@ -25,7 +25,7 @@ The default `<Number of Threads>` is 5.
 
 # Reproducing the evaluation
 
-For Evaluation, ExRunner applies EvoCrash 10 times on all of the 72 stack traces selected for evaluation.
+For Evaluation, ExRunner applies EvoCrash 10 times on all of the stack traces selected for evaluation.
 
  **Attention:** to reproduce evaluation in a reasonable amount of time, one need a powerful machine with a large amount of memory to be able to increase the `<Number of Threads>`. In our evaluation, we distributed the execution on several machines.
 
