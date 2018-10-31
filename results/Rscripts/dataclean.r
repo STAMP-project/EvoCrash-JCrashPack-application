@@ -68,7 +68,8 @@ getCleanBenchmarkDf <- function(csvFile){
 }
 
 getBenchmark <- function(){
-  df <- getCleanBenchmarkDf('../csv/benchmark.csv')
+  df <- getCleanBenchmarkDf('../csv/benchmark.csv') %>%
+    filter(!(case == "LANG-27b" & frame_level == 2))
   return(df)
 }
 
@@ -100,7 +101,8 @@ getCleanResultsDf <- function(csvFile){
 
 getResults <- function(){
   # Get results dataframe
-  results <- getCleanResultsDf('../csv/results.csv')
+  results <- getCleanResultsDf('../csv/results.csv') %>%
+    filter(!(case == "LANG-27b" & frame_level == 2))
   return(results)
 }
 

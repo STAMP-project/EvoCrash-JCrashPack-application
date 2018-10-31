@@ -122,9 +122,3 @@ df <- majority %>%
   mutate(perc = number_of_frames / sum(number_of_frames))
 print(df)
 cat('\n') 
-
-
-
-df <- succeeding %>%
-  filter(case == 'XWIKI-12482')
-

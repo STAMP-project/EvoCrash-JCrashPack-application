@@ -195,6 +195,7 @@ main <- function(){
     facet_wrap( ~ exception_factor, ncol = 4) +
     scale_y_log10() + 
     ylab("Number of fitness evaluation (log. scale)") + 
+    xlab("") +
     guides(fill=FALSE) + 
     scale_fill_brewer(palette=colorpalette) +
     theme(axis.text.x = element_text(angle = 90, hjust = 1))

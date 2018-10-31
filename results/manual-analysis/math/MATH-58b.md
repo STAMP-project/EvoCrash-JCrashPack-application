@@ -13,7 +13,7 @@ org.apache.commons.math.exception.NotStrictlyPositiveException: -1,277 n'est pas
 	at org.apache.commons.math.optimization.direct.BaseAbstractVectorialOptimizer.optimize(BaseAbstractVectorialOptimizer.java:141)
 	at org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer.optimize(AbstractLeastSquaresOptimizer.java:253)
 	at org.apache.commons.math.optimization.general.AbstractLeastSquaresOptimizer.optimize(AbstractLeastSquaresOptimizer.java:43)
-	at org.apache.commons.math.optimization.fitting.CurveFitter.fit(CurveFitter.java:160)
+	at org.apache.commons.math.optimization.fitting.CurveFitter.fit(CurveFitter.java:161)
 	at org.apache.commons.math.optimization.fitting.CurveFitter.fit(CurveFitter.java:126)
 	at org.apache.commons.math.optimization.fitting.GaussianFitter.fit(GaussianFitter.java:121)
 ```
@@ -65,3 +65,24 @@ The class is abstract and the method is protected. Method can be called from pub
 Best fitness: crashed
 
 The class is abstract and could not be instantiated.
+
+
+## Frame 10
+
+Best fitness: line reached
+
+Method has 3 parameters, one with complex structure. Those parameters are in turn used to compute the 5 parameters of `fit`.
+
+
+## Frame 11
+
+Best fitness: ex. thrown
+
+This method is a wrapper for the method called in frame 10.
+
+
+## Frame 12
+
+Best fitness: line reached
+
+This method is a wrapper for the method called in frame 11.

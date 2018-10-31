@@ -93,11 +93,11 @@ main <- function(){
 	
 	# CCN distribution per project
 	p <- plotAvgCCNPerApp(benchmark)
-	ggsave(plot = p, filename = '../plots/benchmark-ccn-per-app-boxplot.pdf', width=190, height=90, units = "mm" )
+	ggsave(plot = p, filename = '../plots/benchmark-ccn-per-app-boxplot.pdf', width=200, height=70, units = "mm" )
 	
 	# CCN distribution per project
 	p <- plotAvgNCSSPerApp(benchmark)
-	ggsave(plot = p, filename = '../plots/benchmark-ncss-per-app-boxplot.pdf', width=190, height=90, units = "mm" )
+	ggsave(plot = p, filename = '../plots/benchmark-ncss-per-app-boxplot.pdf', width=200, height=70, units = "mm" )
 	
 }
 

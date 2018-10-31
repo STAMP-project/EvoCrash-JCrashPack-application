@@ -11,7 +11,6 @@
 10,lang,Commons-lang,Defects4J,20b,LANG-20b,2,Static Initialization
 11,lang,Commons-lang,Defects4J,20b,LANG-20b,3,Static Initialization
 13,lang,Commons-lang,Defects4J,37b,LANG-37b,1,Input Data Generation
-14,lang,Commons-lang,Defects4J,44b,LANG-44b,1,NA
 15,lang,Commons-lang,Defects4J,6b,LANG-6b,2,Abstract Class
 16,lang,Commons-lang,Defects4J,6b,LANG-6b,3,Input Data Generation
 17,lang,Commons-lang,Defects4J,9b,LANG-9b,1,Private Inner Class
@@ -23,18 +22,10 @@
 23,lang,Commons-lang,Defects4J,9b,LANG-9b,8,Anonymous Class
 24,lang,Commons-lang,Defects4J,9b,LANG-9b,9,Private Inner Class
 25,lang,Commons-lang,Defects4J,9b,LANG-9b,10,Input Data Generation
-26,math,Commons-math,Defects4J,101b,MATH-101b,1,NA
 27,math,Commons-math,Defects4J,103b,MATH-103b,2,Input Data Generation
 28,math,Commons-math,Defects4J,103b,MATH-103b,3,Input Data Generation
 29,math,Commons-math,Defects4J,1b,MATH-1b,1,Nested calls
 30,math,Commons-math,Defects4J,31b,MATH-31b,1,Abstract Class
-31,math,Commons-math,Defects4J,31b,MATH-31b,2,NA
-32,math,Commons-math,Defects4J,31b,MATH-31b,3,NA
-33,math,Commons-math,Defects4J,31b,MATH-31b,4,NA
-34,math,Commons-math,Defects4J,31b,MATH-31b,5,NA
-35,math,Commons-math,Defects4J,31b,MATH-31b,6,NA
-36,math,Commons-math,Defects4J,31b,MATH-31b,7,NA
-37,math,Commons-math,Defects4J,31b,MATH-31b,8,NA
 38,math,Commons-math,Defects4J,32b,MATH-32b,3,Private Inner Class
 39,math,Commons-math,Defects4J,32b,MATH-32b,4,Private Inner Class
 40,math,Commons-math,Defects4J,32b,MATH-32b,5,Input Data Generation
@@ -60,9 +51,9 @@
 60,math,Commons-math,Defects4J,58b,MATH-58b,7,Abstract Class
 61,math,Commons-math,Defects4J,58b,MATH-58b,8,Abstract Class
 62,math,Commons-math,Defects4J,58b,MATH-58b,9,Abstract Class
-63,math,Commons-math,Defects4J,58b,MATH-58b,10,NA
-64,math,Commons-math,Defects4J,58b,MATH-58b,11,NA
-65,math,Commons-math,Defects4J,58b,MATH-58b,12,NA
+63,math,Commons-math,Defects4J,58b,MATH-58b,10,Input Data Generation
+64,math,Commons-math,Defects4J,58b,MATH-58b,11,Input Data Generation
+65,math,Commons-math,Defects4J,58b,MATH-58b,12,Input Data Generation
 66,math,Commons-math,Defects4J,60b,MATH-60b,1,Abstract Class
 67,math,Commons-math,Defects4J,60b,MATH-60b,2,Complex Code
 68,math,Commons-math,Defects4J,60b,MATH-60b,3,Complex Code
