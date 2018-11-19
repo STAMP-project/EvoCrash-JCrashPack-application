@@ -91,7 +91,7 @@ getCleanResultsDf <- function(csvFile){
   df$result[is.numeric(df$fitness_function_value) & df$fitness_function_value != 0 & df$fitness_function_value <= 1] <- "ex. thrown"
   df$result[is.numeric(df$fitness_function_value) & df$fitness_function_value == 0] <- "reproduced"
   # Set the order of exceptions
-  df$result_factor <- factor(df$result, levels = c("crashed", "failed", "line reached", "ex. thrown", "reproduced"))
+  df$result_factor <- factor(df$result, levels = c("crashed", "failed", "line reached", "ex. thrown", "reproduced"), ordered = TRUE)
   # Check if isKilled factor is present 
   if(!("iskilled" %in% colnames(df))){
     df$iskilled <- NA
