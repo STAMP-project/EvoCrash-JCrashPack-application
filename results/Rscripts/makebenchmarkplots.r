@@ -43,12 +43,29 @@ plotExceptionsPerApp <- function(benchmark){
   return (p)
 }
 
+plotCCNPerApp <- function(benchmark){
+  # Consider only distinct cases
+  df <- benchmark %>% 
+    distinct(application, application_name, version, avg_ccn) %>%
+    arrange(application_name, version)
+  p <- ggplot(df, aes(x=version, y=avg_ccn, fill=factor(application_name))) +
+    geom_bar(stat = "identity") +
+    theme(axis.title.x=element_blank(),
+          axis.text.x=element_blank(),
+          axis.ticks.x=element_blank()) + 
+    ylab("Average CCN") + 
+    guides(fill=FALSE) +
+    scale_fill_brewer(palette=colorpalette) +
+    facet_grid(. ~ application_name, scales="free_x")
+  return (p)
+}
+
 plotAvgCCNPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, case, avg_ccn) #%>%
+    distinct(application, application_name, version, avg_ccn) #%>%
     #mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
-  p <- ggplot(df, aes(x=application_name, y=avg_ccn, fill=factor(application_name))) +
+  p <- ggplot(df, aes(x=application_name, y=version, fill=factor(application_name))) +
     geom_bar(position = "dodge", stat = "summary", fun.y = "mean") +
     geom_point() +
     xlab("") + 
@@ -56,6 +73,23 @@ plotAvgCCNPerApp <- function(benchmark){
     #scale_y_log10() +
     guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette)
+  return (p)
+}
+
+plotNCSSPerApp <- function(benchmark){
+  # Consider only distinct cases
+  df <- benchmark %>% 
+    distinct(application, application_name, version, application_ncss=application_ncss/1000 ) %>%
+    arrange(application_name, version)
+  p <- ggplot(df, aes(x=version, y=application_ncss, fill=factor(application_name))) +
+    geom_bar(stat = "identity") +
+    theme(axis.title.x=element_blank(),
+          axis.text.x=element_blank(),
+          axis.ticks.x=element_blank()) + 
+    ylab("Average KNCSS") + 
+    guides(fill=FALSE) +
+    scale_fill_brewer(palette=colorpalette) +
+    facet_grid(. ~ application_name, scales="free_x")
   return (p)
 }
 
@@ -92,8 +126,16 @@ main <- function(){
 	ggsave(plot = p, filename = '../plots/benchmark-exceptions-per-app-barchart.pdf', width=110, height=50, units = "mm" )
 	
 	# CCN distribution per project
+	p <- plotCCNPerApp(benchmark)
+	ggsave(plot = p, filename = '../plots/benchmark-ccn-per-app-histogram.pdf', width=200, height=50, units = "mm" )
+	
+	# CCN distribution per project
 	p <- plotAvgCCNPerApp(benchmark)
 	ggsave(plot = p, filename = '../plots/benchmark-ccn-per-app-boxplot.pdf', width=200, height=70, units = "mm" )
+	
+	# CCN distribution per project
+	p <- plotNCSSPerApp(benchmark)
+	ggsave(plot = p, filename = '../plots/benchmark-ncss-per-app-histogram.pdf', width=200, height=50, units = "mm" )
 	
 	# CCN distribution per project
 	p <- plotAvgNCSSPerApp(benchmark)
