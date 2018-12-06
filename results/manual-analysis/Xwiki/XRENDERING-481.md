@@ -46,9 +46,6 @@ java.lang.NullPointerException
 	at com.xpn.xwiki.XWiki.evaluateTemplate(XWiki.java:2131)
 	at com.xpn.xwiki.XWiki.parseTemplate(XWiki.java:2109)
 	at com.xpn.xwiki.api.XWiki.parseTemplate(XWiki.java:953)
-	at sun.reflect.GeneratedMethodAccessor262.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.apache.velocity.util.introspection.UberspectImpl$VelMethodImpl.doInvoke(UberspectImpl.java:395)
 	at org.apache.velocity.util.introspection.UberspectImpl$VelMethodImpl.invoke(UberspectImpl.java:384)
 	at org.apache.velocity.runtime.parser.node.ASTMethod.execute(ASTMethod.java:173)
@@ -74,9 +71,6 @@ java.lang.NullPointerException
 	at com.xpn.xwiki.XWiki.evaluateTemplate(XWiki.java:2131)
 	at com.xpn.xwiki.XWiki.parseTemplate(XWiki.java:2109)
 	at com.xpn.xwiki.api.XWiki.parseTemplate(XWiki.java:953)
-	at sun.reflect.GeneratedMethodAccessor262.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.apache.velocity.util.introspection.UberspectImpl$VelMethodImpl.doInvoke(UberspectImpl.java:395)
 	at org.apache.velocity.util.introspection.UberspectImpl$VelMethodImpl.invoke(UberspectImpl.java:384)
 	at org.apache.velocity.runtime.parser.node.ASTMethod.execute(ASTMethod.java:173)
@@ -127,8 +121,6 @@ java.lang.NullPointerException
 	at org.xwiki.container.servlet.filters.internal.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:111)
 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1637)
 	at org.xwiki.resource.servlet.RoutingFilter.doFilter(RoutingFilter.java:134)
-
-
 ```
 
 # Frame 1
@@ -208,56 +200,56 @@ EvoCrash can not finish initialization of the CUT. It can not set the proper inp
 # Frame 45
 EvoCrash throws error during initialisation of injection dependencies.
 
-# Frame 60
+# Frame 57
 Same as frame 32
 
-# Frame 61
+# Frame 58
 Same as frame 33
 
-# Frame 62
+# Frame 59
 Same as frame 34
 
-# Frame 63 & 64 & 65 & 67 & 68 & 69
+# Frame 60 & 61 & 62 & 64 & 65 & 66
 same as frame 35
 
-# Frame 66
+# Frame 63
 Same as frame 38
 
-# Frame 70
+# Frame 67
 same as frame 42
 
-# Frame 71
+# Frame 68
 same as frame 43
 
-# Frame 72
+# Frame 69
 same as frame 44
 
-# Frame 73
+# Frame 70
 same as frame 45
 
-# Frame 93
+# Frame 87
 Same as frame 32
 
-# Frame 94
+# Frame 88
 Same as frame 33
 
-# Frame 95
+# Frame 89
 Same as frame 34
 
-# Frame 96 & 97 & 98 & 100 & 101 & 102
+# Frame 90 & 91 & 92 & 94 & 95 & 96
 same as frame 35
 
-# Frame 99
+# Frame 93
 Same as frame 38
 
-# Frame 103
+# Frame 97
 same as frame 42
 
-# Frame 104
+# Frame 98
 same as frame 43
 
-# Frame 105 & 106 & 107
+# Frame 99 & 100 & 101
 Target method contains more than 200 lines of code and it contains nested predicates.
 
-# Frame 116 & 118 & 120 & 122 & 124 & 126
+# Frame 110 & 112 & 114 & 116 & 118 & 120
 EvoCrash reaches the target line. It got stuck in this line because it can not set a proper value for `chain` input argument.

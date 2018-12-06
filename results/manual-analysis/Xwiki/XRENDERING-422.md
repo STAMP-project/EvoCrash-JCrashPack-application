@@ -26,14 +26,6 @@ java.util.NoSuchElementException
 	at org.xwiki.rendering.wikimodel.xhtml.filter.AccumulationXMLFilter.endElement(AccumulationXMLFilter.java:86)
 	at org.xml.sax.helpers.XMLFilterImpl.endElement(XMLFilterImpl.java:570)
 	at org.xwiki.rendering.wikimodel.xhtml.filter.DTDXMLFilter.endElement(DTDXMLFilter.java:86)
-	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
-	at org.apache.xerces.parsers.XML11NonValidatingConfiguration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11NonValidatingConfiguration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
 	at org.xml.sax.helpers.XMLFilterImpl.parse(XMLFilterImpl.java:357)
 	at org.xwiki.rendering.wikimodel.xhtml.filter.DefaultXMLFilter.parse(DefaultXMLFilter.java:58)
 	at org.xml.sax.helpers.XMLFilterImpl.parse(XMLFilterImpl.java:357)
@@ -41,10 +33,16 @@ java.util.NoSuchElementException
 	at org.xml.sax.helpers.XMLFilterImpl.parse(XMLFilterImpl.java:357)
 	at org.xwiki.rendering.wikimodel.xhtml.filter.DefaultXMLFilter.parse(DefaultXMLFilter.java:58)
 	at org.xwiki.rendering.wikimodel.xhtml.XhtmlParser.parse(XhtmlParser.java:132)
-
 ```
-# Frame 7 & 8
+## Frame 6
+Evocrash achieves to the target line. This line is:
+```
+listener.endFormat(format, parameters);
+```
 
+`listener` is a local variable of the target class. This variable can be set to many tyoes of objects. EvoCrash cannot find the right one.
+
+## Frame 7 & 8
 The target method is private. And, there are lots of public or protected callers which call the target method directly (public method A calls the target method) or indirectly (public method A calls Private method B, and method B calls the target method). In these cases, due to the randomness of EvoCrash, it may have difficulty to find the right path for calling the target method.
 
 
@@ -59,8 +57,8 @@ The generated test covers target line and target exception. However, due to the 
 # Frame 15
 The target method is public. EvoCrash can not achieve to the line coverage. it got stock in previous lines because of the lack of proper input generation.
 
-# Frame 23 & 25
+# Frame 23 & 25 & 27 & 29 & 31
 EvoCrash can achieve to the target line coverage. however, It can no go further than this because it can not generate the proper inputs.
 
-# Frame 35 & 37 & 39 & 40
-Unknown source
+# Frame 32
+The search pricess cannot set proper value for `xmlReader`. This variable is defined in the target method and its value came from another method in the target class.
