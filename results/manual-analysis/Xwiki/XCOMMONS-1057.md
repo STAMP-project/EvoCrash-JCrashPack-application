@@ -1,4 +1,4 @@
-XCOMMONS-1057
+# XCOMMONS-1057
 ```
 java.lang.ClassCastException: org.xwiki.extension.job.plan.internal.DefaultExtensionPlanNode cannot be cast to org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanNode
     at org.xwiki.extension.job.internal.AbstractInstallPlanJob$ModifableExtensionPlanTree.clone(AbstractInstallPlanJob.java:84)
@@ -14,11 +14,11 @@ java.lang.ClassCastException: org.xwiki.extension.job.plan.internal.DefaultExten
     at java.lang.Thread.run(Thread.java:745)
 ```
 
-# Frame  2 & 3 & 4 & 5 & 6
+## Frame  2 & 3 & 4 & 5 & 6
 
 Injecting target method is hard. EvoCrash can not do it because it can not find the generator for the genetic type which is needed for initializing the target class (`UpgradePlanJob`)
 
 
-# Frame  7 & 8
+## Frame  7 & 8
 
 The target class (`AbstractJob`) is an abstract class with lots of abstract methods.

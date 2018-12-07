@@ -5,4 +5,4 @@ java.lang.ArrayIndexOutOfBoundsException: 0
 ```
 
 # Frame 1
-EvoCrash got stock in constructor of CUT . Like MOCKITO-3b Frame 1.
+EvoCrash got stuck in constructor of CUT . Like MOCKITO-3b Frame 1.

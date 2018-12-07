@@ -1,7 +1,6 @@
-XRENDERING-418
+# XRENDERING-418
 ```
 java.lang.NullPointerException
-	java.lang.NullPointerException
 	at com.xpn.xwiki.doc.DefaultDocumentAccessBridge.getAttachmentURL(DefaultDocumentAccessBridge.java:698)
 	at org.xwiki.rendering.internal.wiki.XWikiWikiModel.getLinkURL(XWikiWikiModel.java:144)
 	at org.xwiki.rendering.internal.wiki.XWikiWikiModel.getImageURL(XWikiWikiModel.java:176)
@@ -73,61 +72,50 @@ java.lang.NullPointerException
 	at java.lang.Thread.run(Thread.java:745)
 ```
 
-# Frame 1
-## Line is not covered
-Evocrash got stock in line 694. this object is generated from an injected object called `execution`.
+## Frame 1
+Evocrash got stuck in line 694. this object is generated from an injected object called `execution`.
 It is hard for EvoCrash to set the state of the object, and it leads to NPE in line 694.
 
-# Frame 2 & 3
-## Hard to init the CUT.
-cssParser dependency is available but application could not instantiate it.
+## Frame 2 & 3
+cssParser dependency is available but application could not instantiate it properly.
 
-# Frame 4
-## line is not covered in 5 out of 5 rounds
+## Frame 4
 the `initialize()` method need to be run before calling target frame.
 
-# Frame 5
-## target line is covered
-but ... there is a method on that line which is abstract in CUT.
+## Frame 5
+Target line is covered. However, EvoCrash cannot throw exception in the target line because the generated inputs are not correct.
 
-# Frame 6
-## target line is covered
-but ... there is another method in target line which call `getXHTMLImageTypeRenderer`, and Evocrash got stock in this method.
-there are many objects (etc: injected `componentManagerProvider` object, `reference` as  input argument) need to be set to run this method completely.
+## Frame 6
+Target line is covered. However, there is another method in target line which call `getXHTMLImageTypeRenderer`, and Evocrash got stuck in this method.
 
-# Frame 7
-## target line is not covered
-Evocrash got stock in line 545. the statement in this line is :
+## Frame 7
+Target line is not covered. Evocrash got stuck in line 545. the statement in this line is :
 ```
 reference.addBaseReferences(getMetaDataState().<String>getAllMetaData(MetaData.BASE));
 ```
-Note that reference is an input argument, and it is hard for EvoCrash to set the state of this object properly for replicating crash.
+Noting that reference is an input argument, and it is hard for EvoCrash to set the state of this object properly for replicating crash.
 
-# Frame 8 & 9
-## target line is not covered
-Evocrash got stock in line 450. in this line application call `getListenerChain()` method which return `listenerChain` object.
+## Frame 8 & 9
+Target line is not covered. Evocrash got stuck in line 450. in this line application call `getListenerChain()` method which return `listenerChain` object.
 the `listenerChain` is needed to be set with another method (`setListenerChain()`). Probability of calling the setter before calling target method in search is low.
 
-# Frame 10
-## target line is covered
-Evocrash had problem for deeper fram ( Frame 9 )
+## Frame 10
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 9)
 
-# Frame 11
+## Frame 11
 same as Frame 8 & 9
 
-# Frame 12
-## target line is covered
-Evocrash had problem for deeper fram ( Frame 11 )
+## Frame 12
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 11)
 
-# Frame 13
+## Frame 13
 same as Frame 8 & 9
 
-# Frame 14 & 15
-## target line is covered
-Evocrash had problem for deeper frame ( Frame 13 )
+## Frame 14 & 15
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 13)
 
-# Frame 16
-## target line is covered but there is no clue of deeper frames coverage
+## Frame 16
+Target line is covered. Evocrash had problem for covering deeper frame.
 the target line is :
 ```
 fListener.onImage(ref);
@@ -135,39 +123,34 @@ fListener.onImage(ref);
 fListener is an object which is made by init of CUT.
 Evocrash need to generate proper inputs for init to set the state of `fListener` properly
 
-# Frame 17
-## target line is covered
-Evocrash had problem for deeper frame ( Frame 16 )
+## Frame 17
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 16)
 
-# Frame 18
-## target line is not covered
-the target call is private. Evocrash try to access to target method by public callers of it (`onComment` method), and it was successful.
-But ... Evocrash got stock in line 174, because it is hard to generate proper `content` as input argument of `onComment()` to set state of the application.
+## Frame 18
+Target line is not covered.
+The target call is private. Evocrash tried to access to target method by public callers ( here `onComment`), and it was successful. However, Evocrash got stuck in line 174 because it is hard to generate proper `content` as input argument.
 
-# Frame 19
-## target line is covered
-Evocrash had problem for deeper frame ( Frame 18 )
+## Frame 19
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 18)
 Note that target call of this frame is `onComment` method which we mentioned it in Frame 18.
 
-# Frame 20
-## target line is covered but there is no clue of deeper frames coverage
+## Frame 20
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 18)
 the situation is similar to Frame 16
 
-# Frame 21
-## Line is not covered
-the situation is similar to Frame 2 & 3
+## Frame 21
+Line is not covered. The situation is similar to Frame 2 & 3
 
-# Frame 22
-## Line is not covered
-Evocrash got stock on init of CUT
+## Frame 22
+Line is not covered. Evocrash got stuck in `<init>` of the target class.
 
-# Frame 23
-## line is not covered
-the input arguments of target call is :
+## Frame 23
+Line is not covered.
+The input arguments of target call is :
 ```
 comment(char[] ch, int start, int length)
 ```
-in all of the 5 rounds of experiment, Evocrash got stock in line 269 which is:
+In all of the 5 rounds of experiment, Evocrash got stuck in line 269 which is:
 ```
 String comment = new String(ch, start, length);
 ```
@@ -178,61 +161,55 @@ org.xwiki.rendering.wikimodel.xhtml.filter.XHTMLWhitespaceXMLFilter.comment(XHTM
 ```
 According to these information, it seems that Evocrash could not generate proper input for `java.lang.String`.
 
-# Frame 24
-## target line is covered
-Evocrash had problem for deeper frame ( Frame 23 )
+## Frame 24
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 23)
 
-# Frame 25
-## target line is covered and exception has been thrown
-but ... the target line is :
+## Frame 25
+Target line is covered.
+However, the target line is :
 ```
 super.comment(array, start, length);
 ```
-it points to its super class. there is no Exception in target line. exception has been thrown after that in super class calls.
+This line points to its super class. there is no Exception in target line.
 
 
-# Frame 26
-## target line is covered and exception has been thrown
-but ... the target line is :
+## Frame 26
+Target line is covered.
+However, the target line is :
 ```
 this.lexicalHandler.comment(ch, start, length);
 ```
-`lexicalHandler` should be set properly by a setter method.
+For achieving the coverage, `lexicalHandler` should be set properly by a setter method.
 
-# Frame 27
-## target line is covered and exception has been thrown
-similar situation to Frame 25
+## Frame 27
+Similar situation to Frame 25
 
-# Frame 29
-## target line and exception are covered
-Evocrash had problem for deeper frame (frame 28) which is for dependencies of XWIKI.
+## Frame 29
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 28)
 
 
-# Frame 31
-## target line and exception are covered
-Evocrash had problem for deeper frame (frame 30) which is for dependencies of XWIKI.
+## Frame 31
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 30)
 
-# Frame 33
-## target line and exception are covered
-Evocrash had problem for deeper frame (frame 32) which is for dependencies of XWIKI.
+## Frame 33
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 32)
 
-# Frame 34
-## Line is not covered
-Evocrash got stock in line 121. the reason is similar to frame 2 and 3.
+## Frame 34
+Line is not covered.
+Evocrash got stuck in line 121. the reason is similar to frame 2 and 3.
 
-# Frame 35
-# Target line is covered
+## Frame 35
+Target line is covered
 In 2 out of 5 rounds, exception is covered too. in this situation the problem is line Frame 36.
 In 3 out of 5 rounds, best Fitness function was 3. in these 3 rounds Evocrash had problem with css parser.
 
-# Frame 36
-## Target line and exception are covered
-Evocrash had problem for deeper frame ( Frame 34 )
+## Frame 36
+Target line is covered. Evocrash had problem for covering deeper frame (Frame 34)
 
-# Frame 37
-## Line is covered
+## Frame 37
+Line is covered. However, EvoCrash could not throw any exception in this line
 But ... execution passed from target line and NPE has been thrown in line 143.
-Line 139 is:
+Target line is:
 ```
 xhtmlStreamParser.parse(new StringReader(html), printRendererFactory.createRenderer(printer));
 ```
@@ -243,19 +220,18 @@ PrintRendererFactory printRendererFactory =
 ```
 Noting that, `syntaxId` is an **input argument**.
 
-# Frame 38
-## Line is not covered
+## Frame 38
+Line is not covered.
 Evocrash should generate a proper value for `req`, which is an **input argument**, to set state of the SUT in a way that it achieve to target line.
 
-# Frame 41 & 44 & 47 & 50
-## Target line and exception are covered
-But ... NPE has been thrown in target line.
+## Frame 41 & 44 & 47 & 50
+Line is covered. However, EvoCrash could not throw the right type of exception in this line
 Target line is:
 ```
 chain.doFilter(request, response);
 ```
 `chain` is an **input argument**.
 
-# Frame 53
-## Line is not covered
+## Frame 53
+Line is not covered.
 The problem is similar to Frame 41 & 44 & 47 & 50.

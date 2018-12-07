@@ -1,4 +1,4 @@
-XRENDERING-481
+# XRENDERING-481
 ```
 java.lang.NullPointerException
 	at org.xwiki.rendering.internal.macro.toc.TreeParametersBuilder.build(TreeParametersBuilder.java:71)
@@ -123,7 +123,7 @@ java.lang.NullPointerException
 	at org.xwiki.resource.servlet.RoutingFilter.doFilter(RoutingFilter.java:134)
 ```
 
-# Frame 1
+## Frame 1
 
 EvoCrash can not achieve to the line coverage. The target method is public. So, EvoCrash can directly call `build` method. However, it got stuck in line 61 which is:
 ```
@@ -132,7 +132,7 @@ resolvedRootBlock = context.getXDOM();
 
 EvoCrash can not generate a proper input value (`context`) for this method call.
 
-# Frame 2
+## Frame 2
 Same as previous one, it got stuck in a line before the target line:
 ```
 WikiModel wikiModel = this.wikiModelProvider.get();
@@ -140,116 +140,117 @@ WikiModel wikiModel = this.wikiModelProvider.get();
 
 `wikiModelProvider` is injected, but EvoCrash can not set a proper value for it.
 
-# Frame 3
+## Frame 3
 
 Same as previous ones. The search got stuck in line 202 because it can not set a proper value for one of the complex input arguments (`rootBlock`).
 
-# Frame 4
+## Frame 4
 EvoCrash can not mock the values properly to instantiate the target class.
 
-#Frame 5
+## Frame 5
 The reason is same as frame 3, it got stuck in this line:
 ```
 for (String hint : this.configuration.getTransformationNames()) {
 ```
 It can not set a proper value for one of the complex injected objects (`configuration`).
 
-# Frame 6 & 7
+## Frame 6 & 7
 Same as previous ones. It got stuck in line 280 because it can not set a proper value for one of the complex input arguments (`document`).
 
-# Frame 8
+## Frame 8
 
 Point to the `@inject`.
 
-# Frame 9 & 10
+## Frame 9 & 10
 Target line and exception is covered. however, EvoCrash can not generate proper values for achieving 100% stack trace similarity.
 
+## frame 11 & 12
+Target method of frame 11 is private. Its public caller is the target method of frame 12. EvoCrash can not reach to the target line of frame 12 because it can not generate proper inputs to pass from previous lines without throwing any other exception.
+## Frame 13 & 14
+EvoCrash reach the target line. EvoCrash got stuck in the deeper frame.
 
-# Frame 11 & 12 & 13 & 14
-`XWikiDocument` initialization needs complex inputs that EvoCrash can not generate them properly.
-
-# Frame 15
+## Frame 15
 EvoCrash achieves to the target line, but this line has a call to `getXWikiContext`. For executing this method properly, EvoCrash needs to set lots of values properly.
 
-# Frame 29
+## Frame 29
 
 The target method has nested predicates.
 
-# Frame 32
+## Frame 32
 
 The target method is private, and its public caller should be called. In the process of public caller invoking, EvoCrash needs to set proper input arguments. However, it can not.
 
-# Frame 33
+## Frame 33
 This frame's target method is the public caller which is mentioned in the previous frame.
 
-# Frame 34
+## Frame 34
 EvoCrash can not set all of the input values properly.
 
-# Frame 35 & 36 & 37 & 39 & 40 & 41
-The target methods are in the private inner classes.
+## Frame 35 & 36 & 37 & 39 & 40 & 41
+EvoCrash cannot initialize the target class (`InternalTemplateManager`). This class contains static abstract inner classes which uses generic types.
 
-# Frame 38
+## Frame 38
 EvoCrash can not reach to the target line. before that it got stuck because it can not set a proper value for input `xcontextProvider`.
 
-# Frame 42
+## Frame 42
 EvoCrash reaches the target line, but it got stuck there because of the improper setting of the variables in the CUT.
 
-# Frame 43 & 44
+## Frame 43 & 44
 EvoCrash can not finish initialization of the CUT. It can not set the proper input values.
 
-# Frame 45
+## Frame 45
 EvoCrash throws error during initialisation of injection dependencies.
 
-# Frame 57
+## Frame 57
 Same as frame 32
 
-# Frame 58
+## Frame 58
 Same as frame 33
 
-# Frame 59
+## Frame 59
 Same as frame 34
 
-# Frame 60 & 61 & 62 & 64 & 65 & 66
+## Frame 60 & 61 & 62 & 64 & 65 & 66
 same as frame 35
 
-# Frame 63
+## Frame 63
 Same as frame 38
 
-# Frame 67
+## Frame 67
 same as frame 42
 
-# Frame 68
+## Frame 68
 same as frame 43
 
-# Frame 69
+## Frame 69
 same as frame 44
 
-# Frame 70
+## Frame 70
 same as frame 45
 
-# Frame 87
+## Frame 87
 Same as frame 32
 
-# Frame 88
+## Frame 88
 Same as frame 33
 
-# Frame 89
+## Frame 89
 Same as frame 34
 
-# Frame 90 & 91 & 92 & 94 & 95 & 96
+## Frame 90 & 91 & 92 & 94 & 95 & 96
 same as frame 35
 
-# Frame 93
+## Frame 93
 Same as frame 38
 
-# Frame 97
+## Frame 97
 same as frame 42
 
-# Frame 98
+## Frame 98
 same as frame 43
 
-# Frame 99 & 100 & 101
+## Frame 99 & 100 & 101
 Target method contains more than 200 lines of code and it contains nested predicates.
 
-# Frame 110 & 112 & 114 & 116 & 118 & 120
-EvoCrash reaches the target line. It got stuck in this line because it can not set a proper value for `chain` input argument.
+## Frame 110 & 112 & 114 & 116 & 118 & 120
+EvoCrash got stuck in one of the lines of target method, which uses the variable `chain`, because it can not set a proper value for `chain` input argument.

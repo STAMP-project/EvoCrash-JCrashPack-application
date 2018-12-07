@@ -1,4 +1,4 @@
-XRENDERING-422
+# XRENDERING-422
 ```
 java.util.NoSuchElementException
 	at org.xwiki.rendering.listener.chaining.EmptyBlockChainingListener.stopContainerBlock(EmptyBlockChainingListener.java:458)
@@ -40,25 +40,24 @@ Evocrash achieves to the target line. This line is:
 listener.endFormat(format, parameters);
 ```
 
-`listener` is a local variable of the target class. This variable can be set to many tyoes of objects. EvoCrash cannot find the right one.
+`listener` is a local variable of the target class. This variable can be set to many extensions of an abstract class. EvoCrash cannot find the right one.
 
 ## Frame 7 & 8
-The target method is private. And, there are lots of public or protected callers which call the target method directly (public method A calls the target method) or indirectly (public method A calls Private method B, and method B calls the target method). In these cases, due to the randomness of EvoCrash, it may have difficulty to find the right path for calling the target method.
+The target method is private. And, there are lots of public or protected callers which call the target method directly (public method A calls the target method) or indirectly (public method A calls Private method B, and method B calls the target method). In these cases, due to the randomness of EvoCrash, it has difficulty to find the right path for calling the target method.
 
 
-# Frame 9 & 10
-
+## Frame 9 & 10
 The target method is public. But, it should be called after setting the state of the software under test in the proper way. However, setting these state needed a proper sequence of method calls to achieve this specific type of exception.
 
 
-# Frame 11 & 12 & 13 & 14 & 17 & 18 & 19 & 20 & 21
+## Frame 11 & 12 & 13 & 14 & 17 & 18 & 19 & 20 & 21
 The generated test covers target line and target exception. However, due to the complexity of generating the proper input, It can not achieve to the stack trace similarity.
 
-# Frame 15
-The target method is public. EvoCrash can not achieve to the line coverage. it got stock in previous lines because of the lack of proper input generation.
+## Frame 15
+The target method is public. EvoCrash can not achieve to the line coverage. it got stuck in previous lines because of the lack of proper input generation.
 
-# Frame 23 & 25 & 27 & 29 & 31
-EvoCrash can achieve to the target line coverage. however, It can no go further than this because it can not generate the proper inputs.
+## Frame 23 & 25 & 27 & 29 & 31
+EvoCrash can reach to the target line coverage. however, It can not go further than this point because it can not generate the proper inputs.
 
-# Frame 32
-The search pricess cannot set proper value for `xmlReader`. This variable is defined in the target method and its value came from another method in the target class.
+## Frame 32
+The search process cannot set proper value for `xmlReader`. This variable is defined in the target method and its value came from another method in the target class.
