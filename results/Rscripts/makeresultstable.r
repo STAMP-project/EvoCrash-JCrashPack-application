@@ -29,7 +29,7 @@ printResultsDetailedTable <- function(results){
         for(i in 1:10){
           r <- c %>% filter(frame_level == l & execution_idx == i) %>%
             distinct(result)
-          color <- case_when(r$result == "crashed" ~ 'purple',
+          color <- case_when(r$result == "aborted" ~ 'purple',
                              r$result == "failed" ~ 'red', 
                              r$result == "line reached" ~ 'orange',
                              r$result == "ex. thrown" ~ 'yellow',

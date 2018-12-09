@@ -19,7 +19,7 @@ plotGroupedCoverageRanges <- function(results){
   p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
     geom_bar(stat="count") +
     xlab("") +
-    ylab("Average Number of frames (logarithmic scale)") +
+    ylab("Number of frames (logarithmic scale)") +
     theme(axis.text.x = element_text(angle=90)) +
     facet_grid(exception_factor ~ application_kind_factor, scales="free_x") +
     scale_fill_brewer(palette=colorpalette) +
@@ -29,6 +29,36 @@ plotGroupedCoverageRanges <- function(results){
     return(p)
 }
 
+plotGroupedCoverageRangesAllApps <- function(results){
+  majority <- getMostFrequentResult()
+  
+  p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
+    geom_bar(stat="count") +
+    xlab("") +
+    ylab("Number of frames (logarithmic scale)") +
+    theme(axis.text.x = element_text(angle=90)) +
+    facet_grid(exception_factor ~ application_factor) +
+    scale_fill_brewer(palette=colorpalette) +
+    scale_y_log10() +
+    guides(fill=FALSE)
+  
+  return(p)
+}
+
+plotSummary <- function(results){
+  majority <- getMostFrequentResult()
+  
+  p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
+    geom_bar(stat="count") +
+    xlab("") +
+    ylab("Number of frames (log. scale)") +
+    scale_fill_brewer(palette=colorpalette) +
+    scale_y_log10() +
+    guides(fill=FALSE)
+  
+  return(p)
+}
+
 # ------------------------------
 # Main function definition
 # ------------------------------
@@ -36,9 +66,15 @@ plotGroupedCoverageRanges <- function(results){
 main <- function(){
 	results <- getResults()
 	
-	# Print plot
+	# Print plots
 	p <- plotGroupedCoverageRanges(results)
 	ggsave(plot = p, filename = '../plots/rq1_compact.pdf', width=130, height=135, units = "mm" )
+	
+	p <- plotGroupedCoverageRangesAllApps(results)
+	ggsave(plot = p, filename = '../plots/rq1_all.pdf', width=200, height=150, units = "mm" )
+	
+	p <- plotSummary(results)
+	ggsave(plot = p, filename = '../plots/rq1_summary.pdf', width=140, height=80, units = "mm" )
 	
 	# Compute values from the text
 	
@@ -167,4 +203,8 @@ main <- function(){
 
 main()
 
+df <- getResults()
 
+df %>% 
+  filter(case == "MOCKITO-4b") %>%
+  select(result)

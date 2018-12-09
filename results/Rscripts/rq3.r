@@ -42,6 +42,32 @@ updateFromOld <- function(){
   # write.csv(df, file = '../manual-analysis/categorisation.csv', quote = FALSE)
 }
 
+printChallengesTable <- function(manual_analysis){
+  df <- manual_analysis %>% 
+    group_by(Category) %>%
+    summarise(count = n()) %>%
+    mutate(freq = (count / sum(count)* 100), total = sum(count)) %>%
+    arrange(desc(count))
+  
+  cat("\\begin{tabular}{l r r}", "\n")
+  cat("\\textbf{Category} & \\textbf{Frames} & \\textbf{Frequency} ", "\n")
+  cat("\\\\")
+  cat("\\hline", "\n")
+  for(i in 1:nrow(df)){
+    challenge <- df[i,]
+    cat(challenge$Category)
+    cat(" &", challenge$count)
+    cat(" & ", formatC(challenge$freq, digits=2, format="f"), "\\%", sep = '')
+    cat("\\\\", "\n")
+  }
+  cat("\\hline", "\n")
+  cat("\\textbf{Total}")
+  cat(" &", df$total[1])
+  cat(" & 100\\% ")
+  cat("\\\\", "\n")
+  cat("\\end{tabular}")
+}
+
 # ------------------------------
 # Main function definition
 # ------------------------------
@@ -56,6 +82,14 @@ main <- function(){
   cat("Summary:")
   print(df)
   
+  
+  outputFile <- "../tables/challenges-table.tex"
+  unlink(outputFile)
+  # Redirect cat outputs to file
+  sink(outputFile, append = TRUE, split = TRUE)
+  printChallengesTable(manual_analysis)
+  # Restore cat outputs to console
+  sink()
   
 }
 

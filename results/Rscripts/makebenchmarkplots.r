@@ -46,9 +46,9 @@ plotExceptionsPerApp <- function(benchmark){
 plotCCNPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, version, avg_ccn) %>%
-    arrange(application_name, version)
-  p <- ggplot(df, aes(x=version, y=avg_ccn, fill=factor(application_name))) +
+    distinct(application, application_name, application_factor, version, avg_ccn) %>%
+    arrange(application_factor, version)
+  p <- ggplot(df, aes(x=version, y=avg_ccn, fill=factor(application_factor))) +
     geom_bar(stat = "identity") +
     theme(axis.title.x=element_blank(),
           axis.text.x=element_blank(),
@@ -56,16 +56,16 @@ plotCCNPerApp <- function(benchmark){
     ylab("Average CCN") + 
     guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette) +
-    facet_grid(. ~ application_name, scales="free_x")
+    facet_grid(. ~ application_factor, scales="free_x")
   return (p)
 }
 
 plotAvgCCNPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, version, avg_ccn) #%>%
+    distinct(application, application_name, application_factor, version, avg_ccn) #%>%
     #mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
-  p <- ggplot(df, aes(x=application_name, y=version, fill=factor(application_name))) +
+  p <- ggplot(df, aes(x=application_factor, y=avg_ccn, fill=factor(application_factor))) +
     geom_bar(position = "dodge", stat = "summary", fun.y = "mean") +
     geom_point() +
     xlab("") + 
@@ -79,9 +79,9 @@ plotAvgCCNPerApp <- function(benchmark){
 plotNCSSPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, version, application_ncss=application_ncss/1000 ) %>%
-    arrange(application_name, version)
-  p <- ggplot(df, aes(x=version, y=application_ncss, fill=factor(application_name))) +
+    distinct(application, application_name, application_factor, version, application_ncss=application_ncss/1000 ) %>%
+    arrange(application_factor, version)
+  p <- ggplot(df, aes(x=version, y=application_ncss, fill=factor(application_factor))) +
     geom_bar(stat = "identity") +
     theme(axis.title.x=element_blank(),
           axis.text.x=element_blank(),
@@ -89,16 +89,16 @@ plotNCSSPerApp <- function(benchmark){
     ylab("Average KNCSS") + 
     guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette) +
-    facet_grid(. ~ application_name, scales="free_x")
+    facet_grid(. ~ application_factor, scales="free_x")
   return (p)
 }
 
 plotAvgNCSSPerApp <- function(benchmark){
   # Consider only distinct cases
   df <- benchmark %>% 
-    distinct(application, application_name, case, application_ncss) #%>%
+    distinct(application, application_name, application_factor, case, application_ncss) #%>%
     #mutate(application_name = ifelse(application %in% c('math', 'time', 'chart', 'mockito', 'lang'), 'Defects4J', application_name))
-  p <- ggplot(df, aes(x=application_name, y=application_ncss, fill=factor(application_name))) +
+  p <- ggplot(df, aes(x=application_factor, y=application_ncss, fill=factor(application_factor))) +
     geom_bar(position = "dodge", stat = "summary", fun.y = "mean") +
     geom_point() +
     xlab("") + 

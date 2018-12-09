@@ -163,7 +163,7 @@ printExceptionsApplicationsVertical <- function(){
     distinct(application_name, application_factor, version, application_ncss) %>% 
     group_by(application_name, application_factor) %>% 
     summarise(nb_versions = n(), avg_ncss = mean(application_ncss)/1000) %>%
-    arrange(application_name, application_factor)
+    arrange(application_factor)
   
   cat("% ")
   for (i in 1:nrow(exceptions)) {

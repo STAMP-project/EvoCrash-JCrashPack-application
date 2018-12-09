@@ -85,13 +85,13 @@ getCleanResultsDf <- function(csvFile){
   # Add short name for exceptions
   df <- addExceptionShortName(df)
   # Set the global result of the execution
-  df$result[is.na(df$fitness_function_value) | !is.numeric(df$fitness_function_value)] <- "crashed"
+  df$result[is.na(df$fitness_function_value) | !is.numeric(df$fitness_function_value)] <- "aborted"
   df$result[is.numeric(df$fitness_function_value) & df$fitness_function_value > 3] <- "failed"
   df$result[is.numeric(df$fitness_function_value) & df$fitness_function_value == 3] <- "line reached"
   df$result[is.numeric(df$fitness_function_value) & df$fitness_function_value != 0 & df$fitness_function_value <= 1] <- "ex. thrown"
   df$result[is.numeric(df$fitness_function_value) & df$fitness_function_value == 0] <- "reproduced"
   # Set the order of exceptions
-  df$result_factor <- factor(df$result, levels = c("crashed", "failed", "line reached", "ex. thrown", "reproduced"), ordered = TRUE)
+  df$result_factor <- factor(df$result, levels = c("aborted", "failed", "line reached", "ex. thrown", "reproduced"), ordered = TRUE)
   # Check if isKilled factor is present 
   if(!("iskilled" %in% colnames(df))){
     df$iskilled <- NA
@@ -102,15 +102,15 @@ getCleanResultsDf <- function(csvFile){
 getResults <- function(){
   # Get results dataframe
   results <- getCleanResultsDf('../csv/results.csv') %>%
-    filter(!(case == "LANG-27b" & frame_level == 2))
+    filter(!(case == "LANG-27b" & frame_level == 2)) # That frame points to a JUnit class, it has been removed in JCrashPack
   return(results)
 }
 
 getMostFrequentResult <- function(){
   majority <- getResults() %>%
-    group_by(application_name, application_kind, application_kind_factor, case, exception, exception_factor, frame_level) %>%
+    group_by(application_name, application_factor, application_kind, application_kind_factor, case, exception, exception_factor, frame_level) %>%
     summarise(majority_result = names(which.max(table(result_factor))),
-              majority_result_factor = factor(names(which.max(table(result_factor))), levels = c("crashed", "failed", "line reached", "ex. thrown", "reproduced")))
+              majority_result_factor = factor(names(which.max(table(result_factor))), levels = c("aborted", "failed", "line reached", "ex. thrown", "reproduced")))
   df <- data.frame(majority)
   return(df)
 }
