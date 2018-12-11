@@ -802,7 +802,7 @@ es,Elasticsearch,Elasticsearch,5.5.0,ES-25666,4,Input Data Generation
 es,Elasticsearch,Elasticsearch,2.4.1,ES-25775,1,Anonymous Class
 es,Elasticsearch,Elasticsearch,2.4.1,ES-25775,2,Abstract Class
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,3,Input Data Generation
-es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,4,Enum Type
+es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,4,Empty Enum Type
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,5,Input Data Generation
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,6,Input Data Generation
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,7,Anonymous Class
