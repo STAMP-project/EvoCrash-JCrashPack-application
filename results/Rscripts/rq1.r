@@ -13,8 +13,7 @@ colorpalette="Spectral" # Use photocopy friendly colors (http://colorbrewer2.org
 # Functions definition
 # ------------------------------
 
-plotGroupedCoverageRanges <- function(results){
-  majority <- getMostFrequentResult()
+plotGroupedCoverageRanges <- function(majority){
   
   p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
     geom_bar(stat="count") +
@@ -29,8 +28,7 @@ plotGroupedCoverageRanges <- function(results){
     return(p)
 }
 
-plotGroupedCoverageRangesAllApps <- function(results){
-  majority <- getMostFrequentResult()
+plotGroupedCoverageRangesAllApps <- function(majority){
   
   p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
     geom_bar(stat="count") +
@@ -45,8 +43,22 @@ plotGroupedCoverageRangesAllApps <- function(results){
   return(p)
 }
 
-plotSummary <- function(results){
-  majority <- getMostFrequentResult()
+plotGroupedCoverageRangesAllApps <- function(majority){
+  
+  p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
+    geom_bar(stat="count") +
+    xlab("") +
+    ylab("Number of frames (logarithmic scale)") +
+    theme(axis.text.x = element_text(angle=90)) +
+    facet_grid(exception_factor ~ application_factor) +
+    scale_fill_brewer(palette=colorpalette) +
+    scale_y_log10() +
+    guides(fill=FALSE)
+  
+  return(p)
+}
+
+plotSummary <- function(majority){
   
   p <- ggplot(data=majority, aes(x=majority_result_factor, fill=majority_result_factor)) +
     geom_bar(stat="count") +
@@ -66,19 +78,19 @@ plotSummary <- function(results){
 main <- function(){
 	results <- getResults()
 	
+	frequent <- getMostFrequentResult()
+	
 	# Print plots
-	p <- plotGroupedCoverageRanges(results)
+	p <- plotGroupedCoverageRanges(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_compact.pdf', width=130, height=135, units = "mm" )
 	
-	p <- plotGroupedCoverageRangesAllApps(results)
+	p <- plotGroupedCoverageRangesAllApps(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_all.pdf', width=200, height=150, units = "mm" )
 	
-	p <- plotSummary(results)
+	p <- plotSummary(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_summary.pdf', width=140, height=80, units = "mm" )
 	
 	# Compute values from the text
-	
-	frequent <- getMostFrequentResult()
 	
 	cat("Most frequent outcome frequencies:", "\n")
 	df <- frequent %>%
@@ -202,9 +214,3 @@ main <- function(){
 # ------------------------------
 
 main()
-
-df <- getResults()
-
-df %>% 
-  filter(case == "MOCKITO-4b") %>%
-  select(result)
