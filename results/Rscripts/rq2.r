@@ -258,7 +258,7 @@ main <- function(){
           axis.ticks.x=element_blank()) + 
     guides(fill=FALSE) + 
     scale_fill_brewer(palette=colorpalette)
-  ggsave(plot = p, filename = '../plots/rq2_excepappstats.pdf', width=200, height=150, units = "mm" )
+  ggsave(plot = p, filename = '../plots/rq2_excepappstats.pdf', width=200, height=210, units = "mm" )
   
   # Getting extreme cases for each exception type
   for(ex in distinct(filtered_results, exception_factor)$exception_factor){

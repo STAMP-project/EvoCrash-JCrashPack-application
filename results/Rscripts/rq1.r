@@ -85,7 +85,7 @@ main <- function(){
 	ggsave(plot = p, filename = '../plots/rq1_compact.pdf', width=130, height=135, units = "mm" )
 	
 	p <- plotGroupedCoverageRangesAllApps(frequent)
-	ggsave(plot = p, filename = '../plots/rq1_all.pdf', width=200, height=150, units = "mm" )
+	ggsave(plot = p, filename = '../plots/rq1_all.pdf', width=200, height=210, units = "mm" )
 	
 	p <- plotSummary(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_summary.pdf', width=140, height=80, units = "mm" )
