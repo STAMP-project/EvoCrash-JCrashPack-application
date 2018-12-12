@@ -802,7 +802,7 @@ es,Elasticsearch,Elasticsearch,5.5.0,ES-25666,4,Input Data Generation
 es,Elasticsearch,Elasticsearch,2.4.1,ES-25775,1,Anonymous Class
 es,Elasticsearch,Elasticsearch,2.4.1,ES-25775,2,Abstract Class
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,3,Input Data Generation
-es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,4,Enum Type
+es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,4,Empty Enum Type
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,5,Input Data Generation
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,6,Input Data Generation
 es,Elasticsearch,Elasticsearch,5.5.0,ES-25849,7,Anonymous Class
@@ -1594,7 +1594,7 @@ xwiki,XWiki,XWiki,8.4,XWIKI-14263,119,Input Data Generation
 xwiki,XWiki,XWiki,8.4,XWIKI-14263,122,Input Data Generation
 xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,15,Private Inner Class
 xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,16,Private Inner Class
-xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,17,Environmental Dependencies
+xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14302,17,Input Data Generation
 xwiki,XWiki,XWiki,9.4-rc-1,XWIKI-14319,2,Input Data Generation
 xwiki,XWiki,XWiki,9.5,XWIKI-14462,1,Static Initialization
 xwiki,XWiki,XWiki,9.5,XWIKI-14462,2,Static Initialization
