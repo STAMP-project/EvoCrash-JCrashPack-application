@@ -250,7 +250,7 @@ main <- function(){
   
   p <- ggplot(filtered_results, aes(x = application_factor, y = fitness_function_number_of_tries, fill = application_factor)) +
     geom_boxplot(outlier.shape = NA) +
-    facet_grid(exception_factor ~ application_factor, scales="free_x") +
+    facet_grid(exception_factor ~ application_factor, scales="free_x", margins = TRUE) +
     scale_y_log10() + 
     ylab("Number of fitness evaluation (log. scale)") + 
     theme(axis.title.x=element_blank(),
@@ -258,7 +258,7 @@ main <- function(){
           axis.ticks.x=element_blank()) + 
     guides(fill=FALSE) + 
     scale_fill_brewer(palette=colorpalette)
-  ggsave(plot = p, filename = '../plots/rq2_excepappstats.pdf', width=200, height=210, units = "mm" )
+  ggsave(plot = p, filename = '../plots/rq2_excepappstats.pdf', width=230, height=250, units = "mm" )
   
   # Getting extreme cases for each exception type
   for(ex in distinct(filtered_results, exception_factor)$exception_factor){

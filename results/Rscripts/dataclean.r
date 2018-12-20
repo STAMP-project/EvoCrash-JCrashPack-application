@@ -42,14 +42,14 @@ addApplicationKind <- function(df){
 # Adds accronyms for exceptions 
 #
 addExceptionShortName <- function(df){
-  df$exception <- "Oth."
+  df$exception <- "Other"
   df$exception[df$exception_name == "java.lang.NullPointerException"] <- "NPE"
   df$exception[df$exception_name == "java.lang.IllegalArgumentException"] <- "IAE"
   df$exception[df$exception_name == "java.lang.ArrayIndexOutOfBoundsException"] <- "AIOOBE"
   df$exception[df$exception_name == "java.lang.ClassCastException"] <- "CCE"
   df$exception[df$exception_name == "java.lang.StringIndexOutOfBoundsException"] <- "SIOOBE"
   df$exception[df$exception_name == "java.lang.IllegalStateException"] <- "ISE"
-  df$exception_factor <- factor(df$exception, levels = c("NPE", "IAE", "AIOOBE", "CCE", "SIOOBE", "ISE", "Oth."))
+  df$exception_factor <- factor(df$exception, levels = c("NPE", "IAE", "AIOOBE", "CCE", "SIOOBE", "ISE", "Other"))
   return(df)
 }
 

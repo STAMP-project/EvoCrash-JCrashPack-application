@@ -20,7 +20,7 @@ plotGroupedCoverageRanges <- function(majority){
     xlab("") +
     ylab("Number of frames (logarithmic scale)") +
     theme(axis.text.x = element_text(angle=90)) +
-    facet_grid(exception_factor ~ application_kind_factor, scales="free_x") +
+    facet_grid(exception_factor ~ application_kind_factor, scales="free_x", margins = TRUE) +
     scale_fill_brewer(palette=colorpalette) +
     scale_y_log10() +
     guides(fill=FALSE)
@@ -35,7 +35,7 @@ plotGroupedCoverageRangesAllApps <- function(majority){
     xlab("") +
     ylab("Number of frames (logarithmic scale)") +
     theme(axis.text.x = element_text(angle=90)) +
-    facet_grid(exception_factor ~ application_factor) +
+    facet_grid(exception_factor ~ application_factor, margins = TRUE) +
     scale_fill_brewer(palette=colorpalette) +
     scale_y_log10() +
     guides(fill=FALSE)
@@ -50,7 +50,7 @@ plotGroupedCoverageRangesAllApps <- function(majority){
     xlab("") +
     ylab("Number of frames (logarithmic scale)") +
     theme(axis.text.x = element_text(angle=90)) +
-    facet_grid(exception_factor ~ application_factor) +
+    facet_grid(exception_factor ~ application_factor, margins = TRUE) +
     scale_fill_brewer(palette=colorpalette) +
     scale_y_log10() +
     guides(fill=FALSE)
@@ -85,7 +85,7 @@ main <- function(){
 	ggsave(plot = p, filename = '../plots/rq1_compact.pdf', width=130, height=135, units = "mm" )
 	
 	p <- plotGroupedCoverageRangesAllApps(frequent)
-	ggsave(plot = p, filename = '../plots/rq1_all.pdf', width=200, height=210, units = "mm" )
+	ggsave(plot = p, filename = '../plots/rq1_all.pdf', width=230, height=250, units = "mm" )
 	
 	p <- plotSummary(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_summary.pdf', width=140, height=80, units = "mm" )

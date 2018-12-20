@@ -50,9 +50,9 @@ plotCCNPerApp <- function(benchmark){
     arrange(application_factor, version)
   p <- ggplot(df, aes(x=version, y=avg_ccn, fill=factor(application_factor))) +
     geom_bar(stat = "identity") +
-    theme(axis.title.x=element_blank(),
-          axis.text.x=element_blank(),
+    theme(axis.text.x=element_blank(),
           axis.ticks.x=element_blank()) + 
+    xlab("Application version") +
     ylab("Average CCN") + 
     guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette) +
@@ -83,9 +83,9 @@ plotNCSSPerApp <- function(benchmark){
     arrange(application_factor, version)
   p <- ggplot(df, aes(x=version, y=application_ncss, fill=factor(application_factor))) +
     geom_bar(stat = "identity") +
-    theme(axis.title.x=element_blank(),
-          axis.text.x=element_blank(),
+    theme(axis.text.x=element_blank(),
           axis.ticks.x=element_blank()) + 
+    xlab("Application version") +
     ylab("Average KNCSS") + 
     guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette) +

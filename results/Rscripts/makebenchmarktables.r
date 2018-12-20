@@ -18,32 +18,32 @@ printExceptionsApplicationsDescription <- function(){
   # Get statistics for each application and each exception
   df <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     group_by(application_kind, application_kind_factor, exception_class, exception, exception_factor) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count)) %>%
     arrange(application_kind_factor, exception_factor)
   
   totalException <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     group_by(exception_class, exception, exception_factor) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count)) %>%
     arrange(exception_factor)
   
   totalApplication <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     group_by(application_kind, application_kind_factor) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count)) %>%
     arrange(application_kind_factor)
   
   total <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count))
   
   exceptions <- benchmark %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     arrange(exception_factor) %>% 
     distinct(exception, exception_class, exception_factor)
   applications <- benchmark %>%
@@ -130,32 +130,32 @@ printExceptionsApplicationsVertical <- function(){
   # Get statistics for each application and each exception
   df <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     group_by(application_name, application_factor, exception_class, exception, exception_factor) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count)) %>%
     arrange(application_name, exception_factor)
   
   totalException <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     group_by(exception_class, exception, exception_factor) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count)) %>%
     arrange(exception_factor)
   
   totalApplication <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     group_by(application_name, application_factor) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count)) %>%
     arrange(application_name)
   
   total <- benchmark %>%
     distinct(application, application_name, application_factor, application_kind, application_kind_factor, case, exception_class, exception, exception_factor, frame_count) %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     summarise(n_cases = n(), tot_frame_count = sum(frame_count), mean_frame_count = mean(frame_count), sd_frame_count = sd(frame_count))
   
   exceptions <- benchmark %>%
-    mutate(exception_class = ifelse(exception == "Oth.", 'Others', exception_class)) %>%
+    mutate(exception_class = ifelse(exception == "Other", 'Other', exception_class)) %>%
     arrange(exception_factor) %>% 
     distinct(exception, exception_class, exception_factor)
   
@@ -174,12 +174,12 @@ printExceptionsApplicationsVertical <- function(){
   
   cat("\\begin{tabular}{ l l | r r r r r r r | r } ")
   # Print headers
-  cat("\\textbf{App.} &")
+  cat("\\textbf{Applications} &")
   for(j in 1:nrow(exceptions)){
     ex <- exceptions[j,]
     cat(" & \\textbf{\\rotatebox{90}{", ex$exception, "}}")
   }
-  cat(" & \\textbf{ Tot. } ")
+  cat(" & \\textbf{ Total } ")
   cat("\\\\", "\n")
   cat("\\hline", "\n")
   
@@ -239,7 +239,7 @@ printExceptionsApplicationsVertical <- function(){
     #Print total
     square <- totalApplication %>%
       filter(application_factor == app$application_factor)
-    cat(" &", formatC(square$sd_frame_count, digits=1, format="f"))
+    cat(" &", formatC(square$mean_frame_count, digits=1, format="f"))
     cat("\\\\", "\n")
     
     cat(" & $\\sigma$ ")
@@ -275,6 +275,7 @@ printExceptionsApplicationsVertical <- function(){
   cat(" &", total$n_cases)
   cat("\\\\", "\n")
   
+  cat(sum(applications$nb_versions), "versions")
   cat(" & \\textit{fr} ")
   for(j in 1:nrow(exceptions)){
     ex <- exceptions[j,]
@@ -285,6 +286,7 @@ printExceptionsApplicationsVertical <- function(){
   cat(" &", formatC(total$tot_frame_count, digits=0, format="f"))
   cat("\\\\", "\n")
   
+  cat("$\\overline{NCSS}$: ", formatC(mean(applications$avg_ncss), digits=2, format="f"), "k", sep = '')
   cat(" & $\\overline{fr}$ ")
   for(j in 1:nrow(exceptions)){
     ex <- exceptions[j,]
@@ -304,7 +306,6 @@ printExceptionsApplicationsVertical <- function(){
   }
   cat(" &", formatC(total$sd_frame_count, digits=1, format="f"))
   cat("\\\\", "\n")
-  cat("\\hline", "\n")
   
   cat("\\end{tabular}")
 }
