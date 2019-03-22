@@ -71,6 +71,27 @@ plotSummary <- function(majority){
   return(p)
 }
 
+plotSummaryPieChart <- function(majority){
+  df <- majority %>%
+  group_by(majority_result_factor) %>%
+  summarise(n = n()) %>%
+  mutate(Frequency = n / sum(n), label = paste0(n)) %>%
+  mutate(Tool = "EvoCrash_results")
+  p <- ggplot(df, aes(x = Tool, y = Frequency, fill = majority_result_factor)) + 
+   geom_bar(stat = "identity", width = 1) +
+    geom_text(aes(label = label), position = position_stack(vjust = 0.5), size = 5) +
+    scale_fill_brewer(palette=colorpalette) +
+    scale_y_continuous(labels = scales::percent) +
+    xlab(NULL) +
+    ylab(NULL) +
+    guides(fill=guide_legend(title=NULL)) +
+    theme(legend.position="bottom",
+          axis.title.y = element_blank(),
+          axis.text.y=element_blank(),
+          axis.ticks.y=element_blank()
+          ) +
+    coord_polar("y", start=0)
+}
 # ------------------------------
 # Main function definition
 # ------------------------------
@@ -90,6 +111,8 @@ main <- function(){
 	p <- plotSummary(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_summary.pdf', width=140, height=80, units = "mm" )
 	
+	p <- plotSummaryPieChart(frequent)
+	ggsave(plot = p, filename = 'rq1_summary_pieChart.pdf', width=130, height=130, units = "mm" )
 	# Compute values from the text
 	
 	cat("Most frequent outcome frequencies:", "\n")
