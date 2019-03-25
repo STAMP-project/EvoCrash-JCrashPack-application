@@ -115,3 +115,26 @@ getMostFrequentResult <- function(){
   return(df)
 }
 
+
+STATUS_LEVELS = c("not reproduced", "reproduced")
+
+getReproduceStatus <- function(results){
+  df <- results %>%
+    group_by(case, majority_result) %>%
+    mutate(max_reproduced = ifelse(majority_result == 'reproduced', max(frame_level), 0)) %>%
+    ungroup() %>%
+    group_by(case) %>%
+    mutate(max_reproduced = max(max_reproduced)) %>%
+    ungroup() %>%
+    distinct(application_name, application_factor, case, exception, exception_factor, max_reproduced)
+  df <- data.frame(df) %>%
+    group_by(case) %>%
+    mutate(highest = max(max_reproduced)) %>%
+    ungroup() %>%
+    mutate(status = ifelse(max_reproduced > 0 & max_reproduced >= highest, STATUS_LEVELS[2], STATUS_LEVELS[1]))
+  df <- data.frame(df)
+  df$status_factor <- factor(df$status, levels = STATUS_LEVELS, ordered = TRUE)
+  return(df)
+}
+
+

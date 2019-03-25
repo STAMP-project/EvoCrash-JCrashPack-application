@@ -93,40 +93,27 @@ plotSummaryPieChart <- function(majority){
     coord_polar("y", start=0)
 }
 
-STATUS_LEVELS = c("not reproduced", "reproduced")
-
-getReproduceStatus <- function(results){
-  df <- results %>%
-    group_by(case, majority_result) %>%
-    mutate(max_reproduced = ifelse(majority_result == 'reproduced', max(frame_level), 0)) %>%
-    ungroup() %>%
-    group_by(case) %>%
-    mutate(max_reproduced = max(max_reproduced)) %>%
-    ungroup() %>%
-    distinct(application_name, application_factor, case, exception, exception_factor, max_reproduced)
-  df <- data.frame(df) %>%
-    group_by(case) %>%
-    mutate(highest = max(max_reproduced)) %>%
-    ungroup() %>%
-    mutate(status = ifelse(max_reproduced > 0 & max_reproduced >= highest, STATUS_LEVELS[2], STATUS_LEVELS[1]))
-  df <- data.frame(df)
-  df$status_factor <- factor(df$status, levels = STATUS_LEVELS, ordered = TRUE)
-  return(df)
-}
-
-
-buildStackedBarCrashStatusPerApp <- function(majority){
+plotSummaryCrashes <- function(majority){
   # Get result status
   reproduction <- getReproduceStatus(majority) 
-  # Add count and frequency 
-  df <- reproduction %>%
+  # Add (all) applications
+  allApps <- reproduction %>%
     mutate(application_name = '(all)')
-  df$application_factor = factor(df$application_name, levels = c(levels(df$application_factor), '(all)'))
-  df <- df %>%
+  allApps$application_factor = factor(allApps$application_name, levels = c(levels(allApps$application_factor), '(all)'))
+  # Add (all) applications
+  allEx <- reproduction %>%
+    rbind(allApps) %>%
+    mutate(exception = '(all)')
+  allEx$exception_factor = factor(allEx$exception, levels = c(levels(allEx$exception_factor), '(all)'))
+  # Add (all) exceptions
+  # Add count and frequency 
+  df <- allApps %>%
+    rbind(allEx) %>%
     rbind(reproduction) %>%
     group_by(application_factor, exception_factor, status_factor) %>%
     summarise(n = n()) %>%
     mutate(Frequency = n / sum(n), label = paste0(n))
+  # Reverse order of exceptions
   df$exception_factor <- fct_rev(df$exception_factor)
   p <- ggplot(df, aes(x = exception_factor, y = Frequency, fill = status_factor)) + 
     geom_bar(stat = "identity") +
@@ -163,6 +150,9 @@ main <- function(){
 	
 	p <- plotSummaryPieChart(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_summary.pdf', width=130, height=130, units = "mm" )
+	
+	p <- plotSummaryCrashes(frequent)
+	ggsave(plot = p, filename = '../plots/rq1_crashes.pdf', width=250, height=150, units = "mm" )
 	
 	# Compute values from the text
 	
