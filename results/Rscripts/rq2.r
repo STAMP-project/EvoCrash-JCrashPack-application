@@ -3,10 +3,9 @@
 # author: Xavier Devroey
 
 library(ggplot2)
-library(dplyr)
-
 library(moments)
 library(boot)
+library(tidyverse)
 
 source('dataclean.r')
 
@@ -201,6 +200,58 @@ printExceptionTable <- function(filtered_results){
   cat("\\end{tabularx}", "\n")
 }
 
+plotFrameLevelsPerException <- function(majority){
+  reproduction <- getReproduceStatus(majority) %>%
+    filter(status == STATUS_LEVELS[2])
+  # Add (all) applications
+  # allApps <- reproduction %>%
+  #   mutate(application_name = '(all)')
+  # allApps$application_factor = factor(allApps$application_name, levels = c(levels(allApps$application_factor), '(all)'))
+  # Add (all) exception
+  allEx <- reproduction %>%
+    mutate(exception = '(all)')
+  allEx$exception_factor = factor(allEx$exception, levels = c(levels(allEx$exception_factor), '(all)'))
+  df <- allEx %>%
+    rbind(reproduction) %>%
+    group_by(exception_factor, highest, status_factor) %>%
+    summarise(n = n()) %>%
+    mutate(Frequency = n / sum(n), label = paste0(n))
+  p <- ggplot(df, aes(x = exception_factor, y = highest, size = n, label = n)) +
+    geom_point(shape = 1, colour = "black", fill = "lightblue") + 
+    geom_text(color="black", size=3) + 
+    scale_size_continuous(range = c(5, 15)) +
+    theme(legend.position="none", axis.text.x = element_text(angle = 45, hjust = 1)) +
+    xlab(NULL) +
+    ylab('Highest reproduced frame level')
+  return(p)
+}
+
+plotFrameLevelsPerApplication <- function(majority){
+  reproduction <- getReproduceStatus(majority) %>%
+    filter(status == STATUS_LEVELS[2])
+  # Add (all) applications
+  allApps <- reproduction %>%
+    mutate(application_name = '(all)')
+  allApps$application_factor = factor(allApps$application_name, levels = c(levels(allApps$application_factor), '(all)'))
+  # # Add (all) exception
+  # allEx <- reproduction %>%
+  #   mutate(exception = '(all)')
+  df <- allApps %>%
+    # rbind(allEx) %>%
+    rbind(reproduction) %>%
+    group_by(application_factor, highest, status_factor) %>%
+    summarise(n = n()) %>%
+    mutate(Frequency = n / sum(n), label = paste0(n))
+  p <- ggplot(df, aes(x = application_factor, y = highest, size = n, label = n)) +
+    geom_point(shape = 1, colour = "black", fill = "white") + 
+    geom_text(color="black", size=3) + 
+    scale_size_continuous(range = c(5, 15)) +
+    theme(legend.position="none", axis.text.x = element_text(angle = 45, hjust = 1)) +
+    xlab(NULL) +
+    ylab('Highest reproduced frame level') 
+  return(p)
+}
+
 # ------------------------------
 # Main function definition
 # ------------------------------
@@ -208,6 +259,12 @@ printExceptionTable <- function(filtered_results){
 main <- function(){
   results <- getResults()
   majority <- getMostFrequentResult()
+
+  p <- plotFrameLevelsPerException(majority)
+  ggsave(plot = p, filename = '../plots/rq1_framelvlex.pdf', width=100, height=100, units = "mm" )
+  
+  p <- plotFrameLevelsPerApplication(majority)
+  ggsave(plot = p, filename = '../plots/rq1_framelvlapp.pdf', width=100, height=100, units = "mm" )
   
   # Filter results to keep only those that have been most frequently reproduced
   filtered_results <- results %>%
