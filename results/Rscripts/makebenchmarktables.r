@@ -195,36 +195,36 @@ printExceptionsApplicationsVertical <- function(){
       square <- df %>%
         filter(application_factor == app$application_factor, exception_factor == ex$exception_factor)
       if(nrow(square) != 0){
-        cat(" &", square$n_cases)
+        cat(" &", formatC(square$n_cases, digits=1, format="f"))
       } else {
-        cat(" &", 0, " ")
+        cat(" &", "0.0 ")
       }
     }
     #Print total
     square <- totalApplication %>%
       filter(application_factor == app$application_factor)
-    cat(" &", square$n_cases)
+    cat(" &", formatC(square$n_cases, digits=1, format="f"))
     cat("\\\\", "\n")
     
-    cat(app$nb_versions, "versions")
+    cat(" ")
     cat(" & \\textit{fr} ")
     for(j in 1:nrow(exceptions)){
       ex <- exceptions[j,]
       square <- df %>%
         filter(application_factor == app$application_factor, exception_factor == ex$exception_factor)
       if(nrow(square) != 0){
-        cat(" &", formatC(square$tot_frame_count, digits=0, format="f"))
+        cat(" &", formatC(square$tot_frame_count, digits=1, format="f"))
       } else {
-        cat(" &", 0)
+        cat(" &", "0.0")
       }
     }
     #Print total
     square <- totalApplication %>%
       filter(application_factor == app$application_factor)
-    cat(" &", square$tot_frame_count)
+    cat(" &", formatC(square$tot_frame_count, digits=1, format="f"))
     cat("\\\\", "\n")
     
-    cat("$\\overline{NCSS}$: ", formatC(app$avg_ncss, digits=2, format="f"), "k", sep = '')
+    cat(" ")
     cat(" & $\\overline{fr}$ ")
     for(j in 1:nrow(exceptions)){
       ex <- exceptions[j,]
@@ -269,30 +269,30 @@ printExceptionsApplicationsVertical <- function(){
     ex <- exceptions[j,]
     square <- totalException %>%
       filter(exception_factor == ex$exception_factor)
-    cat(" &", square$n_cases)
+    cat(" &", formatC(square$n_cases, digits=1, format="f"))
   }
   
-  cat(" &", total$n_cases)
+  cat(" &", formatC(total$n_cases, digits=1, format="f"))
   cat("\\\\", "\n")
   
-  cat(sum(applications$nb_versions), "versions")
+  cat(" ")
   cat(" & \\textit{fr} ")
   for(j in 1:nrow(exceptions)){
     ex <- exceptions[j,]
     square <- totalException %>%
       filter(exception_factor == ex$exception_factor)
-    cat(" &", formatC(square$tot_frame_count, digits=0, format="f"))
+    cat(" &", formatC(square$tot_frame_count, digits=1, format="f"))
   }
-  cat(" &", formatC(total$tot_frame_count, digits=0, format="f"))
+  cat(" &", formatC(total$tot_frame_count, digits=1, format="f"))
   cat("\\\\", "\n")
   
-  cat("$\\overline{NCSS}$: ", formatC(mean(applications$avg_ncss), digits=2, format="f"), "k", sep = '')
+  cat(" ")
   cat(" & $\\overline{fr}$ ")
   for(j in 1:nrow(exceptions)){
     ex <- exceptions[j,]
     square <- totalException %>%
       filter(exception_factor == ex$exception_factor)
-    cat(" &", formatC(square$mean_frame_count, digits=0, format="f"))
+    cat(" &", formatC(square$mean_frame_count, digits=1, format="f"))
   }
   cat(" &", formatC(total$mean_frame_count, digits=1, format="f"))
   cat("\\\\", "\n")

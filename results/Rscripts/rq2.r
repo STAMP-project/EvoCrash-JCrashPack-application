@@ -82,7 +82,7 @@ printApplicationTable <- function(filtered_results){
   }
 
   # Print table
-  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{0.6} R{1.4} r R{1} r }", "\n")
+  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} r r R{1} r }", "\n")
   #cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} R{1} r R{1} r r r }", "\n")
   cat("\\hline", "\n")
   #cat("\\textbf{Applications} & \\textbf{st} & \\textbf{fr}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} & \\textbf{Skew.} & \\textbf{Kurt.} \\\\", "\n")
@@ -95,9 +95,9 @@ printApplicationTable <- function(filtered_results){
     cat(x$crashes," & ");
     cat(x$frames," & ");
     cat(x$min," & ");
-    cat(x$lowerquartile," & ");
-    cat("[", x$cilower,",",x$ciupper, "]" ," & ", sep = "");
-    cat(formatC(x$median, digits=2, format="f", big.mark = ',')," & ");
+    cat(formatC(x$lowerquartile, digits=1, format="f", big.mark = ',')," & ");
+    cat("[", formatC(x$cilower, digits=1, format="f", big.mark = ','),";", formatC(x$ciupper, digits=1, format="f", big.mark = ','), "]" ," & ", sep = "");
+    cat(formatC(x$median, digits=1, format="f", big.mark = ',')," & ");
     cat(formatC(x$upperquartile, digits=1, format="f", big.mark = ',')," & ");
     cat(formatC(x$max, format="d", big.mark = ',')," ");
     # cat(formatC(x$max, format="d", big.mark = ',')," & ");
@@ -111,9 +111,9 @@ printApplicationTable <- function(filtered_results){
   cat(x$crashes," & ");
   cat(x$frames," & ");
   cat(x$min," & ");
-  cat(x$lowerquartile," & ");
-  cat("[", x$cilower,",",x$ciupper, "]" ," & ", sep = "");
-  cat(formatC(x$median, digits=2, format="f", big.mark = ',')," & ");
+  cat(formatC(x$lowerquartile, digits=1, format="f", big.mark = ',')," & ");
+  cat("[", formatC(x$cilower, digits=1, format="f", big.mark = ','),";", formatC(x$ciupper, digits=1, format="f", big.mark = ','), "]" ," & ", sep = "");
+  cat(formatC(x$median, digits=1, format="f", big.mark = ',')," & ");
   cat(formatC(x$upperquartile, digits=1, format="f", big.mark = ',')," & ");
   cat(formatC(x$max, format="d", big.mark = ',')," ");
   # cat(formatC(x$max, format="d", big.mark = ',')," & ");
@@ -158,7 +158,7 @@ printExceptionTable <- function(filtered_results){
   }
   
   # Print table
-  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{0.6} R{1.4} r R{1} r }", "\n")
+  cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} r r R{1} r }", "\n")
   # cat("\\begin{tabularx}{\\textwidth}{ l r r r R{1} R{1} r R{1} r r r }", "\n")
   cat("\\hline", "\n")
   # cat("\\textbf{Exception kind} & \\textbf{st} & \\textbf{fr}& \\textbf{Min} & \\textbf{Lower Quart.} & \\textbf{Median CI} & \\textbf{Median} & \\textbf{Upper Quart.} & \\textbf{Max} & \\textbf{Skew.} & \\textbf{Kurt.} \\\\", "\n")
@@ -171,12 +171,11 @@ printExceptionTable <- function(filtered_results){
     cat(x$crashes," & ");
     cat(x$frames," & ");
     cat(x$min," & ");
-    cat(x$lowerquartile," & ");
-    cat("[", x$cilower,",",x$ciupper, "]" ," & ", sep = "");
-    cat(formatC(x$median, digits=2, format="f", big.mark = ',')," & ");
+    cat(formatC(x$lowerquartile, digits=1, format="f", big.mark = ',')," & ");
+    cat("[", formatC(x$cilower, digits=1, format="f", big.mark = ','),";", formatC(x$ciupper, digits=1, format="f", big.mark = ','), "]" ," & ", sep = "");
+    cat(formatC(x$median, digits=1, format="f", big.mark = ',')," & ");
     cat(formatC(x$upperquartile, digits=1, format="f", big.mark = ',')," & ");
-    #cat(formatC(x$max, format="d", big.mark = ',')," & ");
-    cat(formatC(x$max, format="d", big.mark = ','));
+    cat(formatC(x$max, format="d", big.mark = ',')," ");
     # cat(formatC(x$skewness, digits=2, format="f", big.mark = ',')," & ");
     # cat(formatC(x$kurtosis, digits=2, format="f", big.mark = ',')," ");
     cat("\\\\", "\n")
@@ -187,12 +186,11 @@ printExceptionTable <- function(filtered_results){
   cat(x$crashes," & ");
   cat(x$frames," & ");
   cat(x$min," & ");
-  cat(x$lowerquartile," & ");
-  cat("[", x$cilower,",",x$ciupper, "]" ," & ", sep = "");
-  cat(formatC(x$median, digits=2, format="f", big.mark = ',')," & ");
+  cat(formatC(x$lowerquartile, digits=1, format="f", big.mark = ',')," & ");
+  cat("[", formatC(x$cilower, digits=1, format="f", big.mark = ','),";", formatC(x$ciupper, digits=1, format="f", big.mark = ','), "]" ," & ", sep = "");
+  cat(formatC(x$median, digits=1, format="f", big.mark = ',')," & ");
   cat(formatC(x$upperquartile, digits=1, format="f", big.mark = ',')," & ");
   cat(formatC(x$max, format="d", big.mark = ',')," ");
-  # cat(formatC(x$max, format="d", big.mark = ',')," & ");
   # cat(formatC(x$skewness, digits=2, format="f", big.mark = ',')," & ");
   # cat(formatC(x$kurtosis, digits=2, format="f", big.mark = ',')," ");
   cat("\\\\", "\n")

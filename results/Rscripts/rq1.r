@@ -138,6 +138,67 @@ main <- function(){
 	
 	frequent <- getMostFrequentResult()
 	
+	results %>%
+	  filter( result == 'reproduced' ) %>%
+	  group_by(application, application_factor, exception, exception_factor, case, frame_level) %>%
+	  summarise(count = n()) %>%
+	  data.frame() %>%
+	  ggplot(aes(x = application_factor, y = count)) +
+	   geom_boxplot()
+	
+	results %>%
+	  filter( result == 'reproduced' ) %>%
+	  group_by(application, application_factor, exception, exception_factor, case, frame_level) %>%
+	  summarise(count = n()) %>%
+	  data.frame() %>%
+	  ggplot(aes(x = exception_factor, y = count)) +
+	  geom_boxplot()
+	
+	results %>%
+	  filter( result == 'reproduced' ) %>%
+	  group_by(application, application_factor, exception, exception_factor, case, frame_level) %>%
+	  summarise(count = n()) %>%
+	  data.frame() %>%
+	  ggplot(aes(x = as.factor(frame_level), y = count)) +
+	  geom_boxplot() +
+	  facet_grid(exception_factor ~ application_factor, margins = TRUE)
+	
+	results %>%
+	  filter( result == 'reproduced' ) %>%
+	  group_by(application, application_factor, exception, exception_factor, case, frame_level, result, result_factor) %>%
+	  summarise(count = n()) %>%
+	  data.frame() %>%
+	  ggplot(aes(x = as.factor(frame_level), y = count)) +
+	  geom_boxplot()
+	
+	# Blue: #2b83ba
+	
+	frequent <- getMostFrequentResult() %>%
+	  mutate(caseframe = paste0(case, frame_level)) %>%
+	  filter(majority_result == 'reproduced')
+	  
+	df <- results %>%
+	  mutate(caseframe = paste0(case, frame_level)) %>%
+	  filter(caseframe %in% frequent$caseframe, result == 'reproduced') %>%
+	  group_by(application, application_factor, case, frame_level) %>%
+	  summarise(count = n()) %>%
+	  filter(count < 9)
+	
+	df %>%
+	  group_by(application_factor) %>%
+	  count()
+	
+	df <- results %>%
+	  filter(result == 'reproduced') %>%
+	  group_by(application, application_factor, case, frame_level) %>%
+	  summarise(count = n()) %>%
+	  filter(count < 9)
+	
+	df %>%
+	  group_by(application_factor) %>%
+	  count()
+	
+	
 	# Print plots
 	p <- plotGroupedCoverageRanges(frequent)
 	ggsave(plot = p, filename = '../plots/rq1_compact.pdf', width=130, height=135, units = "mm" )

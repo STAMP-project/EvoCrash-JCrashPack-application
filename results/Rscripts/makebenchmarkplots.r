@@ -86,7 +86,7 @@ plotNCSSPerApp <- function(benchmark){
     theme(axis.text.x=element_blank(),
           axis.ticks.x=element_blank()) + 
     xlab("Application version") +
-    ylab("Average KNCSS") + 
+    ylab("KNCSS") + 
     guides(fill=FALSE) +
     scale_fill_brewer(palette=colorpalette) +
     facet_grid(. ~ application_factor, scales="free_x")
