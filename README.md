@@ -1,10 +1,22 @@
  # Introduction
 
-This artifact provides 3 parts: sample, evaluation, and results.
-Sample is an example which replicates the `XWIKI-13031` stack trace using ExRunner. 
-Evaluation may be used to replicate our results, presented in `CrashPack: A Benchmark for Crash Reproduction`, M. Soltani, P. Derakhshanfar, X. Devroey, and A. van Deursen, submitted to ISSTA 2018.
-Results presents complete results of the paper, including details of the manual analysis performed.
-We also detail the steps to add a new stack trace to CrashPack and include it in ExRunner, and how to extend ExRunner to another crash replication tool.
+This repository contains the reproduction package of the large scale evaluation of search-based crash reproduction reported in the following paper: Soltani, M., Derakhshanfar, P., Devroey, X. and van Deursen, A. (2020). [A benchmark-based evaluation of search-based crash reproduction](https://doi.org/10.1007/s10664-019-09762-1). In *Empirical Software Engineering*. 25, 1 (Jan. 2020), pp. 96–138. ([open access](https://doi.org/10.1007/s10664-019-09762-1)).
+
+```bibtex
+@article{Derakhshanfar2020,
+  author    = {Soltani, Mozhan and Derakhshanfar, Pouria and Devroey, Xavier and van Deursen, Arie},
+  title     = {A benchmark-based evaluation of search-based crash reproduction},
+  journal   = {Empirical Software Engineering},
+  volume    = {25},
+  number    = {1},
+  pages     = {96--138},
+  year      = {2020},
+  doi       = {10.1007/s10664-019-09762-1}
+}
+```
+
+This reproduction package provides 3 parts: sample, evaluation, and results.
+Sample is an example which replicates the `XWIKI-13031` stack trace using ExRunner. Evaluation may be used to replicate our full results, presented in the paper. Results presents complete results of the paper, including details of the statistical and  manual analysis performed. We also detail the steps to add a new stack trace to CrashPack and include it in ExRunner, and how to extend ExRunner to another crash replication tool.
 
 # Running Sample
 
