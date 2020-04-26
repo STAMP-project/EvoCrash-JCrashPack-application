@@ -1,4 +1,6 @@
- # Introduction
+[![DOI](https://zenodo.org/badge/141550643.svg)](https://zenodo.org/badge/latestdoi/141550643)
+
+# Introduction
 
 This repository contains the reproduction package of the large scale evaluation of search-based crash reproduction reported in the following paper: Soltani, M., Derakhshanfar, P., Devroey, X. and van Deursen, A. (2020). [A benchmark-based evaluation of search-based crash reproduction](https://doi.org/10.1007/s10664-019-09762-1). In *Empirical Software Engineering*. 25, 1 (Jan. 2020), pp. 96–138. ([open access](https://doi.org/10.1007/s10664-019-09762-1)).
 
